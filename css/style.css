@@ -75,10 +75,19 @@ p,span{
 .navbar_info{
     display: table;
      margin-right: -46px;
+     border-left: 1px solid #e5e5e5;
+     padding: 5px;
 }
 .navbar_tel{
     display: table-cell;
     vertical-align: middle;
+    font-size: 60px;
+    padding: 0 15px;
+    height: 70px;
+   
+    vertical-align: middle;
+    font-size: 16px;
+    min-width: 9.5em;
 }
 .contenedor_pse{
     font-size: 18px;
@@ -88,4 +97,126 @@ p,span{
 #tamaño_pse{
     margin-top: 8px;
     
+}
+#propietarios_slide .card.item .caracteristicas{
+    font-weight: 400;
+    padding: 6px;
+    font-size: 13px;
+    color: #535353;
+}
+.tamaño_cards{
+    width: 25rem;
+}
+.style_span_tipo_inmueble{
+    position: absolute;
+    top: 15px;font-size: 9px;
+    color: #fff;
+    text-align: center;
+    right: 159px;letter-spacing: 1.5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 6px 10px 4px 10px;text-transform: uppercase;
+}
+.style_span_precio{
+    position: absolute;
+    top: 192px;font-size: 9px;color: #fff;
+    text-align: center;
+    right: 14px;
+    letter-spacing: 1.5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 6px 10px 4px 10px;text-transform: uppercase;
+}
+.contenido_card{
+    padding: 20px 20px 15px;
+}
+.titulo_cards{
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#logos_servicios{
+
+    font-size: 45px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.contenedor_publicaciones{
+    background: #fff;
+    margin-bottom: 30px;
+}
+.titulo_publicaciones{
+    padding: 45px 31px;
+}
+.contenedor_consignar{
+    background: black;
+    padding: 18px 0;
+}
+.frase_consiganr{
+    font-size: 24px;
+    margin: 0;
+    line-height: 50px;
+    color: #fff;
+    font-weight: 300;
+}
+.boton_consiganar{
+    background: #fff;
+    float: right;
+    cursor: pointer;
+    padding: 12px 30px 10px;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 3px;
+    color: black;
+}
+.contacto_footer{
+    left: -33px;
+}
+.titulo_footer{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.conten_lista_footer{
+    margin-left: 38px;
+    margin-left: 53px;
+    margin-top: -17px;
+    line-height: 2.3;
+}
+.iconos_footer{
+    font-size: 25px; 
+       margin-left: 77px;
+}
+.conten_link{
+    margin-top: 20px;
+    margin-left: -82px;
+}
+.style_lista_link{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #535353;
+    line-height: 3.0;
+}
+.style_icono_link{
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 20px;
+}
+.style_a{
+    color:black;
+}
+.margen_form{
+    margin-top: 10px;
+}
+.texto{
+    margin-left: 19px;
+    margin-top: -33px;
+}
+.chek{
+    margin-top: 7px;
+}
+.booton_footer{
+    margin-top: 18px;
 }

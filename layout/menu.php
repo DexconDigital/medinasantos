@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div style="    margin-left: 51px;">
-        <a class="navbar-brand" href="#" style="    width: 358px;height: 44px;">
+    <div style="    margin-left: 24px;">
+        <a class="navbar-brand" href="#" style="    width: 330px;height: 44px;">
             <?php $r = $logo_empresa;
             echo '
           <img src="' . $r['src'] . '" class="w-100" alt="' . $r['alt'] . '">'; ?>
@@ -35,8 +35,9 @@
         </ul>
 
         <div class="navbar_info" id="tamaño_pse">
-            <div class="calling-content  navbar_tel"><i class=""></i>
-                <div class="contenedor_pse">Llámanos <br><span><a href="">(057) 555555</a></span></div>
+        <i style="width: 33px;font-size: 55px;" class="fa fa-mobile-alt"></i>
+            <div class=" navbar_tel">
+                <div class="contenedor_pse">Llámanos <br><span><a class="" href="">(057) 555555</a></span></div>
             </div>
 
             <a href="">
