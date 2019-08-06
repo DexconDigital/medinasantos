@@ -112,13 +112,15 @@ p,span{
     top: 15px;font-size: 9px;
     color: #fff;
     text-align: center;
-    right: 159px;letter-spacing: 1.5px;
+    right: 245px;
+    letter-spacing: 1.5px;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 6px 10px 4px 10px;text-transform: uppercase;
 }
 .style_span_precio{
     position: absolute;
-    top: 192px;font-size: 9px;color: #fff;
+    top: 257px;
+    font-size: 9px;color: #fff;
     text-align: center;
     right: 14px;
     letter-spacing: 1.5px;
@@ -171,25 +173,24 @@ p,span{
     color: black;
 }
 .contacto_footer{
-    left: -33px;
+    left: -4px;
 }
 .titulo_footer{
     font-size: 25px;
     margin-bottom: 30px;
 }
 .conten_lista_footer{
-    margin-left: 38px;
-    margin-left: 53px;
+    margin-left: 17px;
     margin-top: -17px;
     line-height: 2.3;
 }
 .iconos_footer{
     font-size: 25px; 
-       margin-left: 77px;
+       margin-left: 45px;
 }
 .conten_link{
     margin-top: 20px;
-    margin-left: -82px;
+    margin-left: -34px;
 }
 .style_lista_link{
     list-style: none;
@@ -217,6 +218,87 @@ p,span{
 .chek{
     margin-top: 7px;
 }
-.booton_footer{
+#booton_footer{
     margin-top: 18px;
+}
+#style_img_ubica{
+    width: 415px;
+    margin-left: -28px;
+}
+.margen_ubica{
+    margin-left: -9px;
+}
+.image_quienessomos{
+    background: url(../images/no_image.png);
+    background-size: cover;
+    height: 270px;
+    background-position: center center;
+    position: relative;
+    background-color: #4c4c4c52;
+   
+}
+.img_quienesomos{
+    
+    height: 100%;
+     object-fit:contain;
+      width: inherit;
+}
+.banner_estadi{
+    background: url(../images/no_image.png);
+    background-color: #4c4c4c52;
+    height: 330px;
+    
+}
+.tamaño_icono_banner{
+    font-size: 25px;padding: 19px;
+}
+.contenedor_banner{
+    margin-top: 67px;
+}
+.magen_formulario{
+    margin-bottom: 1rem;
+}
+.titulo_asesor{
+    font-size: 25px;
+     margin-bottom: 5px;
+}
+.style_inmueble{
+    float: left;
+}
+.style_li{
+    font-size: 25px;
+     margin-bottom: 5px;
+}
+.style_precio {
+    float: right;
+}
+.style_color{
+    margin-bottom: 5px;
+    font-size: 25px;
+     color:red;
+}
+.span_clientes{
+    position: absolute;
+    top: 17px;
+    font-size: 9px;
+    color: #fff;
+    text-align: center;
+    right: 14px;
+    letter-spacing: 1.5px;
+    background-color: rgba(70, 68, 68, 0.5);
+    padding: 6px 10px 4px 10px;
+    text-transform: uppercase;
+}
+.contenedor_contac{
+    margin-bottom: 8px;
+}
+.li_style_contac{
+    width: 55px;
+    font-size: 20px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    border: 1px dashed #535353;
+    text-align: center;
+    margin-right: 25px;
 }
