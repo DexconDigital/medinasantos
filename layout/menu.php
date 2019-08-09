@@ -1,60 +1,63 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light mt-2">
-    <div style="margin-left:10px;" class="">
-        <a class="navbar-brand" href="index.php" style="width: 335px;height: 52px;">
-            <?php $r = $logo_empresa;
-            echo '
-          <img src="' . $r['src'] . '" class="w-100" alt="' . $r['alt'] . '">'; ?>
-        </a>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse estilo_nav" style="background-color: transparent;">
-        <ul class="navbar-nav  mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.php">Inicio<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="quienes_somos.php">Quiénes Somos<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="servicios.php">Servicios<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="inmueble.php">Inmuebles<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle"  href="" id="navbarDropdown"role="button" data-toggle="dropdown"><span class="sr-only">(current)</span>
-                    Clientes
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=254&tipo=2 ">Arrendatarios</a>
-                    <a class="dropdown-item" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=254&tipo=1  ">Propietarios</a>
-                    <a class="dropdown-item" href="#">Consignar inmueble</a>
-                    <a class="dropdown-item" href="#">Pagos PSE</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="blog.php">Blog<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contactanos.php">Contáctanos<span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-
-        <div class="navbar_info" id="tamaño_pse">
-            <i style="font-size: 25px;" class="fa fa-mobile-alt"></i>
-            <div class=" navbar_tel">
-                <div class="contenedor_pse">Llámanos <br><span><a class="" href="">+57(1) 722 1563</a></span></div>
+<header class="main-header sticky-header header-shrink" id="main-header-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light rounded">
+                    <a class="navbar-brand logo navbar-brand d-flex w-50 mr-auto" href="./">
+                        <img src="images/Logo.png" alt="log0">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="navbar-collapse collapse w-100" id="navbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link" href="./">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./quienes-somos">
+                                    Quiénes Somos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./quienes-somos">
+                                    Servicios
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./quienes-somos">
+                                    Inmuebles
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Clientes
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li class="dropdown-item">
+                                        <a href="">Propietarios</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="">Arrendatarios</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./quienes-somos">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./quienes-somos">
+                                    Contactanos
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <div class="container row " style="height: 65px;width: 65px;padding: 0px;">
-                <a href="">
-                    <?php $r = $pse;
-                    echo '
-                    <img src="' . $r['src'] . '" class="width: 50%; logo_pse"  alt="' . $r['alt'] . '">'; ?>
-                </a>
-            </div>
-
         </div>
     </div>
-</nav>
+</header>

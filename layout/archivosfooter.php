@@ -1,57 +1,6 @@
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-
-<script>
-    $('#propietarios_slide').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
-        }
-    }
-})
-</script>
-<script>
-    $('#aliados_slide').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
-        }
-    }
-})
-</script>
-<script>
-$('.publicaciones').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:2
-        }
-    }
-})</script>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
