@@ -294,13 +294,12 @@ p,span{
 }
 .li_style_contac{
     width: 55px;
-    font-size: 20px;
+    font-size: 14px;
     height: 55px;
-    line-height: 55px;
-    border-radius: 50%;
-    border: 1px dashed #535353;
+    line-height: 34px;
+   
     text-align: center;
-    margin-right: 25px;
+    margin-right: 5px;
 }
 .maps{
     background: url(../images/no_image.png);

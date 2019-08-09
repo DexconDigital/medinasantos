@@ -17,7 +17,7 @@
 
   
     <section>
-        <div class="container">
+        <div class="container" style="    margin-bottom: 22px;">
         <div class=" col-12 ">
             <div class="col-12 p-4  ">
                 <h2 class="main-title text-center">Escríbenos</h2>
@@ -62,17 +62,17 @@
                 </div>
                 <div class="col-4 ">
                     <div class="" style="margin-left: 8.333333%;">
-
+                        <h3>Datos de Contacto</h3>
                         <div>
                            
-                            <div class="row contenedor_contac">
+                            <div class="row contenedor_contac d-flex align-items-center">
                                 <i class="fas fa-map-marker-alt li_style_contac"></i>
                                 <div class="">
                                   
                                     <p> <?php echo $datos_contacto['direccion']['direccion'] ?> </p>
                                 </div>
                             </div>
-                            <div class="row contenedor_contac">
+                            <div class="row contenedor_contac d-flex align-items-center">
                                 <i class="fas fa-phone-alt li_style_contac"></i>
                                 <div>
                                   
@@ -86,15 +86,15 @@
                                     <p><?php echo $datos_contacto['celular']['imprimir'] ?> </p>
                                 </div>
                             </div>
-                            <div class="row contenedor_contac">
+                            <div class="row contenedor_contac d-flex align-items-center">
                                 <i class="fab fa-whatsapp li_style_contac"></i>
                                 <div>
                                   
                                     <p><?php echo $datos_contacto['whatsapp']['imprimir'] ?> </p>
                                 </div>
                             </div>
-                            <div class="row contenedor_contac">
-                                <i class="far fa-envelope li_style_contac"></i>
+                            <div class="row contenedor_contac d-flex align-items-center">
+                                <i  class="far fa-envelope li_style_contac"></i>
                                 <div>
                                  
                                     <p><?php echo $datos_contacto['correo']['correo'] ?> </p>
