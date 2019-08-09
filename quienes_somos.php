@@ -50,11 +50,12 @@
         <div class=" row">
             <div class="col-6 d-flex justify-content-around">
             <div class="card" style="width: 18rem;border: transparent;">
-            <h5 class="card-title text-center">Misíon</h5>
+            <h5 class="text-center"><?php echo $texto_quienes_somos['mision']['titulo'] ?></h5>
+            
                 <img src="images/mision.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p style="text-align: justify;" class="card-text"><?php echo $texto_quienes_somos['mision']['parrafo'] ?></p>
                    
                 </div>
             </div>
@@ -62,11 +63,11 @@
             </div>
             <div class="col-6 d-flex justify-content-around">
             <div class="card" style="width: 18rem;border: transparent;">
-            <h5 class="card-title text-center">Visíon</h5>
+            <h5 class="text-center"><?php echo $texto_quienes_somos['vision']['titulo'] ?></h5>
                 <img src="images/vision.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p style="text-align: justify;" class="card-text"><?php echo $texto_quienes_somos['vision']['parrafo'] ?></p>
                     
                 </div>
             </div>

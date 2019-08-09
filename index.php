@@ -252,11 +252,11 @@
         </section>
 
         <section id="servicios">
-        <div class="row d-flex justify-content-around p-4">
+        <div class="row  p-4">
             <div class="col-12 p-4  ">
                 <h2 class="text-center">Nuestros Servicios</h2>
             </div>
-            <div class=" row col-12 d-flex justify-content-center">
+            <div class=" row col-12 d-flex justify-content-around">
                 <div>
                     <div class="card" style="width: 18rem;">
                         <i id="logos_servicios" class="fas fa-tags"></i>
@@ -288,7 +288,7 @@
                     </div>
                 </div>
             </div>
-            <div class=" row  col-12 p-3 d-flex justify-content-center">
+            <div class=" row  col-12 p-3 d-flex justify-content-around">
                 <div>
                     <div class="card" style="width: 18rem;">
                         <i id="logos_servicios" class="fas fa-toolbox"></i>

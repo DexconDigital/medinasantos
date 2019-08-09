@@ -64,46 +64,46 @@
                     <div class="" style="margin-left: 8.333333%;">
 
                         <div>
-                            <h3 class="main-title">Datos de Contacto</h3>
+                           
                             <div class="row contenedor_contac">
                                 <i class="fas fa-map-marker-alt li_style_contac"></i>
                                 <div class="">
-                                    <h5>Dirección</h5>
+                                  
                                     <p> <?php echo $datos_contacto['direccion']['direccion'] ?> </p>
                                 </div>
                             </div>
                             <div class="row contenedor_contac">
                                 <i class="fas fa-phone-alt li_style_contac"></i>
                                 <div>
-                                    <h5>Teléfono</h5>
+                                  
                                     <p><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?> </p>
                                 </div>
                             </div>
                             <div class="row contenedor_contac">
                                 <i class="fas fa-mobile-alt li_style_contac"></i>
                                 <div>
-                                    <h5>Celular</h5>
+                                   
                                     <p><?php echo $datos_contacto['celular']['imprimir'] ?> </p>
                                 </div>
                             </div>
                             <div class="row contenedor_contac">
                                 <i class="fab fa-whatsapp li_style_contac"></i>
                                 <div>
-                                    <h5>WhatsApp</h5>
+                                  
                                     <p><?php echo $datos_contacto['whatsapp']['imprimir'] ?> </p>
                                 </div>
                             </div>
                             <div class="row contenedor_contac">
                                 <i class="far fa-envelope li_style_contac"></i>
                                 <div>
-                                    <h5>Correo</h5>
+                                 
                                     <p><?php echo $datos_contacto['correo']['correo'] ?> </p>
                                 </div>
                             </div>
                             <div class="row contenedor_contac">
                                 <i class="fas fa-calendar-alt li_style_contac"></i>
                                 <div>
-                                    <h5>Horario</h5>
+                                   
                                     <p><?php echo $datos_contacto['horario']['horario'] ?> </p>
                                 </div>
                             </div>

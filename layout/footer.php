@@ -6,15 +6,44 @@
                     <div class="col-12 text-center contacto_footer">
                         <h4 class="titulo_footer"> Datos de Contacto</h4>
                     </div>
-                    <div class=" conten_lista_footer">
-                        <ul style="list-style: none;margin: 0;">
-                            <li>Dirección: <p style="font-size: 11px;"> <?php echo $datos_contacto['direccion']['direccion'] ?> </p></li>
-                            <li>Correo: <p style="font-size: 11px;"><?php echo $datos_contacto['correo']['correo'] ?> </p></li>
-                            <li>Teléfono fijo: <p style="font-size: 11px;"><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?> </p></li>
-                            <li>Celular: <p style="font-size: 11px;"><?php echo $datos_contacto['celular']['imprimir'] ?> </p></li>
-                            <li>WhatsApp:<p style="font-size: 11px;"><?php echo $datos_contacto['whatsapp']['imprimir'] ?> </p></li>
-                        </ul>
-                    </div>
+                    <div class="" style="margin-left: 8.333333%;">
+
+<div>
+    
+    <div class="row contenedor_contac">
+        <i class="fas fa-map-marker-alt li_style_contac"></i>
+        <div class="">
+            <h5>Dirección</h5>
+            <p> <?php echo $datos_contacto['direccion']['direccion'] ?> </p>
+        </div>
+    </div>
+    <div class="row contenedor_contac">
+        <i class="fas fa-phone-alt li_style_contac"></i>
+        <div>
+            <h5>Teléfono</h5>
+            <p><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?> </p>
+        </div>
+    </div>
+    <div class="row contenedor_contac">
+        <i class="fas fa-mobile-alt li_style_contac"></i>
+        <div>
+            <h5>Celular</h5>
+            <p><?php echo $datos_contacto['celular']['imprimir'] ?> </p>
+        </div>
+    </div>
+    <div class="row contenedor_contac">
+        <i class="fab fa-whatsapp li_style_contac"></i>
+        <div>
+            <h5>WhatsApp</h5>
+            <p><?php echo $datos_contacto['whatsapp']['imprimir'] ?> </p>
+        </div>
+    </div>
+    
+   
+    
+
+</div>
+</div>
                     <div class="col-12 text-center row p-2 iconos_footer">
                         <div class="col-2 "> <i class="fab fa-facebook-f mr-2 " id="estilo_icono_foot"></i></div>
                         <div class="col-2 "> <i class="fab fa-twitter-square mr-2 " id="estilo_icono_foot"></i></div>
