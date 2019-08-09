@@ -15,16 +15,14 @@
         <?php include 'layout/menu.php'; ?>
     </section>
 
-    <section>
-        <?php include 'layout/banner.php'; ?>
-    </section>
+  
 
     <section>
         <?php include 'layout/buscador.php'; ?>
     </section>
 
     <section>
-        <div class="row d-flex justify-content-around p-4">
+        <div class="row d-flex justify-content-around p-5">
             <div class="col-12">
                 <div class="owl-carousel owl-theme" id="propietarios_slide">
                     <div class="card item tamaño_cards">

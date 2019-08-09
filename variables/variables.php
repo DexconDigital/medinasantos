@@ -37,7 +37,7 @@ $redes_sociales = [
 //datos de contacto 
 $datos_contacto = [
 	"direccion" => [
-		"direccion" => "Calle 147 # 101- 56  Local 9 C.C. Fiesta Suba, Bogotá",
+		"direccion" => "Calle 147 # 101- 56 <br> Local 9 C.C. Fiesta Suba, Bogotá",
 		"icono" => "fas fa-map-marker-alt",
 	],
 	"telefono_fijo" => [
@@ -77,7 +77,7 @@ $iconos_servicios = [
 	"arrendamientos" => "fas fa-sign",
 	"ventas" => "fas fa-tags",
 	"asesoria_inmobiliaria" => "fas fa-handshake",
-	"servicios_locativos" => "<fas fa-toolbox",
+	"servicios_locativos" => "fas fa-toolbox",
 	"creditos_hipotecarios" => "fas fa-hand-holding-usd",
 	"seguros" => "fas fa-file-invoice-dollar",
 ];

@@ -14,9 +14,7 @@
     <section>
         <?php include 'layout/menu.php'; ?>
     </section>
-    <section>
-        <?php include 'layout/banner.php' ?>
-    </section>
+    
 
     <section>
         <div class="container p-5">

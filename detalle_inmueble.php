@@ -15,9 +15,7 @@
         <?php include 'layout/menu.php'; ?>
     </section>
 
-    <section>
-        <?php include 'layout/banner.php' ?>
-    </section>
+ 
 
     <section>
         <div class="container p-4">
@@ -26,12 +24,12 @@
                     <div>
                         <div style="margin-bottom: 15px;">
                             <div class="row">
-                                <div class="col-12 border border-secondary">
-                                    <div class="border border-secondary style_inmueble">
+                                <div class="col-12 ">
+                                    <div class=" style_inmueble">
                                         <h3 class="style_li">Tipo de inmueble</h3>
                                         <p><i class="fas fa-map-marker-alt mr-2"></i>Tipo de gestión</p>
                                     </div>
-                                    <div class=" style_precio border border-secondary">
+                                    <div class=" style_precio ">
                                         <h3 class="style_color"> $Precio</h3>
                                     </div>
                                 </div>
@@ -62,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 border border-secondary">
+                <div class="col-4 ">
                     <div class="magen_formulario">
                         <h3 class="titulo_asesor">Contacto con el asesor</h3>
                     </div>
@@ -87,8 +85,7 @@
                             <div class="form-check magen_formulario">
                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                 <label class="form-check-label" for="defaultCheck1">
-                                    Confirmando la lectura de la
-                                    política de datos (colocar el documento descargable de la política de datos)
+                                Confimo que he leído, entendido y acepto la política de tratamiento de datos personales.
                                 </label>
                             </div>
                             <div>
@@ -101,7 +98,49 @@
             </div>
         </div>
     </section>
-    
+
+    <section>
+        <div class="container ">
+            <div class="col-12 row ">
+                <div class="col-6  ">
+                    <div class="col-12 text-center">
+                        <h4>Propiedades</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 ">
+                            <h4>Video</h4>
+                        </div>
+                        <div class="col-8 ">
+                            <div class="col-12 ">
+                                <p> imprimir ficha</p>
+                            </div>
+                            <div class="col-12  ">
+                                <p> características internas</p>
+                            </div>
+                            <div class="col-12 ">
+                                <p> externas , alrededores</p>
+                            </div>
+                            <div class="col-12 ">
+                                <p> Compartir por redes sociales</p>
+                            </div>
+                        </div class="col-12 ">
+                        <h4>Mapa</h4>
+                        <div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 ">
+                    <div class="col-12">
+                        <p>Remplazar por logos aseguradoras</p>
+                    </div>
+                    <div class="col-12">
+                        <p> Remplazar por propiedades similares (por tipo de inmueble y por ciudad) </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <?php include 'layout/footer.php'; ?>
