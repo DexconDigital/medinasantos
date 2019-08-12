@@ -221,33 +221,28 @@
                     </div>
                     <!-- item -->
                     <div class="col-lg-4 col-md-6 col-sm-6 services-info-3 s-brd-1 wow fadeInUp delay-04s" style="visibility: visible; animation-name: fadeInUp;">
-                        <i class="flaticon-house"></i>
-                        <h5>Houses</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                        <i class="<?php echo $iconos_servicios['ventas'] ?>"></i>
+                        <h5>Ventas</h5>
                     </div>
                     <!-- item -->
                     <div class="col-lg-4 col-md-6 col-sm-6 services-info-3 wow fadeInRight delay-04s" style="visibility: visible; animation-name: fadeInRight;">
-                        <i class="flaticon-office-block"></i>
-                        <h5>Commercial</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                        <i class="<?php echo $iconos_servicios['asesoria_inmobiliaria'] ?>"></i>
+                        <h5>Asesoría Inmobiliaria</h5>
                     </div>
                     <!-- item -->
                     <div class="col-lg-4 col-md-6 col-sm-6 services-info-3 s-brd-2 wow fadeInLeft delay-04s" style="visibility: visible; animation-name: fadeInLeft;">
-                        <i class="flaticon-hotel-building"></i>
-                        <h5>Apartments Clean</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                        <i class="<?php echo $iconos_servicios['servicios_locativos'] ?>"></i>
+                        <h5>Servicios Locativos</h5>
                     </div>
                     <!-- item -->
                     <div class="col-lg-4 col-md-6 col-sm-6 services-info-3 s-brd-1 wow fadeInDown delay-04s" style="visibility: visible; animation-name: fadeInDown;">
-                        <i class="flaticon-house"></i>
-                        <h5>Houses</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                        <i class="<?php echo $iconos_servicios['creditos_hipotecarios'] ?>"></i>
+                        <h5>Créditos Hipotecarios</h5>
                     </div>
                     <!-- item -->
                     <div class="col-lg-4 col-md-6 col-sm-6 services-info-3 wow fadeInRight delay-04s" style="visibility: visible; animation-name: fadeInRight;">
-                        <i class="flaticon-office-block"></i>
-                        <h5>Commercial</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                        <i class="<?php echo $iconos_servicios['seguros'] ?>"></i>
+                        <h5>Seguros</h5>
                     </div>
                 </div>
             </div>
