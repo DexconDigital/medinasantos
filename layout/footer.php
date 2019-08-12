@@ -7,16 +7,16 @@
 
                     <ul class="contact-info">
                         <li>
-                            Direccion: <?php echo $datos_contacto['direccion']['direccion'];?>
+							<i class="<?php echo $datos_contacto['direccion']['icono'];?>"></i> <?php echo $datos_contacto['direccion']['direccion'];?>
                         </li>
                         <li>
-                            Correo: <a href="mailto:<?php echo $datos_contacto['correo']['correo']?>"><?php echo $datos_contacto['correo']['correo']?></a>
+							<i class="<?php echo $datos_contacto['correo']['icono'];?>"></i> <a href="mailto:<?php echo $datos_contacto['correo']['correo']?>"><?php echo $datos_contacto['correo']['correo']?></a>
                         </li>
                         <li>
-                            <a href="<?php echo  $datos_contacto['telefono_fijo']['link']?>"><?php echo $datos_contacto['telefono_fijo']['imprimir']?></a>
+							<i class="<?php echo $datos_contacto['telefono_fijo']['icono'];?>"></i> <a href="<?php echo  $datos_contacto['telefono_fijo']['link']?>"><?php echo $datos_contacto['telefono_fijo']['imprimir']?></a>
                         </li>
                         <li>
-                            Celular <a href="<?php echo $datos_contacto['celular']['link']?>"><?php echo $datos_contacto['celular']['imprimir']?></a>
+							<i class="<?php echo $datos_contacto['celular']['icono'];?>"></i> <a href="<?php echo $datos_contacto['celular']['link']?>"><?php echo $datos_contacto['celular']['imprimir']?></a>
                         </li>
                     </ul>
 
@@ -24,7 +24,6 @@
                         <li><a href="" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="" class="twitter"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="" class="instagram"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
                         <li><a href="" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
                     </ul>
                 </div>

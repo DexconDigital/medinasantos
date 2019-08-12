@@ -196,32 +196,32 @@
                     <!-- item -->
                     <div class="col-lg-4 col-md-6 col-sm-6 services-info-3 s-brd-2 wow fadeInLeft delay-04s" style="visibility: visible; animation-name: fadeInLeft;">
                         <i class="<?php echo $iconos_servicios['arrendamientos'] ?>"></i>
-                        <h5>Arrendamientos</h5>
+                        <h5><?php echo $texto_servicios['arrendamientos'] ['titulo']?></h5>
                     </div>
                     <!-- item -->
                     <div class="col-lg-4 col-md-6 col-sm-6 services-info-3 s-brd-1 wow fadeInUp delay-04s" style="visibility: visible; animation-name: fadeInUp;">
-                        <i class="<?php echo $iconos_servicios['ventas'] ?>"></i>
-                        <h5>Ventas</h5>
+                        <i class="<?php echo $iconos_servicios['ventas']?>"></i>
+                        <h5><?php echo $texto_servicios['ventas'] ['titulo']?></h5>
                     </div>
                     <!-- item -->
                     <div class="col-lg-4 col-md-6 col-sm-6 services-info-3 wow fadeInRight delay-04s" style="visibility: visible; animation-name: fadeInRight;">
                         <i class="<?php echo $iconos_servicios['asesoria_inmobiliaria'] ?>"></i>
-                        <h5>Asesoría Inmobiliaria</h5>
+                        <h5><?php echo $texto_servicios['asesoria_inmobiliaria'] ['titulo']?></h5>
                     </div>
                     <!-- item -->
                     <div class="col-lg-4 col-md-6 col-sm-6 services-info-3 s-brd-2 wow fadeInLeft delay-04s" style="visibility: visible; animation-name: fadeInLeft;">
                         <i class="<?php echo $iconos_servicios['servicios_locativos'] ?>"></i>
-                        <h5>Servicios Locativos</h5>
+                        <h5><?php echo $texto_servicios['servicios_locativos'] ['titulo']?></h5>
                     </div>
                     <!-- item -->
                     <div class="col-lg-4 col-md-6 col-sm-6 services-info-3 s-brd-1 wow fadeInDown delay-04s" style="visibility: visible; animation-name: fadeInDown;">
                         <i class="<?php echo $iconos_servicios['creditos_hipotecarios'] ?>"></i>
-                        <h5>Créditos Hipotecarios</h5>
+                        <h5><?php echo $texto_servicios['creditos_hipotecarios'] ['titulo']?></h5>
                     </div>
                     <!-- item -->
                     <div class="col-lg-4 col-md-6 col-sm-6 services-info-3 wow fadeInRight delay-04s" style="visibility: visible; animation-name: fadeInRight;">
                         <i class="<?php echo $iconos_servicios['seguros'] ?>"></i>
-                        <h5>Seguros</h5>
+                        <h5><?php echo $texto_servicios['seguros'] ['titulo']?></h5>
                     </div>
                 </div>
             </div>
@@ -253,7 +253,7 @@
         <div class="blog content-area-2 bg-white">
             <div class="container">
                 <div class="main-title">
-                    <h1>Ultimas Noticias</h1>
+                    <h1>Últimas Noticias</h1>
                 </div>
                 <div class="row wow fadeInUp delay-04s" style="visibility: visible; animation-name: fadeInUp;">
                     <div class="col-lg-6 col-md-6">

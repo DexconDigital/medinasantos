@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-12 row contact-information">
                 <ul>
-                    <li class=""> Comunicate: </li>
+                    <li class=""> Comunícate: </li>
                     <li class=""><a href="mailto:<?php echo $datos_contacto['correo']['correo']?>"><i class="fas fa-envelope"></i></a></li>
                     <li class=""><a href="tel:<?php echo $datos_contacto['celular']['link']?>"><i class="fas fa-mobile-alt"></i></a></li>
                     <li class=""><a href="<?php echo $datos_contacto['whatsapp']['link']?>"><i class="fab fa-whatsapp"></i></a></li>
@@ -62,7 +62,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./quienes-somos">
-                                    Contactanós
+                                    Contáctanos
                                 </a>
                             </li>
                         </ul>

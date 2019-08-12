@@ -174,7 +174,7 @@ $texto_servicios = [
 		]
 	],
 	"asesoria_inmobiliaria" => [
-		"titulo" => "Asesoria Inmobiliaria",
+		"titulo" => "Asesoría Inmobiliaria",
 		"parrafos" => [
 			0 => "",
 		]
@@ -186,7 +186,7 @@ $texto_servicios = [
 		]
 	],
 	"creditos_hipotecarios" => [
-		"titulo" => "Creditos Hipotecarios",
+		"titulo" => "Créditos Hipotecarios",
 		"parrafos" => [
 			0 => "",
 		],
