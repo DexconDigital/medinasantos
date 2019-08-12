@@ -1,8 +1,17 @@
-<?php include('variables/variables.php');?>
+<?php include('variables/variables.php'); ?>
 
 <header class="main-header sticky-header header-shrink" id="main-header-2">
     <div class="container-fluid">
         <div class="row">
+            <div class="col-12 row contact-information">
+                <ul>
+                    <li class=""> Comunicate: </li>
+                    <li class=""><a href="mailto:<?php echo $datos_contacto['correo']['correo']?>"><i class="fas fa-envelope"></i></a></li>
+                    <li class=""><a href="tel:<?php echo $datos_contacto['celular']['link']?>"><i class="fas fa-mobile-alt"></i></a></li>
+                    <li class=""><a href="<?php echo $datos_contacto['whatsapp']['link']?>"><i class="fab fa-whatsapp"></i></a></li>
+                    <li class="b-none"><a href="tel:<?php echo $datos_contacto['telefono_fijo']['link']?>"><i class="fas fa-phone mr-3"></i><?php echo $datos_contacto['telefono_fijo']['imprimir']?></a></li>
+                </ul>
+            </div>
             <div class="col-12">
                 <nav class="navbar navbar-expand-lg navbar-light rounded">
                     <a class="navbar-brand logo navbar-brand d-flex w-50 mr-auto" href="./">
@@ -53,7 +62,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./quienes-somos">
-                                    Contactanos
+                                    Contactanós
                                 </a>
                             </li>
                         </ul>

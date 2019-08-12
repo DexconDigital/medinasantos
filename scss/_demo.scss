@@ -8676,7 +8676,7 @@ body.off-canvas-sidebar-open {
     }
 
     .header-shrink {
-        background: #fff;
+        background: rgb(27, 27, 27);
         -webkit-transition: 0.5s;
         -moz-transition: 0.5s;
         -ms-transition: 0.5s;
@@ -8686,7 +8686,7 @@ body.off-canvas-sidebar-open {
     }
 
     .header-shrink .navbar-expand-lg .navbar-nav .nav-link {
-        color: #515151;
+        color: #fff;
     }
 
     .header-shrink .open-offcanvas {

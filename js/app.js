@@ -37,15 +37,18 @@ $(function () {
     {
         var windowWidth = $(window).width();
         if(windowWidth > 992) {
+            $('.contact-information').css('display', 'none');
             if ($(document).scrollTop() >= 100) {
                 if($('.header-shrink').length < 1) {
                     $('.sticky-header').addClass('header-shrink');
+                    $('.contact-information').css('display', 'none');
                 }
                 if($('.do-sticky').length < 1) {
                     $('.logo img').attr('src', 'images/Logo.png');
                 }
             }
             else {
+                $('.contact-information').css('display', 'block');
                 $('.sticky-header').removeClass('header-shrink');
                 if($('.do-sticky').length < 1) {
                     $('.logo img').attr('src', 'images/Logo.png');

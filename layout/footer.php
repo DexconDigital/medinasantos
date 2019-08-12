@@ -3,36 +3,36 @@
         <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                 <div class="footer-item">
-                    <h4>Contact Us</h4>
+                    <h4>Datos de contacto:</h4>
 
                     <ul class="contact-info">
                         <li>
-                            Address: 20/F Green Road, Dhanmondi, Dhaka
+                            Direccion: <?php echo $datos_contacto['direccion']['direccion'];?>
                         </li>
                         <li>
-                            Email: <a href="mailto:info@themevessel.com">info@themevessel.com</a>
+                            Correo: <a href="mailto:<?php echo $datos_contacto['correo']['correo']?>"><?php echo $datos_contacto['correo']['correo']?></a>
                         </li>
                         <li>
-                            Phone: <a href="tel:+0477-85x6-552">+XXXX XXXX XXX</a>
+                            <a href="<?php echo  $datos_contacto['telefono_fijo']['link']?>"><?php echo $datos_contacto['telefono_fijo']['imprimir']?></a>
                         </li>
                         <li>
-                            Fax: +XXXX XXXX XXX
+                            Celular <a href="<?php echo $datos_contacto['celular']['link']?>"><?php echo $datos_contacto['celular']['imprimir']?></a>
                         </li>
                     </ul>
 
                     <ul class="social-list clearfix">
-                        <li><a href="http://storage.googleapis.com/themevessel-products/xero/index.html#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="http://storage.googleapis.com/themevessel-products/xero/index.html#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="http://storage.googleapis.com/themevessel-products/xero/index.html#" class="google"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="http://storage.googleapis.com/themevessel-products/xero/index.html#" class="rss"><i class="fa fa-rss"></i></a></li>
-                        <li><a href="http://storage.googleapis.com/themevessel-products/xero/index.html#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
                     </ul>
                 </div>
             </div>
-            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="footer-item">
                     <h4>
-                        Useful Links
+                        Formularios Aseguradoras
                     </h4>
                     <ul class="links">
                         <li>
@@ -59,7 +59,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="recent-posts footer-item">
                     <h4>Recent Properties</h4>
                     <div class="media mb-4">
@@ -126,8 +126,7 @@
 
         <div class="row">
             <div class="col-xl-12">
-                <p class="copy">© 2018 <a href="http://themevessel.com/" target="_blank">Theme Vessel</a>.
-                    Trademarks and brands are the property of their respective owners.</p>
+                <p class="copy">Copyright © 2019 <a href="http://dexcondigital.com"></a> Dexcon Digital. Todos los derechos reservados.</p>
             </div>
         </div>
     </div>
