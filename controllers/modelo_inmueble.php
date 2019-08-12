@@ -14,8 +14,21 @@
             $api = $r[$i];
 
             // Renombrar variables
-            $administracion = $api['Administracion'];
-            $alcobas = $api['Alcobas'];
+			$codigo = $api['Codigo_Inmueble'];
+			$ciudad = $api['Ciudad'];
+			$barrio = $api['Barrio'];
+			$gestion = $api['Gestion'];
+			$tipo_inmueble = $api['Tipo_Inmueble'];
+			$alcobas = $api['Alcobas'];
+			$banios = $api['banios'];
+			$garaje = $api['garaje'];
+			$area_construida = $api ['AreaConstruida'];
+			$area_privada = $api['AreaLote'];
+			$administracion = $api['Administracion'];
+			$canon = $api['Canon'];
+			$edad_inmueble =$api['EdadInmueble'];
+			$estrato = $api['Estrato'];
+			$venta = $api['Venta'];
         }
     }
 

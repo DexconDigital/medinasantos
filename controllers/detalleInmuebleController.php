@@ -13,9 +13,27 @@ curl_setopt($ch, CURLOPT_USERPWD, $headers);
 $result = curl_exec($ch);
 curl_close($ch);
 $r = json_decode($result, true);
-
 $r['ValorVenta'] = number_format($r['ValorVenta']);
 $r['ValorCanon'] = number_format($r['ValorCanon']);
+$administracion = $r['Administracion'];
+$area_construida =
+$area_privada =
+$edad_inmueble =
+$estrato =
+$gestion =
+$barrio =
+$gestion =
+$tipo_inmueble =
+$precio =
+$alcobas =
+$banios =
+$caracteristicas_internas =
+$caracteristicas_externas =
+$caracteristicas_alrededores =
+$ciudad =
+$codigo =
+$descripcion =
+$garaje =
 
 
 
