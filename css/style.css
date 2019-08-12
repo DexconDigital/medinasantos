@@ -72,12 +72,18 @@ body {
   background: #fafafa;
   color: #535353; }
 
-.container-fluid, .banner, header {
-  overflow-x: hidden; }
-
 .img-fluid {
   max-width: 100% !important;
   height: auto; }
+
+.page_loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background: url(../img/loader.gif) center no-repeat #fff; }
 
 ul {
   list-style: none;
@@ -842,7 +848,7 @@ input[type=checkbox]:checked + label:before {
     color: #fff;
 }*/
 .main-header .logo img {
-  height: 40px; }
+  height: 60px; }
 
 .main-header .logo {
   padding: 19px 0;
@@ -7610,8 +7616,17 @@ li.active.btn.filtr-button.filtr {
     color: #274cbf;
     border: solid 2px #274cbf; } }
 #buscador {
-  padding: 40px 0; }
+  padding: 40px 0;
+  background-color: #e6e6e6; }
   #buscador input, #buscador select {
     height: 49px !important; }
+  #buscador .btn-color {
+    color: #fff !important; }
+
+section {
+  overflow-x: hidden; }
+
+.banner {
+  overflow-x: hidden; }
 
 /*# sourceMappingURL=style.css.map */
