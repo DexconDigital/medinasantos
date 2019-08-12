@@ -13,10 +13,11 @@ curl_setopt($ch, CURLOPT_USERPWD, $headers);
 $result = curl_exec($ch);
 curl_close($ch);
 $r = json_decode($result, true);
-
 $r['ValorVenta'] = number_format($r['ValorVenta']);
 $r['ValorCanon'] = number_format($r['ValorCanon']);
 
+// Convertir variables
+$administracion = $r['Administracion'];
 
 
 function precio($r){
