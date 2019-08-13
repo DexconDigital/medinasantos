@@ -35,8 +35,7 @@ $codigo =
 $descripcion =
 $garaje =
 
-// Convertir variables
-$administracion = $r['Administracion'];
+
 
 
 function precio($r){

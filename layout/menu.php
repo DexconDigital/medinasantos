@@ -1,6 +1,6 @@
 <?php include('variables/variables.php'); ?>
 
-<header class="main-header sticky-header header-shrink" id="main-header-2">
+<header class="main-header sticky-header" id="main-header-2">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 row contact-information">
@@ -21,14 +21,14 @@
                         <span class="fa fa-bars"></span>
                     </button>
                     <div class="navbar-collapse collapse w-100" id="navbar">
-                        <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav ml-auto align-items-center">
                             <li class="nav-item dropdown active">
                                 <a class="nav-link" href="./">
                                     Inicio
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./quienes-somos">
+                                <a class="nav-link" href="./quienes-somos.php">
                                     Quiénes Somos
                                 </a>
                             </li>
@@ -65,6 +65,11 @@
                                     Contáctanos
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./quienes-somos">
+                                    <img src="images/logopse.png" alt="Logo de PSE" width="auto" height="50px">
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -72,3 +77,5 @@
         </div>
     </div>
 </header>
+
+<div class="w-100" id="espacio-menu"></div>

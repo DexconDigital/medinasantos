@@ -7,16 +7,16 @@
 
                     <ul class="contact-info">
                         <li>
-                            <i class="<?php echo $datos_contacto['direccion']['icono'];?> mr-2"></i> <?php echo $datos_contacto['direccion']['direccion']; ?>
+                            <i class="<?php echo $datos_contacto['direccion']['icono']; ?> mr-2"></i> <?php echo $datos_contacto['direccion']['direccion']; ?>
                         </li>
                         <li>
-                            <i class="<?php echo $datos_contacto['correo']['icono'];?> mr-2"></i> <a href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>"><?php echo $datos_contacto['correo']['correo'] ?></a>
+                            <i class="<?php echo $datos_contacto['correo']['icono']; ?> mr-2"></i> <a href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>"><?php echo $datos_contacto['correo']['correo'] ?></a>
                         </li>
                         <li>
-                            <i class="<?php echo $datos_contacto['telefono_fijo']['icono'];?> mr-2"></i> <a href="<?php echo  $datos_contacto['telefono_fijo']['link'] ?>"><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?></a>
+                            <i class="<?php echo $datos_contacto['telefono_fijo']['icono']; ?> mr-2"></i> <a href="<?php echo  $datos_contacto['telefono_fijo']['link'] ?>"><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?></a>
                         </li>
                         <li>
-                            <i class="<?php echo $datos_contacto['celular']['icono'];?> mr-2"></i> <a href="<?php echo $datos_contacto['celular']['link'] ?>"><?php echo $datos_contacto['celular']['imprimir'] ?></a>
+                            <i class="<?php echo $datos_contacto['celular']['icono']; ?> mr-2"></i> <a href="<?php echo $datos_contacto['celular']['link'] ?>"><?php echo $datos_contacto['celular']['imprimir'] ?></a>
                         </li>
                     </ul>
 
@@ -73,6 +73,10 @@
                             <div class="form-group">
                                 <textarea class="form-contact" name="email" style="height:80px;" placeholder="Mensaje"></textarea>
                             </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Acepto politica de tratamiento de datos</label>
+                            </div>
                             <div class="form-group">
                                 <button type="submit" name="submitNewsletter" class="btn btn-block btn-color">
                                     Enviar
@@ -86,8 +90,12 @@
 
         <div class="row">
             <div class="col-xl-12">
-                <p class="copy">Copyright © 2019 <a href="http://dexcondigital.com"></a> Dexcon Digital. Todos los derechos reservados.</p>
+                <p class="copy">Copyright © 2019 <a href="http://dexcondigital.com">Dexcon Digital.</a> Todos los derechos reservados.</p>
             </div>
         </div>
     </div>
 </footer>
+
+<!-- Boton subir -->
+
+<i class="fas fa-angle-double-up subir"></i>
