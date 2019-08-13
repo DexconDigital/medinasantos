@@ -15,29 +15,30 @@ curl_close($ch);
 $r = json_decode($result, true);
 $r['ValorVenta'] = number_format($r['ValorVenta']);
 $r['ValorCanon'] = number_format($r['ValorCanon']);
-$administracion = $r['Administracion'];
-$area_construida =
-$area_privada =
-$edad_inmueble =
-$estrato =
-$gestion =
-$barrio =
-$gestion =
-$tipo_inmueble =
-$precio =
-$alcobas =
-$banios =
-$caracteristicas_internas =
-$caracteristicas_externas =
-$caracteristicas_alrededores =
-$ciudad =
-$codigo =
-$descripcion =
-$garaje =
 
-// Convertir variables
+$codigo = $r['codinm'];
+$ciudad = $r['ciudad'];
+$barrio = $r['barrio'];
+$gestion = $r['Gestion'];
+$tipo_inmueble = $r['Tipo_Inmueble'];
+$alcobas = $r['alcobas'];
+$banios = $r['banos'];
+$garaje = $r['garaje'];
+$area_construida = $r['AreaConstruida'];
+$area_privada = $r['AreaLote'];
 $administracion = $r['Administracion'];
-
+$canon = $r['ValorCanon'];
+$valor_venta = $r['ValorVenta'];
+$edad_inmueble = $r['EdadInmueble'];
+$estrato = $r['Estrato'];
+$descripcion = $r['descripcionlarga'];
+$caracteristicas_internas = $r['caracteristicasInternas'];
+$caracteristicas_externas = $r['caracteristicasExternas'];
+$caracteristicas_alrededores = $r['caracteristicasAlrededores'];
+$video = $r['video'];
+$id_ciudad = $r['IdCiudad'];
+$id_inmueble = $r['idInm'];
+$fotos = $r['fotos'];
 
 function precio($r){
     if($r['Gestion'] == 'Arriendo'){

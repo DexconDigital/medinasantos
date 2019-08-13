@@ -32,7 +32,7 @@
         }
     }
 
-
+    
     
     function modelo_listar_inmueble($r, $cantidad_inmuebles){
         // Recorrer el array la cantidad de veces que se le indique
@@ -56,6 +56,7 @@
             $api = $r[$i];
         }
     }
+
 
     function existeImagen($r) {
             if ($r == "") {
