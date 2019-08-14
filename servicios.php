@@ -14,11 +14,8 @@
     <?php include 'layout/menu.php'; ?>
     <!-- Fin de Menu -->
     <div class="container-fluid body">
-  
+        
     </div>
-    <!-- Banner -->
-
-
     <?php include 'layout/footer.php'; ?>
     <script>
         var pagina = false;
