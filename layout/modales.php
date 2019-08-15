@@ -17,11 +17,11 @@
                             <input type="mail" placeholder="Correo" name="email" class="form-control" required>
                         </div>
                         <div class="form-group col-12">
-                            <input type="Telefono" placeholder="Telefono" name="telefono" class="form-control" requiered>
+                            <input type="Telefono" placeholder="Teléfono" name="telefono" class="form-control" requiered>
                         </div>
                         <div class="form-group col-12">
                             <select class="form-control" name="transaccion" requiered>
-                                <option selected disabled>Tipo de Transaccion</option>
+                                <option selected disabled>Tipo de Transacción</option>
                                 <option value="arriendo">Arriendo</option>
                                 <option value="arriendo/venta">Arriendo/venta</option>
                                 <option value="venta">Venta</option>
@@ -49,21 +49,21 @@
                             <input type="number" placeholder="Valor" name="valor" class="form-control" requiered>
                         </div>
                         <div class="form-group col-12">
-                            <input type="number" placeholder="Areá" name="area" class="form-control" requiered>
+                            <input type="number" placeholder="Área" name="area" class="form-control" requiered>
                         </div>
                         <div class="form-group col-12">
                             <input type="text" placeholder="Ciudad" name="ciudad" class="form-control" requiered>
                         </div>
                         <div class="form-group col-12">
-                            <input type="text" placeholder="Direccion" name="direccion" class="form-control" requiered>
+                            <input type="text" placeholder="Dirección" name="direccion" class="form-control" requiered>
                         </div>
                         <div class="form-group col-12">
-                            <textarea name="mensaje" placeholder="Mensajes" name="mensaje" class="form-control" id="mensaje" rows="6" requiered></textarea>
+                            <textarea name="mensaje" placeholder="Mensaje" name="mensaje" class="form-control" id="mensaje" rows="6" requiered></textarea>
                         </div>
                         <div class="form-group col-12">
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1" requiered>
-                                <label class="form-check-label" for="exampleCheck1">Acepto <a href="./PROTECCION DE DATOS.pdf" class="a-terminos">la politica y tratamiento de datos</a></label>
+                                <label class="form-check-label" for="exampleCheck1">Confimo que he leído, entendido y acepto <a href="./PROTECCION DE DATOS.pdf" class="a-terminos">la política de tratamiento de datos personales.</a></label>
                             </div>
                         </div>
                         <div class="form-group col-12">

@@ -69,7 +69,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./quienes-somos">
+                                <a class="nav-link" href="">
                                     <img src="images/logopse.png" alt="Logo de PSE" width="auto" height="50px">
                                 </a>
                             </li>

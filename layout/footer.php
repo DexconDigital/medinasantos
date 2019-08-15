@@ -47,7 +47,7 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="recent-posts footer-item">
-                    <h4>Ubicanos</h4>
+                    <h4>Ubícanos</h4>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.146475749351!2d-74.09479368573668!3d4.744590342597737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f84f6585f3987%3A0x7c83b0f50ed44598!2sCentro+Comercial+Fiesta+Suba!5e0!3m2!1ses!2sco!4v1565647532423!5m2!1ses!2sco" frameborder="0" style="border:0; width: 100%; height:258px" allowfullscreen></iframe>
                     <div class="form-group mt-2">
                         <a href="https://goo.gl/maps/ZKB5vgpJ3tL3dCLz8" name="submitNewsletter" class="btn btn-block btn-color">
@@ -58,7 +58,7 @@
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                 <div class="footer-item">
-                    <h4>Contactanos</h4>
+                    <h4>Contáctanos</h4>
                     <div class="Subscribe-box">
                         <form action="" method="POST">
                             <div class="form-group">
@@ -68,14 +68,14 @@
                                 <input type="email" class="form-contact" name="email" placeholder="Correo">
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-contact" name="email" placeholder="Telefono">
+                                <input type="number" class="form-contact" name="email" placeholder="Teléfono">
                             </div>
                             <div class="form-group">
                                 <textarea class="form-contact" name="email" style="height:80px;" placeholder="Mensaje"></textarea>
                             </div>
                             <div class="form-group form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Acepto politica de tratamiento de datos</label>
+                                <label class="form-check-label" for="exampleCheck1">Confimo que he leído, entendido y acepto la política de tratamiento de datos personales.</label>
                             </div>
                             <div class="form-group">
                                 <button type="submit" name="submitNewsletter" class="btn btn-block btn-color">

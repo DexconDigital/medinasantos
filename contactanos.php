@@ -17,7 +17,7 @@
         <div class="contact-1 content-area-7">
             <div class="container">
                 <div class="main-title">
-                    <h1>Escribenos</h1>
+                    <h1>Escríbenos</h1>
                 </div>
 
                 <div class="row">
@@ -53,7 +53,7 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="form-group form-check">
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Acepto termminos y condiciones de nuestra polutica de datos</label>
+                                        <label class="form-check-label" for="exampleCheck1">Confimo que he leído, entendido y acepto la política de tratamiento de datos personales.</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
@@ -78,9 +78,9 @@
                             <div class="media">
                                 <i class="fa fa-phone"></i>
                                 <div class="media-body">
-                                    <h5 class="mt-0">Telefonos</h5>
+                                    <h5 class="mt-0">Teléfonos</h5>
                                     <p><a href="tel:<?php echo $datos_contacto['telefono_fijo']['link'];?>"> <?php echo $datos_contacto['telefono_fijo']['imprimir'];?></a> </p>
-                                    <p>Movil: <a href="tel:<?php echo $datos_contacto['celular']['link'];?>">: <?php echo $datos_contacto['celular']['link'];?></a> </p>
+                                    <p>Móvil: <a href="tel:<?php echo $datos_contacto['celular']['link'];?>">: <?php echo $datos_contacto['celular']['imprimir'];?></a> </p>
                                 </div>
                             </div>
                             <div class="media mrg-btn-0">
