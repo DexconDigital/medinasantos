@@ -32,7 +32,7 @@
                         <img class="d-block w-100" src="./images/slide2.jpg" alt="banner">
                         <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
                             <div class="carousel-content container">
-                                <div class="t-right">
+                                <div class="t-center">
                                     <h1 data-animation="animated fadeInDown delay-05s" class="">
                                         Encuentra tu inmueble soñado
                                     </h1>
@@ -44,7 +44,7 @@
                         <img class="d-block w-100" src="./images/slide3.jpg" alt="banner">
                         <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
                             <div class="carousel-content container">
-                                <div class="t-left">
+                                <div class="t-center">
                                     <h1 data-animation="animated fadeInUp delay-05s" class="">Pensamos en tus necesidades<br> de vivienda o negocio</h1>
                                 </div>
                             </div>
@@ -287,7 +287,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-3 col-sm-12">
-                            <a href="" class="btn btn-md sn">Consigna tu inmueble</a>
+                            <a data-toggle="modal" href="#consigna" class="btn btn-md sn" >Consigna tu inmueble</a>  
                         </div>
                     </div>
                 </div>
