@@ -97,5 +97,7 @@
 </footer>
 
 <!-- Boton subir -->
-
 <i class="fas fa-angle-double-up subir"></i>
+
+<!-- LLamado a modales -->
+<?php include 'modales.php'?>

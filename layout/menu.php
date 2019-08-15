@@ -33,12 +33,12 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./quienes-somos">
+                                <a class="nav-link" href="./servicios.php">
                                     Servicios
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./quienes-somos">
+                                <a class="nav-link" href="./inmuebles.php">
                                     Inmuebles
                                 </a>
                             </li>
@@ -48,20 +48,23 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li class="dropdown-item">
-                                        <a href="">Propietarios</a>
+                                        <a href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=254&tipo=1" target="blank">Propietarios</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="">Arrendatarios</a>
+                                        <a href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=254&tipo=2" target="blank">Arrendatarios</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a data-toggle="modal" data-target="#consigna">Consignar Inmueble</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./quienes-somos">
+                                <a class="nav-link" href="./blog.php">
                                     Blog
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./quienes-somos">
+                                <a class="nav-link" href="./contactanos.php">
                                     Contáctanos
                                 </a>
                             </li>
