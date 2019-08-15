@@ -277,7 +277,7 @@
             </div>
         </section>
 
-        <section id="consigna">
+        <section id="consignar">
             <div class="intro-section">
                 <div class="container">
                     <div class="row">
