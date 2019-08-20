@@ -1,3 +1,17 @@
+html, body {
+  font-family: 'Century Gothic' !important;
+  font-weight: 900; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway-bold' !important; }
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: local("Century Gothic"), url(../fonts/Century-Gothic.ttf);
+  font-weight: 900; }
+@font-face {
+  font-family: 'Raleway-bold';
+  src: local("Raleway-bold"), url(../fonts/Raleway-Bold.ttf); }
 /*------------------------------------------------------------------
 [Main Stylesheet]
 
