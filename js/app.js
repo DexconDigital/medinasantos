@@ -539,9 +539,13 @@ $(function () {
         }
     }
 
-
-
-
+    $('.botonF1').click(function () {
+        if ($('.btn1').hasClass('animacionVer')) {
+            $('.btn1').removeClass('animacionVer');
+        } else {
+            $('.btn1').addClass('animacionVer');
+        }
+    })
 });
 
 

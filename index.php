@@ -86,7 +86,7 @@
                             </div>
                         <?php endif;?>
                         <?php if(!is_array($api)):?>
-                            <h2>No Tiene Inmuebles Destacados</h2>
+                            <h5 class="text-center">No Tiene Inmuebles Destacados</h5>
                         <?php endif;?>
                     </div>
                     </div>
@@ -98,14 +98,14 @@
                 <div class="main-title">
                     <h1>Inmobiliaria Medina Santos</h1>
                 </div>
-                <div class="row">
-                    <div class="col-6 col-pad wow fadeInLeft delay-04s d-flex align-items-center" style="visibility: visible; animation-name: fadeInLeft;">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-lg-6 col-pad wow fadeInLeft delay-04s d-flex align-items-center" style="visibility: visible; animation-name: fadeInLeft;">
                         <div>
                             <p><?php echo $texto_quienes_somos['proyeccion']['parrafos'][0]; ?></p>
                             <p><?php echo $texto_quienes_somos['proyeccion']['parrafos'][1]; ?></p>
                         </div>
                     </div>
-                    <div class="col-6 col-pad wow fadeInRight delay-04s" style="visibility: visible; animation-name: fadeInRight;">
+                    <div class="col-11 col-lg-6 col-pad wow fadeInRight delay-04s" style="visibility: visible; animation-name: fadeInRight;">
                         <img src="images/popular-places-3.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -161,10 +161,10 @@
                         <h1>Nuestros Aliados</h1>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col-lg-12 row wow fadeInDown delay-04s" style="visibility: visible; animation-name: fadeInDown;">
+                        <div class="col-lg-12 row wow fadeInDown delay-04s justify-content-center" style="visibility: visible; animation-name: fadeInDown;">
                             <?php
                             for ($i = 0; $i < count($logos_aliados); $i++) {
-                                echo '<div class="col-4 text-center">
+                                echo '<div class="col-12 col-md-6 col-lg-4 text-center">
                                             <img src="' . $logos_aliados[$i] . '" alt="">
                                     </div>';
                             }

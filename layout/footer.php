@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="container footer-inner">
         <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center justify-content-md-start">
                 <div class="footer-item">
                     <h4>Datos de contacto:</h4>
 
@@ -20,7 +20,7 @@
                         </li>
                     </ul>
 
-                    <ul class="social-list clearfix">
+                    <ul class="social-list clearfix mb-4">
                         <li><a href="" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="" class="twitter"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="" class="instagram"><i class="fab fa-instagram"></i></a></li>
@@ -98,7 +98,8 @@
 
 <!-- Boton subir -->
 <i class="fas fa-angle-double-up subir"></i>
-
+<!-- Boton subir -->
+<?php include 'boton-flotante.php'?>
 <!-- LLamado a modales -->
 <div class="modal fade" id="consigna" tabindex="-1" role="dialog" aria-labelledby="consigna" aria-hidden="true">
     <div class="modal-dialog" role="document">

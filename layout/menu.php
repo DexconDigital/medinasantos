@@ -3,7 +3,7 @@
 <header class="main-header sticky-header" id="main-header-2">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 row contact-information">
+            <div class="col-12 row contact-information d-none d-md-block">
                 <ul>
                     <li class=""> Comunícate: </li>
                     <li class=""><a href="mailto:<?php echo $datos_contacto['correo']['correo']?>"><i class="fas fa-envelope"></i></a></li>
@@ -81,4 +81,4 @@
     </div>
 </header>
 
-<div class="w-100" id="espacio-menu"></div>
+<div class="w-100 d-none d-lg-block" id="espacio-menu"></div>
