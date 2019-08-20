@@ -181,7 +181,7 @@
         }else if($r['Gestion'] == 'Venta'){
             $precio = '$'.$r['Venta'];
         }else{
-            $precio = '$'.$r['Canon'].'/ $'.$r['ValorVenta'];
+            $precio = '$'.$r['Canon'].'/ $'.$r['Venta'];
         }
         return $precio;
     }

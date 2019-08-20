@@ -484,7 +484,7 @@ $(function () {
     });
 
     // start owl carousel
-    if (cantidad_inmuebles != undefined) {
+    if (typeof (cantidad_inmuebles) != "undefined" && variable !== null) {
         if (cantidad_inmuebles == 1) {
             $('#owl_propertys').owlCarousel({
                 loop: true,
