@@ -1,3 +1,4 @@
+<?php require 'controllers/inmueblesController.php'?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -25,481 +26,41 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12"></div>
-                    <div class="col-4">
-                        <div class="property-box">
-                            <div class="property-thumbnail">
-                                <a href="" class="property-img" tabindex="-1">
-                                    <div class="tag button alt featured">Featured</div>
-                                    <div class="price-ratings-box">
-                                        <p class="price">
-                                            $178,000
-                                        </p>
-                                    </div>
-                                    <img src="images/no_image.png" alt="Imagen propiedad" class="img-fluid">
-                                </a>
-                                <div class="property-overlay">
-                                </div>
-                            </div>
-                            <div class="detail">
-                                <h1 class="title">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">Modern Family Home</a>
-                                </h1>
-                                <div class="location">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">
-                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123
-                                        Kathal St. Tampa City,
-                                    </a>
-                                </div>
-                                <ul class="facilities-list clearfix">
-                                    <li>
-                                        <i class="flaticon-bed"></i> 3 Bedrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-bath"></i> 2 Bathrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-square-layouting-with-black-square-in-east-area"></i> Sq
-                                        Ft:3400
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-car-repair"></i> 1 Garage
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer">
-                                <a href="http://storage.googleapis.com/themevessel-products/xero/index.html#" tabindex="-1">
-                                    <i class="fa fa-user"></i> Jhon Doe
-                                </a>
-                                <span>
-                                    <i class="fa fa-calendar-o"></i> 2 years ago
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="property-box">
-                            <div class="property-thumbnail">
-                                <a href="" class="property-img" tabindex="-1">
-                                    <div class="tag button alt featured">Featured</div>
-                                    <div class="price-ratings-box">
-                                        <p class="price">
-                                            $178,000
-                                        </p>
-                                    </div>
-                                    <img src="images/no_image.png" alt="Imagen propiedad" class="img-fluid">
-                                </a>
-                                <div class="property-overlay">
-                                </div>
-                            </div>
-                            <div class="detail">
-                                <h1 class="title">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">Modern Family Home</a>
-                                </h1>
-                                <div class="location">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">
-                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123
-                                        Kathal St. Tampa City,
-                                    </a>
-                                </div>
-                                <ul class="facilities-list clearfix">
-                                    <li>
-                                        <i class="flaticon-bed"></i> 3 Bedrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-bath"></i> 2 Bathrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-square-layouting-with-black-square-in-east-area"></i> Sq
-                                        Ft:3400
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-car-repair"></i> 1 Garage
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer">
-                                <a href="http://storage.googleapis.com/themevessel-products/xero/index.html#" tabindex="-1">
-                                    <i class="fa fa-user"></i> Jhon Doe
-                                </a>
-                                <span>
-                                    <i class="fa fa-calendar-o"></i> 2 years ago
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="property-box">
-                            <div class="property-thumbnail">
-                                <a href="" class="property-img" tabindex="-1">
-                                    <div class="tag button alt featured">Featured</div>
-                                    <div class="price-ratings-box">
-                                        <p class="price">
-                                            $178,000
-                                        </p>
-                                    </div>
-                                    <img src="images/no_image.png" alt="Imagen propiedad" class="img-fluid">
-                                </a>
-                                <div class="property-overlay">
-                                </div>
-                            </div>
-                            <div class="detail">
-                                <h1 class="title">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">Modern Family Home</a>
-                                </h1>
-                                <div class="location">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">
-                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123
-                                        Kathal St. Tampa City,
-                                    </a>
-                                </div>
-                                <ul class="facilities-list clearfix">
-                                    <li>
-                                        <i class="flaticon-bed"></i> 3 Bedrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-bath"></i> 2 Bathrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-square-layouting-with-black-square-in-east-area"></i> Sq
-                                        Ft:3400
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-car-repair"></i> 1 Garage
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer">
-                                <a href="http://storage.googleapis.com/themevessel-products/xero/index.html#" tabindex="-1">
-                                    <i class="fa fa-user"></i> Jhon Doe
-                                </a>
-                                <span>
-                                    <i class="fa fa-calendar-o"></i> 2 years ago
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="property-box">
-                            <div class="property-thumbnail">
-                                <a href="" class="property-img" tabindex="-1">
-                                    <div class="tag button alt featured">Featured</div>
-                                    <div class="price-ratings-box">
-                                        <p class="price">
-                                            $178,000
-                                        </p>
-                                    </div>
-                                    <img src="images/no_image.png" alt="Imagen propiedad" class="img-fluid">
-                                </a>
-                                <div class="property-overlay">
-                                </div>
-                            </div>
-                            <div class="detail">
-                                <h1 class="title">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">Modern Family Home</a>
-                                </h1>
-                                <div class="location">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">
-                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123
-                                        Kathal St. Tampa City,
-                                    </a>
-                                </div>
-                                <ul class="facilities-list clearfix">
-                                    <li>
-                                        <i class="flaticon-bed"></i> 3 Bedrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-bath"></i> 2 Bathrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-square-layouting-with-black-square-in-east-area"></i> Sq
-                                        Ft:3400
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-car-repair"></i> 1 Garage
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer">
-                                <a href="http://storage.googleapis.com/themevessel-products/xero/index.html#" tabindex="-1">
-                                    <i class="fa fa-user"></i> Jhon Doe
-                                </a>
-                                <span>
-                                    <i class="fa fa-calendar-o"></i> 2 years ago
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="property-box">
-                            <div class="property-thumbnail">
-                                <a href="" class="property-img" tabindex="-1">
-                                    <div class="tag button alt featured">Featured</div>
-                                    <div class="price-ratings-box">
-                                        <p class="price">
-                                            $178,000
-                                        </p>
-                                    </div>
-                                    <img src="images/no_image.png" alt="Imagen propiedad" class="img-fluid">
-                                </a>
-                                <div class="property-overlay">
-                                </div>
-                            </div>
-                            <div class="detail">
-                                <h1 class="title">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">Modern Family Home</a>
-                                </h1>
-                                <div class="location">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">
-                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123
-                                        Kathal St. Tampa City,
-                                    </a>
-                                </div>
-                                <ul class="facilities-list clearfix">
-                                    <li>
-                                        <i class="flaticon-bed"></i> 3 Bedrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-bath"></i> 2 Bathrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-square-layouting-with-black-square-in-east-area"></i> Sq
-                                        Ft:3400
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-car-repair"></i> 1 Garage
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer">
-                                <a href="http://storage.googleapis.com/themevessel-products/xero/index.html#" tabindex="-1">
-                                    <i class="fa fa-user"></i> Jhon Doe
-                                </a>
-                                <span>
-                                    <i class="fa fa-calendar-o"></i> 2 years ago
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="property-box">
-                            <div class="property-thumbnail">
-                                <a href="" class="property-img" tabindex="-1">
-                                    <div class="tag button alt featured">Featured</div>
-                                    <div class="price-ratings-box">
-                                        <p class="price">
-                                            $178,000
-                                        </p>
-                                    </div>
-                                    <img src="images/no_image.png" alt="Imagen propiedad" class="img-fluid">
-                                </a>
-                                <div class="property-overlay">
-                                </div>
-                            </div>
-                            <div class="detail">
-                                <h1 class="title">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">Modern Family Home</a>
-                                </h1>
-                                <div class="location">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">
-                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123
-                                        Kathal St. Tampa City,
-                                    </a>
-                                </div>
-                                <ul class="facilities-list clearfix">
-                                    <li>
-                                        <i class="flaticon-bed"></i> 3 Bedrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-bath"></i> 2 Bathrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-square-layouting-with-black-square-in-east-area"></i> Sq
-                                        Ft:3400
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-car-repair"></i> 1 Garage
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer">
-                                <a href="http://storage.googleapis.com/themevessel-products/xero/index.html#" tabindex="-1">
-                                    <i class="fa fa-user"></i> Jhon Doe
-                                </a>
-                                <span>
-                                    <i class="fa fa-calendar-o"></i> 2 years ago
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="property-box">
-                            <div class="property-thumbnail">
-                                <a href="" class="property-img" tabindex="-1">
-                                    <div class="tag button alt featured">Featured</div>
-                                    <div class="price-ratings-box">
-                                        <p class="price">
-                                            $178,000
-                                        </p>
-                                    </div>
-                                    <img src="images/no_image.png" alt="Imagen propiedad" class="img-fluid">
-                                </a>
-                                <div class="property-overlay">
-                                </div>
-                            </div>
-                            <div class="detail">
-                                <h1 class="title">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">Modern Family Home</a>
-                                </h1>
-                                <div class="location">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">
-                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123
-                                        Kathal St. Tampa City,
-                                    </a>
-                                </div>
-                                <ul class="facilities-list clearfix">
-                                    <li>
-                                        <i class="flaticon-bed"></i> 3 Bedrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-bath"></i> 2 Bathrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-square-layouting-with-black-square-in-east-area"></i> Sq
-                                        Ft:3400
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-car-repair"></i> 1 Garage
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer">
-                                <a href="http://storage.googleapis.com/themevessel-products/xero/index.html#" tabindex="-1">
-                                    <i class="fa fa-user"></i> Jhon Doe
-                                </a>
-                                <span>
-                                    <i class="fa fa-calendar-o"></i> 2 years ago
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="property-box">
-                            <div class="property-thumbnail">
-                                <a href="" class="property-img" tabindex="-1">
-                                    <div class="tag button alt featured">Featured</div>
-                                    <div class="price-ratings-box">
-                                        <p class="price">
-                                            $178,000
-                                        </p>
-                                    </div>
-                                    <img src="images/no_image.png" alt="Imagen propiedad" class="img-fluid">
-                                </a>
-                                <div class="property-overlay">
-                                </div>
-                            </div>
-                            <div class="detail">
-                                <h1 class="title">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">Modern Family Home</a>
-                                </h1>
-                                <div class="location">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">
-                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123
-                                        Kathal St. Tampa City,
-                                    </a>
-                                </div>
-                                <ul class="facilities-list clearfix">
-                                    <li>
-                                        <i class="flaticon-bed"></i> 3 Bedrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-bath"></i> 2 Bathrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-square-layouting-with-black-square-in-east-area"></i> Sq
-                                        Ft:3400
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-car-repair"></i> 1 Garage
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer">
-                                <a href="http://storage.googleapis.com/themevessel-products/xero/index.html#" tabindex="-1">
-                                    <i class="fa fa-user"></i> Jhon Doe
-                                </a>
-                                <span>
-                                    <i class="fa fa-calendar-o"></i> 2 years ago
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="property-box">
-                            <div class="property-thumbnail">
-                                <a href="" class="property-img" tabindex="-1">
-                                    <div class="tag button alt featured">Featured</div>
-                                    <div class="price-ratings-box">
-                                        <p class="price">
-                                            $178,000
-                                        </p>
-                                    </div>
-                                    <img src="images/no_image.png" alt="Imagen propiedad" class="img-fluid">
-                                </a>
-                                <div class="property-overlay">
-                                </div>
-                            </div>
-                            <div class="detail">
-                                <h1 class="title">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">Modern Family Home</a>
-                                </h1>
-                                <div class="location">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">
-                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123
-                                        Kathal St. Tampa City,
-                                    </a>
-                                </div>
-                                <ul class="facilities-list clearfix">
-                                    <li>
-                                        <i class="flaticon-bed"></i> 3 Bedrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-bath"></i> 2 Bathrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-square-layouting-with-black-square-in-east-area"></i> Sq
-                                        Ft:3400
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-car-repair"></i> 1 Garage
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer">
-                                <a href="http://storage.googleapis.com/themevessel-products/xero/index.html#" tabindex="-1">
-                                    <i class="fa fa-user"></i> Jhon Doe
-                                </a>
-                                <span>
-                                    <i class="fa fa-calendar-o"></i> 2 years ago
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                    <?php
+                        if (is_array($r)) {
+                            modelo_inmueble_listar($r['Inmuebles']);
+                        } else {
+                            echo '<h2>No se encuentran Inmuebles</h2>';
+                        } ?>
                 </div>
 
                 <!-- Paginador -->
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="pagination-box text-center">
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination">
-                                    <li class="page-item"><a class="page-link" href="properties-grid-leftside.html"><span aria-hidden="true">«</span></a></li>
-                                    <li class="page-item"><a class="page-link" href="properties-grid-rightside.html">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="properties-grid-leftside.html">2</a></li>
-                                    <li class="page-item"><a class="page-link active" href="properties-grid-fullwidth.html">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="properties-grid-fullwidth.html"><span aria-hidden="true">»</span></a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                    <div class="col-12 text-center">
+                        <?php if (is_array($r)) : ?>
+                            <div class="pagination-box text-center">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination align-items-end justify-content-center">
+                                        <?php if ($paginator->getPrevUrl()) : ?>
+                                            <li class="page-item"><a href="<?php echo $paginator->getPrevUrl(); ?>" class="page-link">&laquo;</a></li>
+                                        <?php endif; ?>
+                                        <?php foreach ($paginator->getPages() as $page) : ?>
+                                            <?php if ($page['url']) : ?>
+                                                <li <?php echo $page['isCurrent'] ? 'class="page-item active"' : ''; ?>>
+                                                    <a href="<?php echo $page['url']; ?>" class="page-link"><?php echo $page['num']; ?></a>
+                                                </li>
+                                            <?php else : ?>
+                                                <li class="page-item disabled"><span><?php echo $page['num']; ?></span></li>
+                                            <?php endif; ?>
+                                        <?php endforeach; ?>
+
+                                        <?php if ($paginator->getNextUrl()) : ?>
+                                            <li class="page-item"><a href="<?php echo $paginator->getNextUrl(); ?>" class="page-link"> &raquo;</a></li>
+                                        <?php endif; ?>
+                                    </ul>
+                                </nav>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -512,6 +73,9 @@
         var pagina = false;
     </script>
     <?php include 'layout/archivosfooter.php'; ?>
+    <script src="conexion_api/token_api.js"></script>
+    <script src="conexion_api/validadores.js"></script>
+    <script src="conexion_api/buscador.js"></script>
 </body>
 
 </html>

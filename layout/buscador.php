@@ -27,10 +27,10 @@
                     </select>
                 </div>
                 <div class="col-3 form-group">
-                    <input type="text" id='precio_minimo_buscar' class="form-control rounded-0" placeholder="Precio Mínimo">
+                    <input type="text" id='precio_minimo_buscar'  onkeyup="format(this)" onchange="format(this)" class="form-control rounded-0" placeholder="Precio Mínimo" autocomplete="off">
                 </div>
                 <div class="col-3 form-group">
-                    <input type="text" id='precio_maximo_buscar' class="form-control rounded-0" placeholder="Precio Máximo">
+                    <input type="text" id='precio_maximo_buscar' onkeyup="format(this)" onchange="format(this)" class="form-control rounded-0" placeholder="Precio Máximo" autocomplete="off">
                 </div>
                 <div class="col-3 form-group">
                     <button type="button" id="buscar" class="btn btn-color btn-lg btn-block rounded-0">Buscar</button>

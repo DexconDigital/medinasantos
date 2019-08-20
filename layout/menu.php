@@ -38,7 +38,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./inmuebles.php">
+                                <a class="nav-link" href="./inmuebles.php?">
                                     Inmuebles
                                 </a>
                             </li>

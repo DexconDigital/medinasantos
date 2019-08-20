@@ -38,7 +38,7 @@ $garaje =
 
 
 
-function precio($r){
+function precio_validar($r){
     if($r['Gestion'] == 'Arriendo'){
         echo '$'.$r['ValorCanon'];
     }else if($r['Gestion'] == 'Venta'){

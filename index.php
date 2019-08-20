@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inicio</title>
+    <!-- Carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- Incluir documento donde se encuentra el resto de archivos -->
     <?php include 'layout/archivosheader.php'; ?>
 </head>
 
@@ -45,7 +49,8 @@
                         <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
                             <div class="carousel-content container">
                                 <div class="t-center">
-                                    <h1 data-animation="animated fadeInUp delay-05s" class="">Pensamos en tus necesidades<br> de vivienda o negocio</h1>
+                                    <h1 data-animation="animated fadeInUp delay-05s" class="">Pensamos en tus
+                                        necesidades<br> de vivienda o negocio</h1>
                                 </div>
                             </div>
                         </div>
@@ -64,69 +69,22 @@
         <!-- Fin de Banner -->
 
         <!-- Buscador -->
-        <?php include 'layout/buscador.php'?>
+        <?php include 'layout/buscador.php' ?>
         <!-- Fin de Buscador -->
 
         <section id="destacadas" class="content-area-20 bg-white">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="main-title">
                     <h1>Propiedades Destacadas</h1>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-12"></div>
-                    <div class="col-4">
-                        <div class="property-box">
-                            <div class="property-thumbnail">
-                                <a href="" class="property-img" tabindex="-1">
-                                    <div class="tag button alt featured">Featured</div>
-                                    <div class="price-ratings-box">
-                                        <p class="price">
-                                            $178,000
-                                        </p>
-                                    </div>
-                                    <img src="images/no_image.png" alt="Imagen propiedad" class="img-fluid">
-                                </a>
-                                <div class="property-overlay">
-                                </div>
-                            </div>
-                            <div class="detail">
-                                <h1 class="title">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">Modern Family Home</a>
-                                </h1>
-                                <div class="location">
-                                    <a href="http://storage.googleapis.com/themevessel-products/xero/properties-details.html" tabindex="-1">
-                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123
-                                        Kathal St. Tampa City,
-                                    </a>
-                                </div>
-                                <ul class="facilities-list clearfix">
-                                    <li>
-                                        <i class="flaticon-bed"></i> 3 Bedrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-bath"></i> 2 Bathrooms
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-square-layouting-with-black-square-in-east-area"></i> Sq
-                                        Ft:3400
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-car-repair"></i> 1 Garage
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer">
-                                <a href="http://storage.googleapis.com/themevessel-products/xero/index.html#" tabindex="-1">
-                                    <i class="fa fa-user"></i> Jhon Doe
-                                </a>
-                                <span>
-                                    <i class="fa fa-calendar-o"></i> 2 years ago
-                                </span>
-                            </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="owl-carousel owl-theme" id='owl_propertys'>
+                            
                         </div>
                     </div>
+                    </div>
                 </div>
-            </div>
         </section>
 
         <section id="descripcion" class="content-area-20">
@@ -238,8 +196,10 @@
                                             <span><a href="http://storage.googleapis.com/themevessel-products/xero/index.html#"><i class="fa fa-user"></i>John Antony</a></span>
                                             <span><a href="http://storage.googleapis.com/themevessel-products/xero/index.html#"><i class="fa fa-clock-o"></i>7 Comment</a></span>
                                         </div>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
                                             unknown printer took a</p>
                                     </div>
                                 </div>
@@ -265,8 +225,10 @@
                                             <span><a href="http://storage.googleapis.com/themevessel-products/xero/index.html#"><i class="fa fa-user"></i>John Antony</a></span>
                                             <span><a href="http://storage.googleapis.com/themevessel-products/xero/index.html#"><i class="fa fa-clock-o"></i>7 Comment</a></span>
                                         </div>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
                                             unknown printer took a</p>
                                     </div>
                                 </div>
@@ -287,7 +249,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-3 col-sm-12">
-                            <a data-toggle="modal" href="#consigna" class="btn btn-md sn" >Consigna tu inmueble</a>  
+                            <a data-toggle="modal" href="#consigna" class="btn btn-md sn">Consigna tu inmueble</a>
                         </div>
                     </div>
                 </div>
@@ -302,6 +264,12 @@
         var pagina = true;
     </script>
     <?php include 'layout/archivosfooter.php'; ?>
+    <!-- Conexion API -->
+    <script src="conexion_api/token_api.js"></script>
+    <script src="conexion_api/validadores.js"></script>
+    <script src="conexion_api/buscador.js"></script>
+
+
 </body>
 
 </html>
