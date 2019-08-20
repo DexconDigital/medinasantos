@@ -12,7 +12,7 @@
 
             // a la variable "api" le asignamos el array con la iteraccion
             $api = $r[$i];
-
+            $precio = price_validate($api);
             // Renombrar variables
 			$ciudad = $api['Ciudad'];
 			$barrio = $api['Barrio'];
@@ -31,48 +31,49 @@
             
             echo '
             <div class="item">
-                <div class="property-box mx-auto" style="width: 18rem;" >
-                <div class="property-thumbnail">
-                    <a href="" class="property-img" tabindex="-1">
-                        <div class="tag button alt featured">'.$gestion.'</div>
-                        <div class="price-ratings-box">
-                            <p class="price">
-                                '.price_validate($api).'
-                            </p>
+                        <div class="property-box mx-auto" style="max-width:20rem;>
+                            <div class="property-thumbnail">
+                                <a href="" class="property-img" tabindex="-1">
+                                    <div class="tag button alt featured">'.$gestion.'</div>
+                                    <div class="price-ratings-box">
+                                        <p class="price">
+                                            '.$precio.'
+                                        </p>
+                                    </div>
+                                    <img src="'.$imagen.'" alt="Imagen propiedad" class="img-fluid">
+                                </a>
+                                <div class="property-overlay">
+                                </div>
+                            </div>
+                            <div class="detail">
+                                <h1 class="title">
+                                    <a href=""> '.$tipo_inmueble.'</a>
+                                </h1>
+                                <div class="location">
+                                    <a href="" tabindex="-1">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        '.$barrio.', '.$ciudad.'
+                                    </a>
+                                </div>
+                                <ul class="facilities-list clearfix">
+                                    <li>
+                                        <i class="fas fa-bath"></i> '.$banios.' 
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-bed"></i> '.$alcobas.'
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-ruler-combined"></i> '.$area_construida.' m<sup>2<sup>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-car"></i> '.$garaje.'
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer">    
+                            </div>
                         </div>
-                        <img src="'.$imagen.'" alt="Imagen propiedad" class="img-fluid">
-                    </a>
-                    <div class="property-overlay">
                     </div>
-                </div>
-                <div class="detail">
-                    <h1 class="title">
-                        <a href=""> '.$tipo_inmueble.'</a>
-                    </h1>
-                    <div class="location">
-                        <a href="" tabindex="-1">
-                            <i class="fas fa-map-marker-alt"></i>
-                            '.$barrio.', '.$ciudad.'
-                        </a>
-                    </div>
-                    <ul class="facilities-list clearfix">
-                        <li>
-                            <i class="fas fa-bath"></i> '.$banios.' 
-                        </li>
-                        <li>
-                            <i class="fas fa-bed"></i> '.$alcobas.'
-                        </li>
-                        <li>
-                            <i class="fas fa-ruler-combined"></i> '-$area_construida.' m<sup>2<sup>
-                        </li>
-                        <li>
-                            <i class="fas fa-car"></i> '.$garaje.'
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer">
-                </div>
-            </div>
             ';
         }
     }

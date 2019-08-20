@@ -1,3 +1,4 @@
+<?php include 'controllers/indexController.php';?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -79,9 +80,14 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12 d-flex justify-content-center">
-                        <div class="owl-carousel owl-theme" id='owl_propertys'>
-                            
-                        </div>
+                        <?php if(is_array($api)):?>
+                            <div class="owl-carousel owl-theme" id='owl_propertys'>
+                                <?php inmuebles_destacados($api) ;?>
+                            </div>
+                        <?php endif;?>
+                        <?php if(!is_array($api)):?>
+                            <h2>No Tiene Inmuebles Destacados</h2>
+                        <?php endif;?>
                     </div>
                     </div>
                 </div>

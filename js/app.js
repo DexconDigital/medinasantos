@@ -484,22 +484,62 @@ $(function () {
     });
 
     // start owl carousel
-    $('#owl_propertys').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 4
-            }
+    if (cantidad_inmuebles != undefined) {
+        if (cantidad_inmuebles == 1) {
+            $('#owl_propertys').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+        } else if (cantidad_inmuebles == 2) {
+            $('#owl_propertys').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 2
+                    }
+                }
+            })
+        } else if (cantidad_inmuebles >= 3) {
+            $('#owl_propertys').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
         }
-    })
+    }
+
+
 
 
 });
