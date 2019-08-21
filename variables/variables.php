@@ -88,19 +88,19 @@ $iconos_servicios = [
 $formularios_aseguradoras = [
 	0 => [
 		'nombre' => 'Libertador Persona Jurídica',
-		'ruta' => '/'
+		'ruta' => 'formularios/formulario_persona_juridica_libertador.pdf'
 	],
 	1 => [
 		'nombre' => 'Libertador Persona Natural',
-		'ruta' => '/'
+		'ruta' => 'formularios/formulario_persona_natural_libertador.pdf'
 	],
 	2 => [
 		'nombre' => 'Protecsa Persona Jurídica',
-		'ruta' => '/'
+		'ruta' => 'formularios/AFIANZAMIENTO-PERSONA-JURIDICA.pdf'
 	],
 	3 => [
 		'nombre' => 'Protecsa Persona Natural',
-		'ruta' => '/'
+		'ruta' => 'formularios/AFIANZAMIENTO-PERSONA-NATURAL.pdf'
 	],
 ];
 
