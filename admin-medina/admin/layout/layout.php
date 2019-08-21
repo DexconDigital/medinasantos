@@ -91,5 +91,5 @@ $imagen_inicio = $usuario[7];
                     <span>Cerrar sesión</span></a>
             </li>
         </ul>
-        <div id="content-wrapper" style="background:#c8cfda21;">
+        <div id="content-wrapper" style="background:#c8cfda21; position:relative;">
        
