@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+	// TOKEN
+	const TOKEN = 'WCw8GsTmRcSMenaHMmVj7DyDGxDM9zuZjcWlXnAU-254';
+
+	// Lista de inmuebles en general
+	$.ajax({
+		url: 'http://www.simi-api.com/ApiSimiweb/response/v2.1.1/filtroInmueble/limite/1/total/1/departamento/0/ciudad/0/zona/0/barrio/0/tipoInm/0/tipOper/0/areamin/0/areamax/0/valmin/0/valmax/0/campo/0/order/0/banios/0/alcobas/0/garajes/0/sede/0/usuario/0',
+		type: 'GET',
+		beforeSend: function (xhr) {
+		xhr.setRequestHeader(
+		'Authorization',
+		'Basic ' + btoa('Authorization:'+TOKEN));
+		},
+		'dataType': "json",
+		success:function(response)
+		{
+			console.log('Carga de Inmuebles Totales');
+			console.log(response);
+		},
+		error: function (error) {
+			console.log('Carga de Inmuebles Totales');
+			console.log(error);
+		}			
+	});
+
+	// Carga de inmuebles destacados
+	setTimeout(() => {
+		$.ajax({
+ 			url: 'http://www.simi-api.com/ApiSimiweb/response/v21/inmueblesDestacados/total/10/limite/1',
+			type: 'GET',
+			beforeSend: function (xhr) {
+			xhr.setRequestHeader(
+			'Authorization',
+			'Basic ' + btoa('Authorization:'+TOKEN));
+			},
+			'dataType': "json",
+			success:function(response)
+			{
+				console.log('Destacados');
+				console.log(response);
+			}
+						
+		});
+	}, 100);
+
+	//carga de detalle inmuebe
+	// setTimeout(() => {
+	// 	$.ajax({
+	// 	url: 'http://www.simi-api.com/ApiSimiweb/response/v2/inmueble/codInmueble/52',
+	// 	type: 'GET',
+	// 	beforeSend: function (xhr) {
+	// 	xhr.setRequestHeader(
+	// 	'Authorization',
+	// 	'Basic ' + btoa('Authorization:'+TOKEN));
+	// 	},
+	// 	'dataType': "json",
+	// 	success:function(response)
+	// 	{
+	// 		console.log('Detalle Inmueble');
+	// 		console.log(response);
+	// 	},
+	// 	error: function (error) {
+	// 		console.log('Detalle Inmueble');
+	// 		console.log(error);
+	// 	}			
+	// });
+	// }, 101);
+	// // Obtener sedes si existen
+	// setTimeout(()=>{
+	// 	$.ajax({
+	// 	url: 'http://www.simi-api.com/ApiSimiweb/response/sedes',
+	// 	type: 'GET',
+	// 	beforeSend: function (xhr) {
+	// 	xhr.setRequestHeader(
+	// 	'Authorization',
+	// 	'Basic ' + btoa('Authorization:'+TOKEN));
+	// 	},
+	// 	'dataType': "json",
+	// 	success:function(response)
+	// 	{
+	// 		console.log('Carga de Sedes');
+	// 		console.log(response);
+	// 	}
+					
+	// });
+	// }, 500);
+		
+</script>
