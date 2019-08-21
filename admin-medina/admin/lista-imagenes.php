@@ -7,12 +7,12 @@ $id_inmobiliria = 6;
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-10">
-            <h2 class="text-center">Lista de publicaciones</h2>
+            <h2 class="text-center">Lista de Imagenes Slide</h2>
             <table class="table table-striped">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Nombre de la imagen</th>
+                        <th scope="col">Ubicación de la imagen</th>
                         <th scope="col">Frase</th>
                         <th scope="col">Eliminar</th>
                     </tr>
