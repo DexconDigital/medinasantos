@@ -14,6 +14,7 @@ $id_inmobiliria = 6;
                         <th scope="col">#</th>
                         <th scope="col">Ubicación de la imagen</th>
                         <th scope="col">Frase</th>
+                        <th scope="col">Editar</th>
                         <th scope="col">Eliminar</th>
                     </tr>
                 </thead>
@@ -27,6 +28,7 @@ $id_inmobiliria = 6;
                                 <td>'.$res["id"].'</td>
                                 <td>'.$res["ruta_imagen"].'</td>
                                 <td>'.$res["texto-banner"].'</td>
+                                <td><a href="actualizar-img.php?id='.$res['id'].'"><i class="fas fa-edit"></i></a></td>
                                 <td><a data-toggle="modal" data-target="#confirm-delete"><i class="fa fa-times"></i></a>
                                     <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                       <div class="modal-dialog" role="document">
