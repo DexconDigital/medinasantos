@@ -66,14 +66,19 @@ $imagen_inicio = $usuario[7];
                     <span> Agregar Publicacion</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="lista-noticias.php">
+                <a class="nav-link" href="lista-publicaciones.php">
                     <i class="fas fa-list-ol"></i>
                     <span>Lista de Publicaciones</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="estadisticas.php">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Imagenes Home</span></a>
+                <a class="nav-link" href="agregar-imagen.php">
+                    <i class="fas fa-image"></i>
+                    <span>Agregar Imagenes</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="lista-imagenes.php">
+                    <i class="far fa-images"></i>
+                    <span>Ver Imagenes</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="perfil.php">

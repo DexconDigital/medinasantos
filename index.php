@@ -1,4 +1,5 @@
-<?php include 'controllers/indexController.php';
+<?php require 'controllers/indexController.php';
+require 'bases_de_datos/indexDB.php';
 $page= 'inicio'?>
 <!DOCTYPE html>
 <html lang="es">
@@ -23,40 +24,22 @@ $page= 'inicio'?>
         <div class="banner" id="banner">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="./images/slide1.jpg" alt="banner">
-                        <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
-                            <div class="carousel-content container">
-                                <div class="t-center">
-                                    <h1 data-animation="animated fadeInDown delay-05s" class="">Gran oferta
-                                        <br>de inmuebles</h1>
-                                </div>
+                    <?php
+					while ($res = mysqli_fetch_array($sql)) {
+							echo '
+							<div class="carousel-item">
+                                <img  class="d-block w-100" src="admin-medina/admin/' . $res["ruta_imagen"] . '" alt="'.$res['alt_imagen'].'"/>
+                                <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
+                                    <div class="carousel-content container">
+                                        <div class="t-center">
+                                            <h1 data-animation="animated fadeInUp delay-05s" class="">'.$res['texto-banner'].'</h1>
+                                    </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./images/slide2.jpg" alt="banner">
-                        <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
-                            <div class="carousel-content container">
-                                <div class="t-center">
-                                    <h1 data-animation="animated fadeInDown delay-05s" class="">
-                                        Encuentra tu inmueble soñado
-                                    </h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./images/slide3.jpg" alt="banner">
-                        <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
-                            <div class="carousel-content container">
-                                <div class="t-center">
-                                    <h1 data-animation="animated fadeInUp delay-05s" class="">Pensamos en tus
-                                        necesidades<br> de vivienda o negocio</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+							</div>
+					';
+					}
+					?>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -275,6 +258,9 @@ $page= 'inicio'?>
     <script src="conexion_api/token_api.js"></script>
     <script src="conexion_api/validadores.js"></script>
     <script src="conexion_api/buscador.js"></script>
+    <script>
+        $('.carousel-inner div:first-child').addClass('active');
+    </script>
 
 
 </body>

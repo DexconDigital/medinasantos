@@ -19,5 +19,6 @@ $comparador="images/";
     }else{
         copy($ruta,$destino);
         $qry=mysqli_query($con,"UPDATE `usuarios` SET `usuario` = '$usuario', `password` = '$pass', `nombre` = '$nombre', `telefono` = '$telefono', `cargo` = '$cargo', `dependencia` = '$dependencia', `imagen` = '$destino' WHERE `usuarios`.`id_user` = $id;");
+        header("Location: index.php");
     }
 ?>
