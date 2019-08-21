@@ -1,3 +1,4 @@
+<?php $page = 'contacto'?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -87,7 +88,7 @@
                                 <i class="fa fa-envelope"></i>
                                 <div class="media-body">
                                     <h5 class="mt-0">Correo</h5>
-                                    <p><a href="mailto:<?php echo $datos_contacto['correo']['correo'];?>"><?php echo $datos_contacto['correo']['correo'];?></a></p>
+                                    <p><a href="mailto:<?php echo $datos_contacto['correo']['link'];?>"><?php echo $datos_contacto['correo']['correo_espacio'];?></a></p>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +97,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid p-0 mt-4">
+    <div class="container-fluid p-0 mt-4 overflow-hidden">
         <div class="row">
             <div class="col-12">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.1503230495023!2d-74.09455178573675!3d4.743922342603393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f84f6fabbf0ef%3A0xee72626fb3668d89!2sOrganizaci%C3%B3n+Inmobiliaria+Medina+Santos!5e0!3m2!1ses!2sco!4v1565876918788!5m2!1ses!2sco" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>

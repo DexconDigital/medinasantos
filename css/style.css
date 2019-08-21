@@ -7782,7 +7782,7 @@ span {
   .contenedor-flotante {
     display: none; } }
 .footer .footer-item {
-  width: 90%;
+  width: 100%;
   margin: auto; }
   @media (min-width: 992px) {
     .footer .footer-item {
