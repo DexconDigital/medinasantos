@@ -26,7 +26,11 @@ while ($field = mysqli_fetch_array($result)) {
 }
 
 function modelo_ultima_noticia($r){
-    $cantidad_noticias = 2;
+    if(count($r) > 2){
+        $cantidad_noticias = 2;
+    }else{
+        $cantidad_noticias = count($r);
+    }
     for($i=0; $i<$cantidad_noticias; $i++){
        $fecha = fecha_es($r[$i]['fecha'], "d M"); 
 
