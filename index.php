@@ -1,5 +1,6 @@
 <?php require 'controllers/indexController.php';
 require 'bases_de_datos/indexDB.php';
+require 'bases_de_datos/noticiasDB.php';
 $page= 'inicio'?>
 <!DOCTYPE html>
 <html lang="es">
@@ -163,67 +164,12 @@ $page= 'inicio'?>
             <div class="blog content-area-2 bg-white">
                 <div class="container">
                     <div class="main-title">
-                        <h1>Últimas Noticias</h1>
+                        <h1>Últimas Publicaciones</h1>
                     </div>
                     <div class="row wow fadeInUp delay-04s" style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="row blog-3">
-                                <div class="col-lg-5 col-md-12 col-pad ">
-                                    <div class="photo">
-                                        <img src="images/no_image.png" alt="blog-6" class="img-fluid">
-                                        <div class="date-box">
-                                            <span>03</span>May
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-7 col-md-12 col-pad align-self-center">
-                                    <div class="detail">
-                                        <h3>
-                                            <a href="http://storage.googleapis.com/themevessel-products/xero/blog-single-sidebar-right.html">Buying
-                                                a Home</a>
-                                        </h3>
-                                        <div class="post-meta">
-                                            <span><a href="http://storage.googleapis.com/themevessel-products/xero/index.html#"><i class="fa fa-user"></i>John Antony</a></span>
-                                            <span><a href="http://storage.googleapis.com/themevessel-products/xero/index.html#"><i class="fa fa-clock-o"></i>7 Comment</a></span>
-                                        </div>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem
-                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                                            an
-                                            unknown printer took a</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="row blog-3">
-                                <div class="col-lg-5 col-md-12 col-pad ">
-                                    <div class="photo">
-                                        <img src="images/no_image.png" alt="blog-5" class="img-fluid">
-                                        <div class="date-box">
-                                            <span>03</span>May
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-7 col-md-12 col-pad align-self-center">
-                                    <div class="detail">
-                                        <h3>
-                                            <a href="http://storage.googleapis.com/themevessel-products/xero/blog-single-sidebar-right.html">Selling
-                                                Your Home</a>
-                                        </h3>
-                                        <div class="post-meta">
-                                            <span><a href="http://storage.googleapis.com/themevessel-products/xero/index.html#"><i class="fa fa-user"></i>John Antony</a></span>
-                                            <span><a href="http://storage.googleapis.com/themevessel-products/xero/index.html#"><i class="fa fa-clock-o"></i>7 Comment</a></span>
-                                        </div>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem
-                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                                            an
-                                            unknown printer took a</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php if(isset($noticias_array) && is_array($noticias_array)){
+                            modelo_ultima_noticia($noticias_array);
+                        }?>
                     </div>
                 </div>
             </div>

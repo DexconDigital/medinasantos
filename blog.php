@@ -1,4 +1,6 @@
-<?php $page="blog";?>
+<?php 
+require 'bases_de_datos/noticiasDB.php';
+$page="blog";?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -17,183 +19,15 @@
     <div class="container-fluid body">
         <div class="blog-section content-area-2">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-12 text-center">
                         <div class="main-title">
                             <h1>Nuestros Blog</h1>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="blog-1">
-                            <img src="assets/img/blog/blog-2.jpg" alt="blog" class="img-fluid">
-                            <div class="detail">
-                                <div class="date-box">
-                                    <h5>03</h5>
-                                    <h5>May</h5>
-                                </div>
-                                <h3>
-                                    <a href="blog-single-sidebar-right.html">Buying a Home</a>
-                                </h3>
-                                <div class="post-meta">
-                                    <span><a href="#"><i class="fa fa-user"></i>John Antony</a></span>
-                                    <span><a href="#"><i class="fa fa-commenting-o"></i>24 Comment</a></span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="blog-1">
-                            <img src="assets/img/blog/blog-3.jpg" alt="blog" class="img-fluid">
-                            <div class="detail">
-                                <div class="date-box">
-                                    <h5>03</h5>
-                                    <h5>May</h5>
-                                </div>
-                                <h3>
-                                    <a href="blog-single-sidebar-right.html">Why Live in New York</a>
-                                </h3>
-                                <div class="post-meta">
-                                    <span><a href="#"><i class="fa fa-user"></i>John Antony</a></span>
-                                    <span><a href="#"><i class="fa fa-commenting-o"></i>24 Comment</a></span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="blog-1">
-                            <img src="assets/img/blog/blog.jpg" alt="blog" class="img-fluid">
-                            <div class="detail">
-                                <div class="date-box">
-                                    <h5>03</h5>
-                                    <h5>May</h5>
-                                </div>
-                                <h3>
-                                    <a href="blog-single-sidebar-right.html">Selling Your Home</a>
-                                </h3>
-                                <div class="post-meta">
-                                    <span><a href="#"><i class="fa fa-user"></i>John Antony</a></span>
-                                    <span><a href="#"><i class="fa fa-commenting-o"></i>24 Comment</a></span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="blog-1">
-                            <img src="assets/img/blog/blog.jpg" alt="blog" class="img-fluid">
-                            <div class="detail">
-                                <div class="date-box">
-                                    <h5>03</h5>
-                                    <h5>May</h5>
-                                </div>
-                                <h3>
-                                    <a href="blog-single-sidebar-right.html">Selling Your Home</a>
-                                </h3>
-                                <div class="post-meta">
-                                    <span><a href="#"><i class="fa fa-user"></i>John Antony</a></span>
-                                    <span><a href="#"><i class="fa fa-commenting-o"></i>24 Comment</a></span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="blog-1">
-                            <img src="assets/img/blog/blog-2.jpg" alt="blog" class="img-fluid">
-                            <div class="detail">
-                                <div class="date-box">
-                                    <h5>03</h5>
-                                    <h5>May</h5>
-                                </div>
-                                <h3>
-                                    <a href="blog-single-sidebar-right.html">Buying a Home</a>
-                                </h3>
-                                <div class="post-meta">
-                                    <span><a href="#"><i class="fa fa-user"></i>John Antony</a></span>
-                                    <span><a href="#"><i class="fa fa-commenting-o"></i>24 Comment</a></span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="blog-1">
-                            <img src="assets/img/blog/blog-3.jpg" alt="blog" class="img-fluid">
-                            <div class="detail">
-                                <div class="date-box">
-                                    <h5>03</h5>
-                                    <h5>May</h5>
-                                </div>
-                                <h3>
-                                    <a href="blog-single-sidebar-right.html">Why Live in New York</a>
-                                </h3>
-                                <div class="post-meta">
-                                    <span><a href="#"><i class="fa fa-user"></i>John Antony</a></span>
-                                    <span><a href="#"><i class="fa fa-commenting-o"></i>24 Comment</a></span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="blog-1">
-                            <img src="assets/img/blog/blog-2.jpg" alt="blog" class="img-fluid">
-                            <div class="detail">
-                                <div class="date-box">
-                                    <h5>03</h5>
-                                    <h5>May</h5>
-                                </div>
-                                <h3>
-                                    <a href="blog-single-sidebar-right.html">Buying a Home</a>
-                                </h3>
-                                <div class="post-meta">
-                                    <span><a href="#"><i class="fa fa-user"></i>John Antony</a></span>
-                                    <span><a href="#"><i class="fa fa-commenting-o"></i>24 Comment</a></span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="blog-1">
-                            <img src="assets/img/blog/blog-3.jpg" alt="blog" class="img-fluid">
-                            <div class="detail">
-                                <div class="date-box">
-                                    <h5>03</h5>
-                                    <h5>May</h5>
-                                </div>
-                                <h3>
-                                    <a href="blog-single-sidebar-right.html">Why Live in New York</a>
-                                </h3>
-                                <div class="post-meta">
-                                    <span><a href="#"><i class="fa fa-user"></i>John Antony</a></span>
-                                    <span><a href="#"><i class="fa fa-commenting-o"></i>24 Comment</a></span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="blog-1">
-                            <img src="assets/img/blog/blog.jpg" alt="blog" class="img-fluid">
-                            <div class="detail">
-                                <div class="date-box">
-                                    <h5>03</h5>
-                                    <h5>May</h5>
-                                </div>
-                                <h3>
-                                    <a href="blog-single-sidebar-right.html">Selling Your Home</a>
-                                </h3>
-                                <div class="post-meta">
-                                    <span><a href="#"><i class="fa fa-user"></i>John Antony</a></span>
-                                    <span><a href="#"><i class="fa fa-commenting-o"></i>24 Comment</a></span>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus,</p>
-                            </div>
-                        </div>
-                    </div>
+                    <?php if(isset($noticias_array) && is_array($noticias_array)){
+                            modelo_noticia($noticias_array);
+                        }?>
                 </div>
             </div>
         </div>
