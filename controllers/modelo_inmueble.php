@@ -70,8 +70,11 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="footer">    
-                            </div>
+                            <div class="footer">   
+                            <a href="#" tabindex="-1">
+                               Código: '.$codigo.'
+                            </a> 
+                        </div>
                         </div>
                     </div>
             ';
@@ -109,7 +112,7 @@
             $venta = $api['Venta'];
             
             echo '
-            <div class="col-4">
+            <div class="col-11 col-md-6 col-lg-4">
                         <div class="property-box">
                             <div class="property-thumbnail">
                                 <a href="" class="property-img" tabindex="-1">
@@ -149,7 +152,10 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="footer">    
+                            <div class="footer">   
+                                <a href="#" tabindex="-1">
+                                   Código: '.$codigo.'
+                                </a> 
                             </div>
                         </div>
                     </div>

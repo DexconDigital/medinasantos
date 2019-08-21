@@ -56,7 +56,7 @@ $datos_contacto = [
 		"icono" => "fab fa-whatsapp",
 	],
 	"correo" => [
-		"correo" => "inmobiliariamedinasa@outlook.com",
+		"correo" => "inmobiliariamedinasantos<br class='d-lg-none'>@outlook.com",
 		"icono" => "far fa-envelope",
 	],
 	"horario" => [
