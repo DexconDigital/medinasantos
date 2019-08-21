@@ -16,7 +16,7 @@ $imagen_inicio = $usuario[7];
     <title><?php echo $page?></title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/sb-admin.css">
-    <link rel="stylesheet" href="../../css/all.css">
+    <link rel="stylesheet" href="../../css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
     <script src="tinymce/tinymce.min.js"></script>
@@ -39,7 +39,7 @@ $imagen_inicio = $usuario[7];
 <body>
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-        <a class="navbar-brand mr-1" style="width:150px;" href="index.php">
+        <a class="navbar-brand mr-1" style="width:300px;" href="index.php">
             <img src="<?php echo $imagen_inicio ?>" class="img-fluid">
         </a>
 
@@ -53,7 +53,7 @@ $imagen_inicio = $usuario[7];
 
     <div id="wrapper">
         <!-- Sidebar -->
-        <ul class="sidebar navbar-nav">
+        <ul class="sidebar navbar-nav bg-dark">
             <li class="nav-item active">
                 <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -61,19 +61,19 @@ $imagen_inicio = $usuario[7];
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./agregar-noticia.php">
+                <a class="nav-link" href="./agregar-publicacion.php">
                     <i class="fas fa-plus-square"></i>
-                    <span> Agregar Noticia</span></a>
+                    <span> Agregar Publicacion</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="lista-noticias.php">
                     <i class="fas fa-list-ol"></i>
-                    <span>Lista Noticias</span></a>
+                    <span>Lista de Publicaciones</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="estadisticas.php">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Estadisticas</span></a>
+                    <span>Imagenes Home</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="perfil.php">

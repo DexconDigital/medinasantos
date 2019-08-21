@@ -4,7 +4,7 @@ require_once("conexion.php");
 include 'layout/layout.php';
 $id=$_GET["id"];
             $con=Conect();
-            $qry="SELECT * FROM noticias where id ='$id' and id_inmobiliaria2 = 3";
+            $qry="SELECT * FROM noticias where id ='$id' and id_inmobiliaria2 = 6";
             $sql=mysqli_query($con,$qry);
             $res=  mysqli_fetch_array($sql) ; 
 ?>
@@ -15,7 +15,7 @@ $id=$_GET["id"];
             <form method="post" action="uptade.php" enctype="multipart/form-data">
             <input type="hidden" name="id" id="id" value="<?php echo $res[0]; ?>">
                 <div class="form-group row">
-                    <label for="" class="col-sm-2 col-form-label">Titulo Noticia</label>
+                    <label for="" class="col-sm-2 col-form-label">Titulo Publicacion</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" name="titulo" id="titulo" value="<?php echo $res[1]; ?>">
                     </div>

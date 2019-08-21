@@ -69,34 +69,34 @@
             <div class="counters overview-bgi" style="background-image: url(images/bg-photo-2.jpg)">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-auto col-md-3 col-sm-6">
+                        <div class="col-lg-auto col-md-4 col-sm-6">
                             <div class="counter-box">
                                 <h1 class="counter Starting counter-experence"></h1>
                                 <h5>Años de Experiencia</h5>
                             </div>
                         </div>
-                        <div class="col-lg-auto col-md-3 col-sm-6">
+                        <div class="col-lg-auto col-md-4 col-sm-6">
                             <div class="counter-box">
                                 <i class="flaticon-badge"></i>
                                 <h1 class="counter Starting counter-propertys"></h1>
                                 <h5>Total Inmuebles Disponibles</h5>
                             </div>
                         </div>
-                        <div class="col-lg-auto col-md-3 col-sm-6">
+                        <div class="col-lg-auto col-md-4 col-sm-6">
                             <div class="counter-box">
                                 <i class="flaticon-call-center-agent"></i>
                                 <h1 class="counter Starting counter-rent"></h1>
                                 <h5>Inmuebles en Arriendo</h5>
                             </div>
                         </div>
-                        <div class="col-lg-auto col-md-3 col-sm-6">
+                        <div class="col-lg-auto col-md-6 col-sm-6">
                             <div class="counter-box">
                                 <i class="flaticon-job"></i>
                                 <h1 class="counter Starting counter-sale"></h1>
                                 <h5>Inmuebles en Venta</h5>
                             </div>
                         </div>
-                        <div class="col-lg-auto col-md-3 col-sm-6">
+                        <div class="col-lg-auto col-md-6 col-sm-6">
                             <div class="counter-box">
                                 <i class="flaticon-job"></i>
                                 <h1 class="counter Starting counter-sale-rent"></h1>

@@ -1,3 +1,4 @@
+<?php $page="blog";?>
 <!DOCTYPE html>
 <html lang="es">
 

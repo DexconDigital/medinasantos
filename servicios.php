@@ -1,3 +1,4 @@
+<?php $page="servicios";?>
 <!DOCTYPE html>
 <html lang="es">
 

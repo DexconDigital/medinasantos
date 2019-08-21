@@ -3720,11 +3720,7 @@ a {
 
 .pagination {
   padding-left: 0;
-  border-radius: 4px;
-  display: inline-block; }
-
-.pagination li {
-  display: inline-block; }
+  border-radius: 4px; }
 
 .pagination > li > a, .pagination > li > span {
   border-radius: 0;
@@ -6797,7 +6793,7 @@ body.off-canvas-sidebar-open {
   .btn-lg {
     padding: 7px 25px 5px;
     letter-spacing: .5px;
-    line-height: 24px; }
+    line-height: 35px; }
 
   .btn-white-lg-outline {
     padding: 5px 23px 3px; }
@@ -7786,7 +7782,7 @@ span {
   .contenedor-flotante {
     display: none; } }
 .footer .footer-item {
-  width: 85%;
+  width: 90%;
   margin: auto; }
   @media (min-width: 992px) {
     .footer .footer-item {

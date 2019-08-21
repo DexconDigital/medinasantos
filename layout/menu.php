@@ -22,22 +22,22 @@
                     </button>
                     <div class="navbar-collapse collapse w-100" id="navbar">
                         <ul class="navbar-nav ml-auto align-items-center">
-                            <li class="nav-item dropdown active">
+                            <li class="nav-item dropdown <?php if($page=='inicio'){echo'active';}?>">
                                 <a class="nav-link" href="./">
                                     Inicio
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item <?php if($page=='quienes'){echo'active';}?>">
                                 <a class="nav-link" href="./quienes-somos.php">
                                     Quiénes Somos
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item <?php if($page=='servicios'){echo'active';}?>">
                                 <a class="nav-link" href="./servicios.php">
                                     Servicios
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item <?php if($page=='inmuebles'){echo'active';}?>">
                                 <a class="nav-link" href="./inmuebles.php?">
                                     Inmuebles
                                 </a>
@@ -58,12 +58,12 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item <?php if($page=='blog'){echo'active';}?>">
                                 <a class="nav-link" href="./blog.php">
                                     Blog
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item <?php if($page=='contacto'){echo'active';}?>">
                                 <a class="nav-link" href="./contactanos.php">
                                     Contáctanos
                                 </a>

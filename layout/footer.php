@@ -10,7 +10,7 @@
                             <i class="<?php echo $datos_contacto['direccion']['icono']; ?> mr-2"></i> <?php echo $datos_contacto['direccion']['direccion']; ?>
                         </li>
                         <li>
-                            <i class="<?php echo $datos_contacto['correo']['icono']; ?> mr-2"></i> <a href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>"><?php echo $datos_contacto['correo']['correo'] ?></a>
+                            <i class="<?php echo $datos_contacto['correo']['icono']; ?> mr-2"></i> <a href="mailto:<?php echo $datos_contacto['correo']['link'] ?>"><?php echo $datos_contacto['correo']['correo'] ?></a>
                         </li>
                         <li>
                             <i class="<?php echo $datos_contacto['telefono_fijo']['icono']; ?> mr-2"></i> <a href="<?php echo  $datos_contacto['telefono_fijo']['link'] ?>"><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?></a>

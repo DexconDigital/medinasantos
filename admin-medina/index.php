@@ -1,5 +1,5 @@
 <?php
-$imagen_login = "./admin/images/LogoDimensiones.png";
+$imagen_login = "./admin/images/Logo.png";
 $color_fondo = "13223f";
 
 ?>
@@ -17,7 +17,6 @@ $color_fondo = "13223f";
         .altologin {
             height: 100vh;
         }
-
         .btn-success {
             background-color: #13223f;
             border-color: #13223f;
@@ -25,6 +24,10 @@ $color_fondo = "13223f";
         .btn-success:hover {
             background-color: #112540;
             border-color: #112540;
+        }
+        .card-header{
+            background-color: #343a40;
+            border:none;
         }
     </style>
 </head>
@@ -36,7 +39,7 @@ $color_fondo = "13223f";
                 <div class="card">
                     <div class="card-header">
                         <div class="row">
-                            <div class="col-6 offset-3">
+                            <div class="col-12">
                                 <img src="<?php echo $imagen_login ?>" alt="..." class="" style="max-width:100%; height:auto;">
                             </div>
                         </div>

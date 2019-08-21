@@ -1,4 +1,5 @@
-<?php include 'controllers/indexController.php';?>
+<?php include 'controllers/indexController.php';
+$page= 'inicio'?>
 <!DOCTYPE html>
 <html lang="es">
 

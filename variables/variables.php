@@ -37,7 +37,7 @@ $redes_sociales = [
 //datos de contacto 
 $datos_contacto = [
 	"direccion" => [
-		"direccion" => "Calle 147 # 101- 56 <br> Local 9 C.C. Fiesta Suba, Bogotá",
+		"direccion" => "Calle 147 # 101- 56 Local 9 <br> C.C. Fiesta Suba, Bogotá",
 		"icono" => "fas fa-map-marker-alt",
 	],
 	"telefono_fijo" => [
@@ -56,7 +56,8 @@ $datos_contacto = [
 		"icono" => "fab fa-whatsapp",
 	],
 	"correo" => [
-		"correo" => "inmobiliariamedinasantos<br class='d-lg-none'>@outlook.com",
+		"link" => "inmobiliariamedinasantos@outlook.com",
+		"correo" => "inmobiliariamedinasantos@outlook.com",
 		"icono" => "far fa-envelope",
 	],
 	"horario" => [

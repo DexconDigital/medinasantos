@@ -1,4 +1,5 @@
-<?php require 'controllers/inmueblesController.php'?>
+<?php require 'controllers/inmueblesController.php';
+$page ='inmuebles';?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -73,6 +74,10 @@
         var pagina = false;
     </script>
     <?php include 'layout/archivosfooter.php'; ?>
+    <script src="js/responsive-paginate.js"></script>
+    <script>
+        $(".pagination").rPage();
+    </script>
     <script src="conexion_api/token_api.js"></script>
     <script src="conexion_api/validadores.js"></script>
     <script src="conexion_api/buscador.js"></script>

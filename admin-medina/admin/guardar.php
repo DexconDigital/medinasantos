@@ -2,7 +2,7 @@
 require_once 'conexion.php';
 
 $nombre=$_REQUEST["titulo"];
-$descripcion=$_REQUEST["descripcion"];
+$descripcion='No Aplica';
 $fecha=$_REQUEST["fecha"];
 $noticia= $_POST["noticia"];
 $foto=$_FILES["imagen"]["name"];
@@ -10,7 +10,7 @@ $ruta=$_FILES["imagen"]["tmp_name"];
 $nombre_foto = str_replace(" ","",$foto);
 $destino="fotos/".$nombre_foto;
 $fecha = date("Y-m-d");
-$id_inmo = 3;
+$id_inmo = 6;
 
 $nombre_ar = $_FILES['archivo']['name'];
 if($nombre_ar != ""){
@@ -29,9 +29,9 @@ $con = Conect();
 
     if($nombre_ar!=""){
         mysqli_query($con, "INSERT INTO `noticias` (`id`, `nombre`, `descripcion`, `imagen`, `archivo`, `noticia`, `fecha`, `id_inmobiliaria2`) VALUES (NULL, '$nombre', '$descripcion', '$destino', '$destinos', '$noticia', '$fecha', '$id_inmo')");
-        header("Location: lista-noticias.php");
+        header("Location: lista-publicaciones.php");
     }else{
         mysqli_query($con, "INSERT INTO `noticias` (`id`, `nombre`, `descripcion`, `imagen`, `archivo`, `noticia`, `fecha`, `id_inmobiliaria2`) VALUES (NULL, '$nombre', '$descripcion', '$destino', '', '$noticia', '$fecha', '$id_inmo')");
-        header("Location: lista-noticias.php");
+        header("Location: lista-publicaciones.php");
     }
 ?>
