@@ -26,7 +26,7 @@ $id_inmobiliria = 6;
                             echo '<tr>
                                 <td>'.$res["id"].'</td>
                                 <td>'.$res["nombre"].'</td>
-                                <td><a href="actualizarnoticia.php?id='.$res["id"].'"><i class="fas fa-pen-square"></i></a></td>
+                                <td><a href="actualizarpublicacion.php?id='.$res["id"].'"><i class="fas fa-pen-square"></i></a></td>
                                 <td><a data-toggle="modal" data-target="#confirm-delete"><i class="fa fa-times"></i></a>
                                     <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                       <div class="modal-dialog" role="document">

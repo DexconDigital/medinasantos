@@ -1589,10 +1589,26 @@ a {
     display: block;
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
+    height: 255px;
+    @include media(sm){
+        height: 307px;
+    }
+    @include media(md){
+        height:220px;
+    }
+    @include media(lg){
+        height: 225px;
+    }
+    @include media(xl){
+        height: 250px;
+    }
 }
 
 .property-box .property-img img{
     width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
 }
 
 .property-box .detail .title {
