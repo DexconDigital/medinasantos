@@ -963,8 +963,12 @@ a {
   -webkit-animation: bgburnsEast 25s linear infinite alternate;*/ }
 
 .banner img {
-  animation: bgburnsEast 25s linear infinite alternate;
-  -webkit-animation: bgburnsEast 25s linear infinite alternate; }
+  animation: bgburnsEast 93s linear infinite alternate;
+  -webkit-animation: bgburnsEast 93s linear infinite alternate; }
+  @media (min-width: 992px) {
+    .banner img {
+      animation: bgburnsEast 30s linear infinite alternate;
+      -webkit-animation: bgburnsEast 30s linear infinite alternate; } }
 
 .banner-max-height img {
   max-height: 720px; }
