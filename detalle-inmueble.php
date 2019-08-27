@@ -10,6 +10,8 @@ require 'controllers/detalleInmuebleController.php' ?>
     <title>Detalle Inmueble</title>
     <?php include 'layout/archivosheader.php'; ?>
     <link rel="stylesheet" href="./css/carousel.tamanos.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -73,23 +75,18 @@ require 'controllers/detalleInmuebleController.php' ?>
                         <!-- Compartir por redes sociales                                 -->
                         <div class="card compartir">
                             <div class="card-body row">
-                                <div class="col-12 col-md-3 pl-0 text-center text-md-left"><a class="btn btn-color"
-                                        href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=254-<?php echo $co ?>"
-                                        target="_blank">Imprimir Ficha</a></div>
+                                <div class="col-12 col-md-3 pl-0 text-center text-md-left"><a class="btn btn-color" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=254-<?php echo $co ?>" target="_blank">Imprimir Ficha</a></div>
                                 <div class="col-12 col-md-3 offset-md-3 text-center text-md-left">Compartir por:</div>
                                 <div class="col-4 col-md-1">
-                                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.pendiente.com%2FdetalleInmueble%3Fcodigo%3D<?php echo $co; ?>"
-                                        target="_blank">
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.pendiente.com%2FdetalleInmueble%3Fcodigo%3D<?php echo $co; ?>" target="_blank">
                                         <i class="fab fa-facebook-square"></i></a>
                                 </div>
                                 <div class="col-4 col-md-1">
-                                    <a href="<?php echo 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.pendiente.com%2FdetalleInmueble%3Fcodigo%3D' . $co . '&text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] ?>"
-                                        target="_blank">
+                                    <a href="<?php echo 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.pendiente.com%2FdetalleInmueble%3Fcodigo%3D' . $co . '&text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] ?>" target="_blank">
                                         <i class="fab fa-twitter"></i></a>
                                 </div>
                                 <div class="col-4 col-md-1">
-                                    <a href="<?php echo 'https://wa.me/?text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] . '%20http://www.supropiedadinmobiliaria.com/detalleInmueble.php?codigo%3d' . $co ?>"
-                                        target="_blank">
+                                    <a href="<?php echo 'https://wa.me/?text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] . '%20http://www.supropiedadinmobiliaria.com/detalleInmueble.php?codigo%3d' . $co ?>" target="_blank">
                                         <i class="fab fa-whatsapp"></i></a>
                                 </div>
                             </div>
@@ -166,54 +163,54 @@ require 'controllers/detalleInmuebleController.php' ?>
                         <?php
                         if (count($r['caracteristicasInternas']) > 0) {
                             echo
-                            '<div class="amenities-box af mb-60">
+                                '<div class="amenities-box af mb-60">
                                 <h3 class="heading">Caracteristicas internas</h3>
                                     <div class="row">
                                         <div class="col-12">
                                             <ul>';
-                                                for ($i = 0; $i < count($r['caracteristicasInternas']); $i++) {
-                                                    $caracteristicas = ltrim($r['caracteristicasInternas'][$i]['Descripcion']);
-                                                    echo '<li><i class="fas fa-check"></i>' . $caracteristicas . '</li>';
+                            for ($i = 0; $i < count($r['caracteristicasInternas']); $i++) {
+                                $caracteristicas = ltrim($r['caracteristicasInternas'][$i]['Descripcion']);
+                                echo '<li><i class="fas fa-check"></i>' . $caracteristicas . '</li>';
                             }
-                                    echo  '</ul>
+                            echo  '</ul>
                                         </div>
                                     </div>
                             </div>
                             ';
                         }
                         ?>
-                         <?php
+                        <?php
                         if (count($r['caracteristicasExternas']) > 0) {
                             echo
-                            '<div class="amenities-box af mb-60">
+                                '<div class="amenities-box af mb-60">
                                 <h3 class="heading">Caracteristicas Externas</h3>
                                     <div class="row">
                                         <div class="col-12">
                                             <ul>';
-                                                for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
-                                                    $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
-                                                    echo '<li><i class="fas fa-check"></i>' . $caracteristicas . '</li>';
+                            for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
+                                $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
+                                echo '<li><i class="fas fa-check"></i>' . $caracteristicas . '</li>';
                             }
-                                    echo  '</ul>
+                            echo  '</ul>
                                         </div>
                                     </div>
                             </div>
                             ';
                         }
                         ?>
-                         <?php
+                        <?php
                         if (count($r['caracteristicasExternas']) > 0) {
                             echo
-                            '<div class="amenities-box af mb-60">
+                                '<div class="amenities-box af mb-60">
                                 <h3 class="heading">Caracteristicas Externas</h3>
                                     <div class="row">
                                         <div class="col-12">
                                             <ul>';
-                                                for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
-                                                    $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
-                                                    echo '<li><i class="fas fa-check"></i>' . $caracteristicas . '</li>';
+                            for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
+                                $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
+                                echo '<li><i class="fas fa-check"></i>' . $caracteristicas . '</li>';
                             }
-                                    echo  '</ul>
+                            echo  '</ul>
                                         </div>
                                     </div>
                             </div>
@@ -223,16 +220,16 @@ require 'controllers/detalleInmuebleController.php' ?>
                         <?php
                         if (count($r['caracteristicasAlrededores']) > 0) {
                             echo
-                            '<div class="amenities-box af mb-60">
+                                '<div class="amenities-box af mb-60">
                                 <h3 class="heading">Caracteristicas Externas</h3>
                                     <div class="row">
                                         <div class="col-12">
                                             <ul>';
-                                                for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
-                                                    $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
-                                                    echo '<li><i class="fas fa-check"></i>' . $caracteristicas . '</li>';
+                            for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
+                                $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
+                                echo '<li><i class="fas fa-check"></i>' . $caracteristicas . '</li>';
                             }
-                                    echo  '</ul>
+                            echo  '</ul>
                                         </div>
                                     </div>
                             </div>
@@ -245,7 +242,8 @@ require 'controllers/detalleInmuebleController.php' ?>
                                 <h3 class="heading">Video</h3>
                                 <iframe src="' . $r['video'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            '; }?>
+                            ';
+                        } ?>
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <!-- llamar asesor -->
@@ -272,8 +270,7 @@ require 'controllers/detalleInmuebleController.php' ?>
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                     <label class="form-check-label" for="gridCheck">
                                         <small>
-                                            Confirmo que he leído, entendido y acepto la <a
-                                                href="<?php echo $url_host; ?>formatos/politica_de_datos.pdf">policita
+                                            Confirmo que he leído, entendido y acepto la <a href="<?php echo $url_host; ?>formatos/politica_de_datos.pdf">policita
                                                 de tratamiento de datos personales</a>
                                             de su Propiedad Inmobiliaria SAS
                                         </small>
@@ -281,16 +278,29 @@ require 'controllers/detalleInmuebleController.php' ?>
                                 </div>
                                 <br>
                                 <div class="form-group mb-0">
-                                    <button type="submit"
-                                        class="btn btn-color btn-md btn-message btn-block">Enviar</button>
+                                    <button type="submit" class="btn btn-color btn-md btn-message btn-block">Enviar</button>
                                 </div>
                             </form>
                         </div>
-                        <!-- Similares -->
+
+                        <!-- Aliados -->
                         <div class="widget recent-posts">
-                        <h5 class="sidebar-title">Propiedades Similares</h5>
-                            <?php similares($r['IdCiudad'], $r['IdTpInm'])?>
-                    </div>
+                            <h5 class="sidebar-title">Nuestros Aliados</h5>
+                            <div class="owl-carousel owl-theme" id="owl-aliados">
+                                <?php
+                                for ($i = 0; $i < count($logos_aliados); $i++) {
+                                    echo '<div class="item">
+                                            <img src="' . $logos_aliados[$i] . '" alt="" style="width:40%; margin:auto;">
+                                    </div>';
+                                }
+                                ?>
+                            </div>
+                            <!-- Similares -->
+                            <div class="widget recent-posts">
+                                <h5 class="sidebar-title">Propiedades Similares</h5>
+                                <?php similares($r['IdCiudad'], $r['IdTpInm']) ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -299,52 +309,74 @@ require 'controllers/detalleInmuebleController.php' ?>
 
     <?php include 'layout/footer.php'; ?>
     <script>
-    var pagina = false;
+        var pagina = false;
     </script>
     <?php include 'layout/archivosfooter.php'; ?>
-
+    <script src="js/owl.carousel.min.js"></script>
     <!-- inicilizar carousel -->
     <script>
-    $('#slide-detalle').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        fade: true,
-        asNavFor: '#miniaturas'
-    });
-    $('#miniaturas').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        asNavFor: '#slide-detalle',
-        dots: false,
-        centerMode: true,
-        focusOnSelect: true,
-        variableWidth: true,
-        responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
+        $('#slide-detalle').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+            asNavFor: '#miniaturas'
+        });
+        $('#miniaturas').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '#slide-detalle',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true,
+            variableWidth: true,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
                 }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
+            ]
+        });
+    </script>
+    <!-- inicializar aliados -->
+    <script>
+        $('#owl-aliados').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            autoplay:true,
+            autoplayTimeout:1200,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
                 }
             }
-        ]
-    });
+        })
     </script>
 </body>
 
