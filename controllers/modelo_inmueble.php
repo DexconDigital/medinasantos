@@ -33,7 +33,7 @@
             <div class="item">
                         <div class="property-box mx-auto" style="max-width:20rem;>
                             <div class="property-thumbnail">
-                                <a href="" class="property-img" tabindex="-1">
+                                <a href="./detalle-inmueble.php?co='.$codigo.'" class="property-img" tabindex="-1">
                                     <div class="tag button alt featured">'.$gestion.'</div>
                                     <div class="price-ratings-box">
                                         <p class="price">
@@ -42,15 +42,15 @@
                                     </div>
                                     <img src="'.$imagen.'" alt="Imagen propiedad" class="img-fluid">
                                 </a>
-                                <div class="property-overlay">
-                                </div>
+                                <a href="./detalle-inmueble.php?co='.$codigo.'" class="property-overlay">
+                                </a>
                             </div>
                             <div class="detail">
                                 <h1 class="title">
-                                    <a href=""> '.$tipo_inmueble.'</a>
+                                <a href="./detalle-inmueble.php?co='.$codigo.'"> '.$tipo_inmueble.'</a>
                                 </h1>
                                 <div class="location">
-                                    <a href="" tabindex="-1">
+                                    <a href="./detalle-inmueble.php?co='.$codigo.'" tabindex="-1">
                                         <i class="fas fa-map-marker-alt"></i>
                                         '.$barrio.', '.$ciudad.'
                                     </a>
@@ -71,7 +71,7 @@
                                 </ul>
                             </div>
                             <div class="footer">   
-                            <a href="#" tabindex="-1">
+                            <a href="./detalle-inmueble.php?co='.$codigo.'" tabindex="-1">
                                Código: '.$codigo.'
                             </a> 
                         </div>
@@ -115,7 +115,7 @@
             <div class="col-11 col-md-6 col-lg-4">
                         <div class="property-box">
                             <div class="property-thumbnail">
-                                <a href="" class="property-img" tabindex="-1">
+                                <a href="./detalle-inmueble.php?co='.$codigo.'" class="property-img" tabindex="-1">
                                     <div class="tag button alt featured">'.$gestion.'</div>
                                     <div class="price-ratings-box">
                                         <p class="price">
@@ -124,15 +124,15 @@
                                     </div>
                                     <img src="'.$imagen.'" alt="Imagen propiedad" class="img-fluid">
                                 </a>
-                                <div class="property-overlay">
-                                </div>
+                                <a href="./detalle-inmueble.php?co='.$codigo.'" class="property-overlay">
+                                </a>
                             </div>
                             <div class="detail">
                                 <h1 class="title">
-                                    <a href=""> '.$tipo_inmueble.'</a>
+                                    <a href="./detalle-inmueble.php?co='.$codigo.'"> '.$tipo_inmueble.'</a>
                                 </h1>
                                 <div class="location">
-                                    <a href="" tabindex="-1">
+                                    <a href="./detalle-inmueble.php?co='.$codigo.'" tabindex="-1">
                                         <i class="fas fa-map-marker-alt"></i>
                                         '.$barrio.', '.$ciudad.'
                                     </a>
@@ -153,7 +153,7 @@
                                 </ul>
                             </div>
                             <div class="footer">   
-                                <a href="#" tabindex="-1">
+                            <a href="./detalle-inmueble.php?co='.$codigo.'" tabindex="-1">
                                    Código: '.$codigo.'
                                 </a> 
                             </div>
@@ -164,11 +164,30 @@
     }
 
 
-    function modelo_inmueble_similares($r, $url){
+    function modelo_inmueble_similares($r){
         for ($i = 0; $i < count($r); $i++) {
-            $imagen = existeImagen(($r[$i]['foto1']), $url);
-            $codigo = str_ireplace("813-", "", $r[$i]['Codigo_Inmueble']);
+            $imagen = existeImagen(($r[$i]['foto1']));
+            $codigo = str_ireplace("254-", "", $r[$i]['Codigo_Inmueble']);
             $api = $r[$i];
+            $precio = price_validate($api);
+            // Renombrar variables
+			$ciudad = $api['Ciudad'];
+			$barrio = $api['Barrio'];
+			$gestion = $api['Gestion'];
+			$tipo_inmueble = $api['Tipo_Inmueble'];
+            echo'
+            <div class="media mb-4">
+                <a href="./detalle-inmueble.php?co='.$codigo.'" class="contenedor-img-similares">
+                    <img src="'.$imagen.'" alt="sub-property">
+                </a>
+                <div class="media-body align-self-center">
+                    <h5>
+                        <a href="./detalle-inmueble.php?co='.$codigo.'">'.$tipo_inmueble.' en '.$gestion.'</a>
+                    </h5>
+                    <p>'.$barrio.', '.$ciudad.'</p>
+                    <p> <strong>'.$precio.'</strong></p>
+                </div>
+            </div>';
         }
     }
 

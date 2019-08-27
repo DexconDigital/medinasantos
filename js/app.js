@@ -277,50 +277,6 @@ $(function () {
         return false;
     });
 
-    // Slick Sliders
-    $('.slick-normal').each(function () {
-        var slider = $(this);
-        $(this).slick({
-            infinite: true,
-            dots: false,
-            arrows: false,
-            centerMode: true,
-            centerPadding: '0'
-        });
-
-        $(this).closest('.slick-slider-area').find('.slick-prev').on("click", function () {
-            slider.slick('slickPrev');
-        });
-        $(this).closest('.slick-slider-area').find('.slick-next').on("click", function () {
-            slider.slick('slickNext');
-        });
-    });
-
-    $('.slick-fullwidth').slick({
-        centerMode: true,
-        centerPadding: '15%',
-        slidesToShow: 3,
-        dots: true,
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 1441,
-                settings: { centerPadding: '10%', slidesToShow: 3 }
-            },
-            {
-                breakpoint: 1025,
-                settings: {
-                    centerPadding: '10px', slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 767,
-                settings: { centerPadding: '10px', slidesToShow: 1 }
-            }
-        ]
-    });
-
-
 
 
     // Multi-item carousel activation
