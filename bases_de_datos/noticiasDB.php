@@ -56,7 +56,7 @@ function modelo_ultima_noticia($r){
             <div class="col-lg-7 col-md-12 col-pad align-self-center">
                 <div class="detail" style="word-break:break-all;">
                     <h3>
-                        <a href=""> '.$r[$i]['titulo'].'</a>
+                        <a href="detalle-publicacion.php?co='.$r[$i]['id'].'"> '.$r[$i]['titulo'].'</a>
                     </h3>
 
                     <p>'.$descripcion.'</p>
@@ -87,7 +87,7 @@ function modelo_noticia($r){
                    <span> '.$fecha.' <span>
                 </div>
                 <h3>
-                    <a href=""> '.$r[$i]['titulo'].'</a>
+                <a href="detalle-publicacion.php?co='.$r[$i]['id'].'"> '.$r[$i]['titulo'].'</a>
                 </h3>
                     <p>'.$descripcion.'</p>
             </div>

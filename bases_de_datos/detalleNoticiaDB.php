@@ -1,5 +1,6 @@
 <?php
     require_once('conexion.php');
+    require_once("formato_fecha.php");
     $codigo = 0;
     $codigo = $_GET['co'];
 
@@ -16,7 +17,8 @@
         $noticia = $field['noticia'];
         $fecha_complete = $field['fecha'];
     }
-
+    
+    $fecha = fecha_es($fecha_complete, "d M");
     $comparador='./admin-medina/admin/';
     $ruta_imagen='./admin-medina/admin/'.$imagen;
     $ruta_archivo= $comparador.$archivo;
