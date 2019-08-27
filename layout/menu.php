@@ -1,5 +1,14 @@
 <?php include('variables/variables.php'); ?>
-
+    
+    <div id="wrap-preload">
+        <img src="images/preloader.gif" alt="gif" class="gif" id="gif">
+    </div>
+    <script>
+       var loader = document.getElementById("wrap-preload");
+        window.addEventListener("load", function () {
+            loader.style.visibility = "hidden";
+        });
+    </script>
 <header class="main-header sticky-header" id="main-header-2">
     <div class="container-fluid">
         <div class="row">
