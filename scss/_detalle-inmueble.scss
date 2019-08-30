@@ -1,0 +1,31 @@
+#detalle-inmueble{
+    .card {
+        border: none;
+        ul {
+          list-style: none;
+          padding: 0;
+          font-size: 1rem;
+        }
+      }
+      .compartir {
+        .fa-facebook-square {
+          color: #3b5998;
+          font-size: 2rem;
+        }
+        .fa-twitter {
+          color: #00acee;
+          font-size: 2rem;
+        }
+        .fa-whatsapp {
+          color: #00bb2d;
+          font-size: 2rem;
+        }
+      }
+      .contenedor-img-similares{
+          height: 90px !important;
+          img{
+              height: 100% !important;
+              object-fit: cover;
+          }
+      }
+}

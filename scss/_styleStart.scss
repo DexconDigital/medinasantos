@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+body .body {
+    flex: 1;
+    padding: 0;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+section{
+    overflow-x: hidden;
+}
+.btn-color{
+    color: #fff !important;
+}
+.banner{
+    overflow-x: hidden;
+}
+header{
+    .contact-information{
+        ul{
+            color: #fff !important;
+            list-style: none;
+            width: 100%;
+            display: inline-flex;
+            justify-content: flex-end;
+            a{
+                color: inherit;
+                &:hover{
+                    color: inherit;
+                    text-decoration: none;
+                }
+            }
+            li{
+                border-right: 1px solid rgba(220, 220, 220, 0.2);
+                padding: 0 1rem;
+            }
+            .b-none{
+                border: none !important;
+            }
+        }
+        border-bottom: 1px solid rgba(220, 220, 220, 0.2);
+    }
+}
+
+footer{
+    .copy{
+        a{
+            color: rgb(212, 212, 212);
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+}

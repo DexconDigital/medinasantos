@@ -1,0 +1,12 @@
+#description_quienes_somos{
+    .row{
+        @include media(lg){
+            margin-top: 100px;
+        }
+    }
+    .mision{
+        width: 80%;
+        margin: auto;
+      
+    }
+}

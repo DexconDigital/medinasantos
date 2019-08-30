@@ -1,0 +1,13 @@
+{
+    "name": "sebastian/medinasantos",
+    "authors": [
+        {
+            "name": "sebastian",
+            "email": "me@sebastiancastiblanco.com"
+        }
+    ],
+    "require": {
+        "jasongrimes/paginator": "~1.0",
+        "phpmailer/phpmailer": "^6.0"
+    }
+}

@@ -1,0 +1,10 @@
+#buscador{
+    padding: 40px 0;
+    background-color: $gris_oscuro;
+    input, select{
+        height: 49px !important;
+    }
+    .btn-color{
+        color: $blanco !important;
+    }
+}
