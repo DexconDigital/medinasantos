@@ -116,8 +116,13 @@ $page= 'inicio'?>
                         </div>
                         <!-- item -->
                         <div class="col-lg-4 col-md-6 col-sm-6 services-info-3 wow fadeInRight delay-04s" style="visibility: visible; animation-name: fadeInRight;">
+<<<<<<< HEAD
                             <i class="<?php echo $iconos_servicios['asesoria_inmobiliaria'] ?>"></i>
                             <h5><?php echo $texto_servicios['asesoria_inmobiliaria']['titulo'] ?></h5>
+=======
+                            <i class="<?php echo $iconos_servicios['avaluos'] ?>"></i>
+                            <h5><?php echo $texto_servicios['avaluos']['titulo'] ?></h5>
+>>>>>>> 27de4dc97a535bbbae51f7d8183eba87fa4fa435
                         </div>
                         <!-- item -->
                         <div class="col-lg-4 col-md-6 col-sm-6 services-info-3 s-brd-2 wow fadeInLeft delay-04s" style="visibility: visible; animation-name: fadeInLeft;">

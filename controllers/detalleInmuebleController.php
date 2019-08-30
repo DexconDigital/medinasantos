@@ -35,6 +35,7 @@ $banios = $r['banos'];
 $ciudad = $r['ciudad'];
 $descripcion = $r['descripcionlarga'];
 $garaje = $r['garaje'];
+$asesor = $r['asesor'][0];
 
 
 function precio_validar($r){
@@ -46,6 +47,7 @@ function precio_validar($r){
         echo '$'.$r['ValorCanon'].'/ $'.$r['ValorVenta'];
     }
 }
+
 
 function similares($ciudad, $inmueble)
 {

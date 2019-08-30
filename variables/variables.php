@@ -78,7 +78,11 @@ $logos_aliados = [
 $iconos_servicios = [
 	"arrendamientos" => "fas fa-sign",
 	"ventas" => "fas fa-tags",
+<<<<<<< HEAD
 	"asesoria_inmobiliaria" => "fas fa-handshake",
+=======
+	"avaluos" => "fas fa-balance-scale",
+>>>>>>> 27de4dc97a535bbbae51f7d8183eba87fa4fa435
 	"servicios_locativos" => "fas fa-toolbox",
 	"creditos_hipotecarios" => "fas fa-hand-holding-usd",
 	"seguros" => "fas fa-file-invoice-dollar",
@@ -129,10 +133,22 @@ $frases_slide_principal = [
 
 //textos quienes somos
 $texto_quienes_somos = [
+<<<<<<< HEAD
 	"proyeccion" => [
 		"imagen" => "images/quienes_somos.jpg",
 		"titulo" => "Bienvenido a Inmobiliaria Medina Santos",
 		"subtitulo" => "Proyección",
+=======
+	"quienes_somos" => [
+		"imagen" => "images/quienes_somos.jpg",
+		"titulo" => "Bienvenido a Inmobiliaria Medina Santos",
+		"parrafos" => [
+			0 => "Somos una Organización de Servicio Inmobiliario especializada en Arrendamientos, Ventas, Avalúos Urbanos  Rurales y Comerciales, Asesorías,  Seguros y Reparaciones Locativas.  Desde el año 2006 hemos cumplido con la normatividad vigente conferidas en la ley 820 de 2003, el Decreto Nacional 51 de 2004, los Decretos Distritales 121 de 2008 y 572 de 2015.",
+			1 => "Cumplimos con la ley de protección de sus datos teniendo en cuenta que son de carácter confidencial de conformidad con las normas legales vigentes.",
+		],
+	],
+	"proyeccion" => [
+>>>>>>> 27de4dc97a535bbbae51f7d8183eba87fa4fa435
 		"parrafos" => [
 			0 => "Conformamos un equipo de trabajo altamente calificado en el área de servicios profesionales de Finca Raíz, poseemos las capacidades técnicas e intelectuales para desarrollar estrategias orientadas a lograr la satisfacción y la seguridad de nuestros clientes.",
 			1 => "Hemos venido forjando un proyecto de personalización del servicio donde nuestra responsabilidad, integridad  y cumplimiento son nuestra presentación.",			
@@ -165,6 +181,7 @@ $texto_contador_estadisticas = [
 $texto_servicios = [
 	"arrendamientos" => [
 		"titulo" => "Arrendamientos",
+<<<<<<< HEAD
 		"parrafos" => [
 			0 => "",
 		]
@@ -198,6 +215,29 @@ $texto_servicios = [
 		"parrafos" => [
 			0 => "",
 		]
+=======
+		"parrafos" => 'Nuestro Departamento de Arrendamientos dispone para usted toda la experiencia y profesionalismo en la protección y administración de su inmueble incluyéndolo dentro de nuestra póliza colectiva garantizando integridad, seriedad y puntualidad.  Además, ofrecemos cobertura en servicios públicos y daños y faltantes del inventario.',
+	],
+	"ventas" => [
+		"titulo" => "Ventas",
+		"parrafos" => 'Nuestro Departamento de ventas comercializa su Inmueble con las tarifas establecidas por la Lonja de Propiedad Raíz de Bogotá.  Les acompañamos y les asesoramos  profesionalmente durante el proceso de la compra-venta, tramitando y revisando los documentos y paz y salvos que se requieran hasta la escrituración.',
+	],
+	"avaluos" => [
+		"titulo" => "Avalúos",
+		"parrafos" => 'Contamos con valuadores especializados e inscritos en la Oficina de Registro Nacional de Valuadores capacitados para valorar su propiedad, con estudios del sector o zona que se requiera y garantizar que el precio de su negociación sea el real del mercado. Al valorar su inmueble se le entregara un concepto técnico completo tanto de la parte física como de la zona de ubicación acompañado con su debido registro fotográfico y el estudio de la situación jurídica del predio.',
+	],
+	"servicios_locativos" => [
+		"titulo" => "Servicios Locativos",
+		"parrafos" => 'Atendemos el mantenimiento básico de su inmueble, para garantizar el buen estado en general y buen funcionamiento en que se debe mantener el inmueble.',
+	],
+	"creditos_hipotecarios" => [
+		"titulo" => "Créditos Hipotecarios",
+		"parrafos" => '',
+	],
+	"seguros" => [
+		"titulo" => "Seguros",
+		"parrafos" => '',
+>>>>>>> 27de4dc97a535bbbae51f7d8183eba87fa4fa435
 	],
 ];
 ?>

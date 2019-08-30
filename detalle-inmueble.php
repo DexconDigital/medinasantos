@@ -101,12 +101,20 @@ require 'controllers/detalleInmuebleController.php' ?>
                         </div>
                         <!-- Detalles de la propiedad -->
                         <div class="property-details mb-60">
+<<<<<<< HEAD
                             <h3 class="heading">Caracteristicas Principales</h3>
+=======
+                            <h3 class="heading">Características Principales</h3>
+>>>>>>> 27de4dc97a535bbbae51f7d8183eba87fa4fa435
                             <div class="row">
                                 <div class="col-md-4 col-sm-6">
                                     <ul>
                                         <li>
+<<<<<<< HEAD
                                             <strong>Codigo:</strong><?php echo $co; ?>
+=======
+                                            <strong>Código:</strong><?php echo $co; ?>
+>>>>>>> 27de4dc97a535bbbae51f7d8183eba87fa4fa435
                                         </li>
                                         <li>
                                             <strong>Precio:</strong> <?php precio_validar($r) ?>
@@ -122,7 +130,11 @@ require 'controllers/detalleInmuebleController.php' ?>
                                 <div class="col-md-4 col-sm-6">
                                     <ul>
                                         <li>
+<<<<<<< HEAD
                                             <strong>Gestion</strong> <?php echo $gestion; ?>
+=======
+                                            <strong>Gestión</strong> <?php echo $gestion; ?>
+>>>>>>> 27de4dc97a535bbbae51f7d8183eba87fa4fa435
                                         </li>
                                         <li>
                                             <strong>Tipo de Inmueble</strong> <?php echo $tipo_inmueble; ?>
@@ -164,7 +176,11 @@ require 'controllers/detalleInmuebleController.php' ?>
                         if (count($r['caracteristicasInternas']) > 0) {
                             echo
                                 '<div class="amenities-box af mb-60">
+<<<<<<< HEAD
                                 <h3 class="heading">Caracteristicas internas</h3>
+=======
+                                <h3 class="heading">Características Internas</h3>
+>>>>>>> 27de4dc97a535bbbae51f7d8183eba87fa4fa435
                                     <div class="row">
                                         <div class="col-12">
                                             <ul>';
@@ -183,6 +199,7 @@ require 'controllers/detalleInmuebleController.php' ?>
                         if (count($r['caracteristicasExternas']) > 0) {
                             echo
                                 '<div class="amenities-box af mb-60">
+<<<<<<< HEAD
                                 <h3 class="heading">Caracteristicas Externas</h3>
                                     <div class="row">
                                         <div class="col-12">
@@ -203,6 +220,9 @@ require 'controllers/detalleInmuebleController.php' ?>
                             echo
                                 '<div class="amenities-box af mb-60">
                                 <h3 class="heading">Caracteristicas Externas</h3>
+=======
+                                <h3 class="heading">Características Externas</h3>
+>>>>>>> 27de4dc97a535bbbae51f7d8183eba87fa4fa435
                                     <div class="row">
                                         <div class="col-12">
                                             <ul>';
@@ -221,7 +241,11 @@ require 'controllers/detalleInmuebleController.php' ?>
                         if (count($r['caracteristicasAlrededores']) > 0) {
                             echo
                                 '<div class="amenities-box af mb-60">
+<<<<<<< HEAD
                                 <h3 class="heading">Caracteristicas Externas</h3>
+=======
+                                <h3 class="heading">Características Alrededores</h3>
+>>>>>>> 27de4dc97a535bbbae51f7d8183eba87fa4fa435
                                     <div class="row">
                                         <div class="col-12">
                                             <ul>';
@@ -270,9 +294,14 @@ require 'controllers/detalleInmuebleController.php' ?>
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                     <label class="form-check-label" for="gridCheck">
                                         <small>
+<<<<<<< HEAD
                                             Confirmo que he leído, entendido y acepto la <a href="<?php echo $url_host; ?>formatos/politica_de_datos.pdf">policita
                                                 de tratamiento de datos personales</a>
                                             de su Propiedad Inmobiliaria SAS
+=======
+                                            Confirmo que he leído, entendido y acepto la <a href="<?php echo $url_host; ?>formatos/politica_de_datos.pdf">política
+                                                de tratamiento de datos personales</a>
+>>>>>>> 27de4dc97a535bbbae51f7d8183eba87fa4fa435
                                         </small>
                                     </label>
                                 </div>
