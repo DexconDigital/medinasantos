@@ -78,11 +78,7 @@ $logos_aliados = [
 $iconos_servicios = [
 	"arrendamientos" => "fas fa-sign",
 	"ventas" => "fas fa-tags",
-<<<<<<< HEAD
-	"asesoria_inmobiliaria" => "fas fa-handshake",
-=======
 	"avaluos" => "fas fa-balance-scale",
->>>>>>> 27de4dc97a535bbbae51f7d8183eba87fa4fa435
 	"servicios_locativos" => "fas fa-toolbox",
 	"creditos_hipotecarios" => "fas fa-hand-holding-usd",
 	"seguros" => "fas fa-file-invoice-dollar",
@@ -133,12 +129,6 @@ $frases_slide_principal = [
 
 //textos quienes somos
 $texto_quienes_somos = [
-<<<<<<< HEAD
-	"proyeccion" => [
-		"imagen" => "images/quienes_somos.jpg",
-		"titulo" => "Bienvenido a Inmobiliaria Medina Santos",
-		"subtitulo" => "Proyección",
-=======
 	"quienes_somos" => [
 		"imagen" => "images/quienes_somos.jpg",
 		"titulo" => "Bienvenido a Inmobiliaria Medina Santos",
@@ -148,7 +138,6 @@ $texto_quienes_somos = [
 		],
 	],
 	"proyeccion" => [
->>>>>>> 27de4dc97a535bbbae51f7d8183eba87fa4fa435
 		"parrafos" => [
 			0 => "Conformamos un equipo de trabajo altamente calificado en el área de servicios profesionales de Finca Raíz, poseemos las capacidades técnicas e intelectuales para desarrollar estrategias orientadas a lograr la satisfacción y la seguridad de nuestros clientes.",
 			1 => "Hemos venido forjando un proyecto de personalización del servicio donde nuestra responsabilidad, integridad  y cumplimiento son nuestra presentación.",			
@@ -181,41 +170,6 @@ $texto_contador_estadisticas = [
 $texto_servicios = [
 	"arrendamientos" => [
 		"titulo" => "Arrendamientos",
-<<<<<<< HEAD
-		"parrafos" => [
-			0 => "",
-		]
-	],
-	"ventas" => [
-		"titulo" => "Ventas",
-		"parrafos" => [
-			0 => "",
-		]
-	],
-	"asesoria_inmobiliaria" => [
-		"titulo" => "Asesoría Inmobiliaria",
-		"parrafos" => [
-			0 => "",
-		]
-	],
-	"servicios_locativos" => [
-		"titulo" => "Servicios Locativos",
-		"parrafos" => [
-			0 => "",
-		]
-	],
-	"creditos_hipotecarios" => [
-		"titulo" => "Créditos Hipotecarios",
-		"parrafos" => [
-			0 => "",
-		],
-	],
-	"seguros" => [
-		"titulo" => "Seguros",
-		"parrafos" => [
-			0 => "",
-		]
-=======
 		"parrafos" => 'Nuestro Departamento de Arrendamientos dispone para usted toda la experiencia y profesionalismo en la protección y administración de su inmueble incluyéndolo dentro de nuestra póliza colectiva garantizando integridad, seriedad y puntualidad.  Además, ofrecemos cobertura en servicios públicos y daños y faltantes del inventario.',
 	],
 	"ventas" => [
@@ -237,7 +191,6 @@ $texto_servicios = [
 	"seguros" => [
 		"titulo" => "Seguros",
 		"parrafos" => '',
->>>>>>> 27de4dc97a535bbbae51f7d8183eba87fa4fa435
 	],
 ];
 ?>

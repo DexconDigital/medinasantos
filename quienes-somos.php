@@ -25,16 +25,9 @@
                         </div>
                         <div class="col-lg-6 align-self-center">
                             <div class="about-text">
-<<<<<<< HEAD
-                                <h3><?php echo $texto_quienes_somos['proyeccion']['titulo'] ?></h3>
-                                <p> <b><?php echo $texto_quienes_somos['proyeccion']['subtitulo'] ?></b></p>
-                                <?php for ($i = 0; $i < count($texto_quienes_somos['proyeccion']['parrafos']); $i++) {
-                                    echo '<p>' . $texto_quienes_somos['proyeccion']['parrafos'][$i] . '<p>';
-=======
                                 <h3><?php echo $texto_quienes_somos['quienes_somos']['titulo'] ?></h3>
                                 <?php for ($i = 0; $i < count($texto_quienes_somos['quienes_somos']['parrafos']); $i++) {
                                     echo '<p>' . $texto_quienes_somos['quienes_somos']['parrafos'][$i] . '<p>';
->>>>>>> 27de4dc97a535bbbae51f7d8183eba87fa4fa435
                                 } ?>
                             </div>
                         </div>
