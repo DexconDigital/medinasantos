@@ -121,6 +121,7 @@ require 'controllers/detalleInmuebleController.php' ?>
                                 </div>
                                 <div class="col-md-4 col-sm-6">
                                     <ul>
+										<li>
                                             <strong>Gestión:</strong> <?php echo $gestion; ?>
                                         </li>
                                         <li>
