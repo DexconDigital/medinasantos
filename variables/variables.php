@@ -18,17 +18,17 @@ $pse = [
 // redes sociales
 $redes_sociales = [
 	"facebook" => [
-		"link" => "https://www.facebook.com/",
+		"link" => "https://www.facebook.com/Inmobiliaria-Medina-Santos-112577823452109/",
 		"icono" => "fab fa-facebook-f",
 		"imagen" => "images/facebook.png"
 	],
 	"instagram" => [
-		"link" => "https://www.instagram.com/",
+		"link" => "https://www.instagram.com/medinasantosinmobiliaria/?hl=es-la",
 		"icono" => "fab fa-instagram",
 		"imagen" => "images/instagram.png"
 	],
 	"twitter" => [
-		"link" => "https://www.twitter.com/",
+		"link" => " https://twitter.com/Inmobil78395188",
 		"icono" => "fab fa-twitter",
 		"imagen" => "images/twitter.png"
 	],

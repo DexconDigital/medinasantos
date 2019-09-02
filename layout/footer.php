@@ -21,10 +21,10 @@
                     </ul>
 
                     <ul class="social-list clearfix mb-4">
-                        <li><a href="" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="" class="instagram"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="<?php echo $redes_sociales['facebook']['link']; ?>" target="blank" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="<?php echo $redes_sociales['twitter']['link']; ?>" target="blank" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="<?php echo $redes_sociales['instagram']['link']; ?>" target="blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="<?php echo $datos_contacto['whatsapp']['link']?>" target="blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
                     </ul>
                 </div>
             </div>
