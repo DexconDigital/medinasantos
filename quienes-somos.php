@@ -1,3 +1,4 @@
+<?= $page="quienes";?>
 <!DOCTYPE html>
 <html lang="es">
 
