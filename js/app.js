@@ -502,6 +502,10 @@ $(function () {
             $('.btn1').addClass('animacionVer');
         }
     })
+
+    //height mapa footer
+    var altoformulario = $('.formularios_height').height();
+    $('.mapa_footer').height(altoformulario);
 });
 
 

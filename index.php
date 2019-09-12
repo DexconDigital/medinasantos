@@ -85,7 +85,7 @@ $page= 'inicio'?>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-11 col-lg-6 col-pad wow fadeInLeft delay-04s d-flex align-items-center" style="visibility: visible; animation-name: fadeInLeft;">
-                        <div>
+                        <div class="pr-lg-4 mr-lg-3 text-justify">
                             <p><?php echo $texto_quienes_somos['proyeccion']['parrafos'][0]; ?></p>
                             <p><?php echo $texto_quienes_somos['proyeccion']['parrafos'][1]; ?></p>
                         </div>

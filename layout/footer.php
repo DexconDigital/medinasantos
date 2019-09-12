@@ -1,5 +1,5 @@
 <footer class="footer">
-    <div class="container footer-inner">
+    <div class="container-fluid footer-inner">
         <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center justify-content-md-start">
                 <div class="footer-item">
@@ -10,7 +10,7 @@
                             <i class="<?php echo $datos_contacto['direccion']['icono']; ?> mr-2"></i> <?php echo $datos_contacto['direccion']['direccion']; ?>
                         </li>
                         <li>
-                            <i class="<?php echo $datos_contacto['correo']['icono']; ?> mr-2"></i> <a href="mailto:<?php echo $datos_contacto['correo']['link'] ?>"><?php echo $datos_contacto['correo']['correo'] ?></a>
+                            <i class="<?php echo $datos_contacto['correo']['icono']; ?> mr-2"></i> <a href="mailto:<?php echo $datos_contacto['correo']['link'] ?>"><?php echo $datos_contacto['correo']['correo_espacio'] ?></a>
                         </li>
                         <li>
                             <i class="<?php echo $datos_contacto['telefono_fijo']['icono']; ?> mr-2"></i> <a href="<?php echo  $datos_contacto['telefono_fijo']['link'] ?>"><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?></a>
@@ -48,9 +48,9 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="recent-posts footer-item">
                     <h4>Ubícanos</h4>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.146475749351!2d-74.09479368573668!3d4.744590342597737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f84f6585f3987%3A0x7c83b0f50ed44598!2sCentro+Comercial+Fiesta+Suba!5e0!3m2!1ses!2sco!4v1565647532423!5m2!1ses!2sco" frameborder="0" style="border:0; width: 100%; height:258px" allowfullscreen></iframe>
+                    <iframe class="mapa_footer" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.146475749351!2d-74.09479368573668!3d4.744590342597737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f84f6585f3987%3A0x7c83b0f50ed44598!2sCentro+Comercial+Fiesta+Suba!5e0!3m2!1ses!2sco!4v1565647532423!5m2!1ses!2sco" frameborder="0" style="border:0; width: 100%" allowfullscreen></iframe>
                     <div class="form-group mt-2">
-                        <a href="https://goo.gl/maps/ZKB5vgpJ3tL3dCLz8" name="submitNewsletter" class="btn btn-block btn-color">
+                        <a href="https://goo.gl/maps/ZKB5vgpJ3tL3dCLz8" name="submitNewsletter" class="btn btn-block btn-color mt-3 btn-como-llegar">
                             Como llegar
                         </a>
                     </div>
@@ -61,6 +61,7 @@
                     <h4>Contáctanos</h4>
                     <div class="Subscribe-box">
                         <form action="" method="POST">
+                            <div class="formularios_height">   
                             <div class="form-group">
                                 <input type="text" class="form-contact" name="email" placeholder="Nombre">
                             </div>
@@ -76,6 +77,7 @@
                             <div class="form-group form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Confimo que he leído, entendido y acepto la política de tratamiento de datos personales.</label>
+                            </div>
                             </div>
                             <div class="form-group">
                                 <button type="submit" name="submitNewsletter" class="btn btn-block btn-color">

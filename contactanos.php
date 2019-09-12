@@ -18,7 +18,7 @@
         <div class="contact-1 content-area-7">
             <div class="container">
                 <div class="main-title">
-                    <h1>Escríbenos</h1>
+                    <h1 class="title-blue">Escríbenos</h1>
                 </div>
 
                 <div class="row">
@@ -68,16 +68,16 @@
 
                     <div class=" offset-lg-1 col-lg-4 offset-md-0 col-md-5">
                         <div class="contact-info">
-                            <h3>Datos de Contacto</h3>
+                            <h3 class="title-blue">Datos de Contacto</h3>
                             <div class="media">
-                                <i class="<?php echo $datos_contacto['direccion']['icono'];?>"></i>
+                                <i class="<?php echo $datos_contacto['direccion']['icono'];?> title-blue"></i>
                                 <div class="media-body">
                                     <h5 class="mt-0">Dirección</h5>
                                     <p><?php echo $datos_contacto['direccion']['direccion'];?></p>
                                 </div>
                             </div>
                             <div class="media">
-                                <i class="fa fa-phone"></i>
+                                <i class="fa fa-phone title-blue"></i>
                                 <div class="media-body">
                                     <h5 class="mt-0">Teléfonos</h5>
                                     <p><a href="tel:<?php echo $datos_contacto['telefono_fijo']['link'];?>"> <?php echo $datos_contacto['telefono_fijo']['imprimir'];?></a> </p>
@@ -85,7 +85,7 @@
                                 </div>
                             </div>
                             <div class="media mrg-btn-0">
-                                <i class="fa fa-envelope"></i>
+                                <i class="fa fa-envelope title-blue"></i>
                                 <div class="media-body">
                                     <h5 class="mt-0">Correo</h5>
                                     <p><a href="mailto:<?php echo $datos_contacto['correo']['link'];?>"><?php echo $datos_contacto['correo']['correo_espacio'];?></a></p>

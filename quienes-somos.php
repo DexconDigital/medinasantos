@@ -16,17 +16,17 @@
     <!-- Fin de Menu -->
     <div class="container-fluid body">
         <section id="description_quienes_somos">
-            <div class="about-us content-area-7">
+            <div class="about-us">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
+                    <div class="row mt-2">
+                        <div class="col-lg-6 d-flex align-items-center">
                             <div class="properties-service-v quienes-somos">
                                 <img src="images/quienes_somos.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-lg-6 align-self-center">
                             <div class="about-text">
-                                <h3><?php echo $texto_quienes_somos['quienes_somos']['titulo'] ?></h3>
+                                <h3 class="title-blue"><?php echo $texto_quienes_somos['quienes_somos']['titulo'] ?></h3>
                                 <?php for ($i = 0; $i < count($texto_quienes_somos['quienes_somos']['parrafos']); $i++) {
                                     echo '<p>' . $texto_quienes_somos['quienes_somos']['parrafos'][$i] . '<p>';
                                 } ?>
@@ -37,7 +37,7 @@
                     <div class="row">
                         <div class="col-lg-6 align-self-center">
                             <div class="about-text">
-                                <h3><?php echo $texto_quienes_somos['mision']['titulo'] ?></h3>
+                                <h3 class="title-blue"><?php echo $texto_quienes_somos['mision']['titulo'] ?></h3>
                                 <?php echo '<p>' . $texto_quienes_somos['mision']['parrafo'] . '<p>'; ?>
                             </div>
                         </div>
@@ -56,7 +56,7 @@
                         </div>
                         <div class="col-lg-6 align-self-center order-1 order-lg-2">
                             <div class="about-text">    
-                                <h3><?php echo $texto_quienes_somos['vision']['titulo'] ?></h3>
+                                <h3 class="title-blue"><?php echo $texto_quienes_somos['vision']['titulo'] ?></h3>
                                 <?php echo '<p>' . $texto_quienes_somos['vision']['parrafo'] . '<p>'; ?>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
         </section>
 
         <section id="counter">
-            <div class="counters overview-bgi" style="background-image: url(images/bg-photo-2.jpg)">
+            <div class="counters overview-bgi mt-4" style="background-image: url(images/bg-photo-2.jpg)">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-auto col-md-4 col-sm-6">

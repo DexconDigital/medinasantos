@@ -1,3 +1,18 @@
+
+.title-blue{
+    color: $color_principal;
+}
+.page-item.active .page-link {
+    background-color: $color_principal;
+    border-color: $color_principal;
+}
+#aliados{
+    img{
+        height: 190px;
+        width: auto;
+    }
+}
+
 .btn-theme{
     color: #FFF;
     background: #274cbf;
@@ -533,4 +548,18 @@ li.active.btn.filtr-button.filtr {
 }
 
 
+@media (min-width: 1450px) {
+    .main-header .logo img {
+        height: 75;
+    }
+    .main-header .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1610px) {
+    .espacio-correo{
+        display: none !important;
+    }
+}
 

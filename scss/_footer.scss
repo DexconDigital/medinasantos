@@ -1,4 +1,8 @@
 .footer{
+    .footer-inner{
+        padding-right: 30px !important;
+        padding-left: 30px !important;
+    }
     .footer-item{
         width: 100%;
         margin: auto;
@@ -6,5 +10,12 @@
             width: auto;
             margin: inherit;
         }
+    }
+    .btn-como-llegar{
+        padding: 11px 15px 10px;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 2px;
     }
 }

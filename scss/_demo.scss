@@ -112,7 +112,7 @@ a:hover {
 }
 
 p {
-    font-size: 14px;
+    font-size: 17px;
     line-height: 26px;
     color: #535353;
 }
@@ -901,7 +901,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .main-header .navbar-expand-lg .navbar-nav .nav-link {
     padding: 30px 17px 27px;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
     letter-spacing: 1px;
     border-bottom: solid 2px transparent;
@@ -913,7 +913,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }*/
 
 .main-header .logo img {
-    height: 60px;
+    height: 66px;
 }
 
 .main-header .logo {
@@ -1525,7 +1525,7 @@ a {
     margin-top: 15px;
     z-index: 20;
     letter-spacing: 1.5px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(20, 66, 214, 0.5);
     padding: 6px 10px 4px 10px;
     border-radius: 2px;
     text-transform: uppercase;
@@ -3955,16 +3955,16 @@ a {
 
 /** FOOTER STARTED **/
 .footer h4 {
-    font-size: 19px;
+    font-size: 25px;
     margin-bottom: 30px;
-    color: #c5c5c5;
+    color: #e9e9e9;
     font-weight: 400;
     letter-spacing: 1px;
 }
 
 .footer a {
-    color: #7c7e83;
-    font-size: 13px;
+    color: #c5c5c5;
+    font-size: 16px;
 }
 
 .footer a:hover {
@@ -3978,7 +3978,7 @@ a {
 
 .footer .footer-inner p {
     line-height: 27px;
-    color: #7c7e83;
+    color: #c4c4c4;
     font-size: 13px;
 }
 
@@ -3998,8 +3998,8 @@ a {
 
 .footer .footer-inner .contact-info li {
     margin-bottom: 15px;
-    color: #7c7e83;
-    font-size: 13px;
+    color: #c4c4c4;
+    font-size: 16px;
 }
 
 .footer .footer-inner .social-list {
@@ -4007,7 +4007,10 @@ a {
 }
 
 .footer .footer-inner .social-list li a {
-    font-size: 14px;
+    font-size: 20px;
+    @include media(md){
+        font-size: 30px;
+    }
     float: left;
     margin-right: 20px;
 }
@@ -4051,9 +4054,8 @@ a {
 
 .footer .footer-inner .Subscribe-box form .btn {
     padding: 11px 15px 10px;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
-    text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 2px;
 }
@@ -6398,9 +6400,9 @@ table {
 
 .form-group label,
 .checkbox label {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
-    color: #535353;
+    color: #c4c4c4;
 }
 
 .search-area .search-fields button {

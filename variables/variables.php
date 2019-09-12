@@ -58,7 +58,7 @@ $datos_contacto = [
 	"correo" => [
 		"link" => "inmobiliariamedinasantos@outlook.com",
 		"correo" => "inmobiliariamedinasantos@outlook.com",
-		"correo_espacio" =>"inmobiliariamedinasantos<br class='d-none d-md-block d-lg-none'>@outlook.com",
+		"correo_espacio" =>"inmobiliariamedinasantos<br class='d-none d-md-block espacio-correo'>@outlook.com",
 		"icono" => "far fa-envelope",
 	],
 	"horario" => [
