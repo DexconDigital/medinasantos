@@ -51,8 +51,8 @@ $datos_contacto = [
 		"icono" => "fas fa-mobile-alt",
 	],
 	"whatsapp" => [
-		"link"=> "https://api.whatsapp.com/send?phone=573102537420&text=&source=&data=",
-		"imprimir" => "310 253 7420",
+		"link"=> "https://api.whatsapp.com/send?phone=573138049994&text=&source=&data=",
+		"imprimir" => "313 804 9994",
 		"icono" => "fab fa-whatsapp",
 	],
 	"correo" => [
@@ -62,7 +62,7 @@ $datos_contacto = [
 		"icono" => "far fa-envelope",
 	],
 	"horario" => [
-		"horario" => "",
+		"horario" => "Lunes a Viernes 8:00 a 1:00 pm, y de 2.:0 a 6:00 p.m, Sabados 8:30 a 12:30 am.",
 		"icono" => "fas fa-calendar-alt",
 	],	
 ];
