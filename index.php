@@ -1,7 +1,7 @@
 <?php require 'controllers/indexController.php';
 require 'bases_de_datos/indexDB.php';
 require 'bases_de_datos/noticiasDB.php';
-$page= 'inicio'?>
+$page = 'inicio' ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -26,21 +26,21 @@ $page= 'inicio'?>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <?php
-					while ($res = mysqli_fetch_array($sql)) {
-							echo '
+                    while ($res = mysqli_fetch_array($sql)) {
+                        echo '
 							<div class="carousel-item">
-                                <img  class="d-block w-100" src="admin-medina/admin/' . $res["ruta_imagen"] . '" alt="'.$res['alt_imagen'].'"/>
+                                <img  class="d-block w-100" src="admin-medina/admin/' . $res["ruta_imagen"] . '" alt="' . $res['alt_imagen'] . '"/>
                                 <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
                                     <div class="carousel-content container">
                                         <div class="t-center">
-                                            <h1 data-animation="animated fadeInUp delay-05s" class="">'.$res['texto-banner'].'</h1>
+                                            <h1 data-animation="animated fadeInUp delay-05s" class="">' . $res['texto-banner'] . '</h1>
                                     </div>
                             </div>
                         </div>
 							</div>
 					';
-					}
-					?>
+                    }
+                    ?>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -59,23 +59,20 @@ $page= 'inicio'?>
         <!-- Fin de Buscador -->
 
         <section id="destacadas" class="content-area-20 bg-white">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="main-title">
                     <h1>Propiedades Destacadas</h1>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-12 d-flex justify-content-center">
-                        <?php if(is_array($api)):?>
-                            <div class="owl-carousel owl-theme" id='owl_propertys'>
-                                <?php inmuebles_destacados($api) ;?>
-                            </div>
-                        <?php endif;?>
-                        <?php if(!is_array($api)):?>
-                            <h5 class="text-center">No Tiene Inmuebles Destacados</h5>
-                        <?php endif;?>
-                    </div>
+                    <div class="owl-carousel owl-theme" id="owl_propertys">
+                        <?php if(is_array($api)){
+                            inmuebles_destacados($api);
+                        }else{
+                            echo '<h5 class="text-center">No Tiene Inmuebles Destacados</h5>';
+                        }?>
                     </div>
                 </div>
+            </div>
         </section>
 
         <section id="descripcion" class="content-area-20">
@@ -167,9 +164,9 @@ $page= 'inicio'?>
                         <h1>Últimas Publicaciones</h1>
                     </div>
                     <div class="row wow fadeInUp delay-04s" style="visibility: visible; animation-name: fadeInUp;">
-                        <?php if(isset($noticias_array) && is_array($noticias_array)){
+                        <?php if (isset($noticias_array) && is_array($noticias_array)) {
                             modelo_ultima_noticia($noticias_array);
-                        }?>
+                        } ?>
                     </div>
                 </div>
             </div>
