@@ -1,4 +1,4 @@
-<?php $page = 'contacto'?>
+<?php $page = 'contacto' ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -17,12 +17,12 @@
     <div class="container-fluid body">
         <div class="contact-1 content-area-7">
             <div class="container">
-                <div class="main-title">
-                    <h1 class="title-blue">Escríbenos</h1>
-                </div>
-
                 <div class="row">
+
                     <div class="col-lg-7 col-md-7 col-md-7">
+                        <div class="main-title">
+                            <h1 class="title-blue">Escríbenos</h1>
+                        </div>
                         <form action="" method="POST" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
@@ -44,6 +44,11 @@
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <div class="form-group number">
                                         <input type="text" name="phone" class="form-control" placeholder="Teléfono">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-group number">
+                                        <input type="text" name="phone" class="form-control" placeholder="Asunto">
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -70,25 +75,35 @@
                         <div class="contact-info">
                             <h3 class="title-blue">Datos de Contacto</h3>
                             <div class="media">
-                                <i class="<?php echo $datos_contacto['direccion']['icono'];?> title-blue"></i>
+                                <i class="<?php echo $datos_contacto['direccion']['icono']; ?> title-blue"></i>
                                 <div class="media-body">
                                     <h5 class="mt-0">Dirección</h5>
-                                    <p><?php echo $datos_contacto['direccion']['direccion'];?></p>
+                                    <p><?php echo $datos_contacto['direccion']['direccion']; ?></p>
                                 </div>
                             </div>
                             <div class="media">
                                 <i class="fa fa-phone title-blue"></i>
                                 <div class="media-body">
                                     <h5 class="mt-0">Teléfonos</h5>
-                                    <p><a href="tel:<?php echo $datos_contacto['telefono_fijo']['link'];?>"> <?php echo $datos_contacto['telefono_fijo']['imprimir'];?></a> </p>
-                                    <p>Móvil: <a href="tel:<?php echo $datos_contacto['celular']['link'];?>">: <?php echo $datos_contacto['celular']['imprimir'];?></a> </p>
+                                    <p><a href="tel:<?php echo $datos_contacto['telefono_fijo']['link']; ?>"> <?php echo $datos_contacto['telefono_fijo']['imprimir']; ?></a> </p>
+                                    <p>Móvil: <a href="tel:<?php echo $datos_contacto['celular']['link']; ?>">: <?php echo $datos_contacto['celular']['imprimir']; ?></a> </p>
                                 </div>
                             </div>
-                            <div class="media mrg-btn-0">
+                            <div class="media">
                                 <i class="fa fa-envelope title-blue"></i>
                                 <div class="media-body">
                                     <h5 class="mt-0">Correo</h5>
-                                    <p><a href="mailto:<?php echo $datos_contacto['correo']['link'];?>"><?php echo $datos_contacto['correo']['correo_espacio'];?></a></p>
+                                    <p><a href="mailto:<?php echo $datos_contacto['correo']['link']; ?>"><?php echo $datos_contacto['correo']['correo_espacio']; ?></a></p>
+                                </div>
+                            </div>
+                            <div class="media mrg-btn-0">
+                                <i class="fa fa-calendar title-blue"></i>
+                                <div class="media-body">
+                                    <h5 class="mt-0">Horarios</h5>
+                                    <span>Lunes a Viernes</span><br>
+                                    <span>8:00 a 1:00pm y 2:00pm a 6:00pm</span>
+                                    <span>Sabados</span><br>
+                                    <span>8:30am a 12:30pm</span>
                                 </div>
                             </div>
                         </div>
