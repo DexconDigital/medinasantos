@@ -11,7 +11,7 @@ include 'layout/layout.php';
 <div class="container d-flex" style="height:100%">
     <div class="row justify-content-center align-items-center">
         <div class="col-9">
-            <h2 class="text-center mb-4">Agregar Una Imagen</h2>
+            <h2 class="text-center mb-4">Editar Una Imagen</h2>
             <form method="post" action="uptade_img.php" enctype="multipart/form-data">
                 <input type="hidden" name="id" id="id" value="<?php echo $res[0]; ?>">
                 <div class="form-group row">
@@ -40,7 +40,7 @@ include 'layout/layout.php';
                 </div>
                 <div class="form-group row">
                     <div class="col-8 offset-2">
-                        <button type="submit" class="btn btn-dark">Guardar Imagen</button>
+                        <button type="submit" class="btn btn-dark">Actualizar Imagen</button>
                     </div>
                 </div>
             </form>
