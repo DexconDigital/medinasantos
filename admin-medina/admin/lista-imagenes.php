@@ -21,7 +21,7 @@ $id_inmobiliria = 6;
                 <tbody>
                 <?php 
                             $con=Conect();
-                            $qry="select * from slide_inicio where id_inmobiliaria_5 = '$id_inmobiliria' order by id DESC ";
+                            $qry="select * from slide_inicio where id_inmobiliaria5 = '$id_inmobiliria' order by id DESC ";
                             $sql=mysqli_query($con,$qry);
                             while($res=  mysqli_fetch_array($sql)){
                             echo '<tr>
