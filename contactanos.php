@@ -102,7 +102,7 @@
                                 <div class="media-body">
                                     <h5 class="mt-0">Horarios</h5>
                                     <span>Lunes a Viernes</span><br>
-                                    <span>8:00 a 1:00pm y 2:00pm a 6:00pm</span>
+                                    <span>8:00 am a 1:00pm y 2:00pm a 6:00pm</span>
                                     <span>Sabados</span><br>
                                     <span>8:30am a 12:30pm</span>
                                 </div>
