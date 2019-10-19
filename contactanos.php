@@ -92,8 +92,9 @@
                             <div class="media">
                                 <i class="fa fa-envelope title-blue"></i>
                                 <div class="media-body">
-                                    <h5 class="mt-0">Correo</h5>
-                                    <p><a href="mailto:<?php echo $datos_contacto['correo']['link']; ?>"><?php echo $datos_contacto['correo']['correo_espacio']; ?></a></p>
+                                    <h5 class="mt-0">Correos</h5>
+                                    <p><a href="mailto:<?php echo $datos_contacto['correo']['link']; ?>"><?php echo $datos_contacto['correo']['correo']; ?></a></p>
+									<p><a href="mailto:<?php echo $datos_contacto['correo2']['link']; ?>"><?php echo $datos_contacto['correo2']['correo']; ?></a></p>
                                 </div>
                             </div>
                             <div class="media mrg-btn-0">

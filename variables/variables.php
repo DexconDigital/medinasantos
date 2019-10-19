@@ -46,8 +46,8 @@ $datos_contacto = [
 		"icono" => "fas fa-phone-alt",
 	],
 	"celular" => [
-		"link"=> "+573144830040",
-		"imprimir" => "314 483 0040",
+		"link"=> "+573138049994",
+		"imprimir" => "313 804 9994",
 		"icono" => "fas fa-mobile-alt",
 	],
 	"whatsapp" => [
@@ -56,9 +56,15 @@ $datos_contacto = [
 		"icono" => "fab fa-whatsapp",
 	],
 	"correo" => [
-		"link" => "inmobiliariamedinasantos@outlook.com",
-		"correo" => "inmobiliariamedinasantos@outlook.com",
-		"correo_espacio" =>"inmobiliariamedinasantos<br class='d-none d-md-block espacio-correo'>@outlook.com",
+		"link" => "inmobiliariamedinasa@outlook.com",
+		"correo" => "inmobiliariamedinasa@outlook.com",
+		"correo_espacio" =>"inmobiliariamedinasa<br class='d-none d-md-block espacio-correo'>@outlook.com",
+		"icono" => "far fa-envelope",
+	],
+	"correo2" => [
+		"link" => "medinasantos2@outlook.com ",
+		"correo" => "medinasantos2@outlook.com ",
+		"correo_espacio" =>"medinasantos2<br class='d-none d-md-block espacio-correo'>@outlook.com",
 		"icono" => "far fa-envelope",
 	],
 	"horario" => [
