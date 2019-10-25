@@ -23,48 +23,43 @@
                         <div class="main-title">
                             <h1 class="title-blue">Escríbenos</h1>
                         </div>
-                        <form action="" method="POST" enctype="multipart/form-data">
+                        <form action="email/enviarCorreo.php" method="POST" enctype="multipart/form-data">
                             <div class="row">
-                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="form-group name">
-                                        <input type="text" name="name" class="form-control" placeholder="Nombre">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="form-group subject">
-                                        <input type="text" name="subject" class="form-control" placeholder="Apellido">
+                                        <input type="text" name="name" class="form-control" placeholder="Nombre" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <div class="form-group email">
-                                        <input type="email" name="email" class="form-control" placeholder="Correo Electrónico">
+                                        <input type="email" name="email" class="form-control" placeholder="Correo Electrónico" required>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <div class="form-group number">
-                                        <input type="text" name="phone" class="form-control" placeholder="Teléfono">
+                                        <input type="text" name="phone" class="form-control" placeholder="Teléfono required" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <div class="form-group number">
-                                        <input type="text" name="phone" class="form-control" placeholder="Asunto">
+                                        <input type="text" name="asunto" class="form-control" placeholder="Asunto" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="form-group message">
-                                        <textarea class="form-control" name="message" placeholder="Escribe tu Mensaje"></textarea>
+                                        <textarea class="form-control" name="message" placeholder="Escribe tu Mensaje" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="form-group form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                                         <label class="form-check-label" for="exampleCheck1">Confimo que he leído, entendido y acepto la <a href="">política de tratamiento de datos personales.</a></label>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                                     <div class="send-btn">
-                                        <button type="submit" class="btn btn-color btn-md btn-message">Enviar</button>
+                                        <button type="submit" class="btn btn-color btn-md btn-message" required>Enviar</button>
                                     </div>
                                 </div>
                             </div>

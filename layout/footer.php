@@ -61,27 +61,27 @@
                 <div class="footer-item">
                     <h4>Contáctanos</h4>
                     <div class="Subscribe-box">
-                        <form action="" method="POST">
+                        <form action="email/enviarCorreocorto.php" method="POST">
                             <div class="formularios_height">   
                             <div class="form-group">
-                                <input type="text" class="form-contact" name="email" placeholder="Nombre">
+                                <input type="text" class="form-contact" name="nombre" placeholder="Nombre" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-contact" name="email" placeholder="Correo">
+                                <input type="email" class="form-contact" name="correo" placeholder="Correo" required>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-contact" name="email" placeholder="Teléfono">
+                                <input type="number" class="form-contact" name="telefono" placeholder="Teléfono" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-contact" name="email" style="height:80px;" placeholder="Mensaje"></textarea>
+                                <textarea class="form-contact" name="mensaje" style="height:80px;" placeholder="Mensaje" required></textarea>
                             </div>
                             <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                                 <label class="form-check-label" for="exampleCheck1">Confimo que he leído, entendido y acepto la política de tratamiento de datos personales.</label>
                             </div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" name="submitNewsletter" class="btn btn-block btn-color">
+                                <button type="submit" class="btn btn-block btn-color">
                                     Enviar
                                 </button>
                             </div>
