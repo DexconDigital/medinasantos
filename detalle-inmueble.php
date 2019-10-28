@@ -292,7 +292,6 @@ require 'controllers/detalleInmuebleController.php' ?>
         var pagina = false;
     </script>
     <?php include 'layout/archivosfooter.php'; ?>
-    <script src="js/owl.carousel.min.js"></script>
     <!-- inicilizar carousel -->
     <script>
         $('#slide-detalle').slick({
