@@ -121,7 +121,7 @@ require 'controllers/detalleInmuebleController.php' ?>
                                 </div>
                                 <div class="col-md-4 col-sm-6">
                                     <ul>
-										<li>
+                                        <li>
                                             <strong>Gestión:</strong> <?php echo $gestion; ?>
                                         </li>
                                         <li>
@@ -230,25 +230,39 @@ require 'controllers/detalleInmuebleController.php' ?>
                         <!-- llamar asesor -->
                         <div class="contact-1 financing-calculator widget">
                             <h5 class="sidebar-title">Nosotros te llamamos</h5>
-                            <form action="" method="" enctype="multipart/form-data">
+                            <form action="email/detalleCorreo.php" method="POST" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" placeholder="Nombre">
+                                    <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Teléfono</label>
-                                    <input type="number" class="form-control" placeholder="Teléfono">
+                                    <input type="number" name="telefono" class="form-control" placeholder="Teléfono" required>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Correo</label>
-                                    <input type="email" class="form-control" placeholder="Correo">
+                                    <input type="email" name="correo" class="form-control" placeholder="Correo" required>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Mensaje</label>
-                                    <textarea name="" id="" class="form-control" rows="1"></textarea>
+                                    <textarea name="mensaje" class="form-control" rows="1" required></textarea>
                                 </div>
+                                <!--
+                                <div class="form-group" style="display:none">
+                                    <label class="form-label"></label>
+                                    <input type="hidden" name="tipoIn" placeholder="<?php $tipo_inmueble; ?>">
+                                </div>
+                                <div class="form-group" style="display:none">
+                                    <label class="form-label"></label>
+                                    <input type="hidden" name="tipoGes" placeholder="<?php $gestion; ?>">
+                                </div>
+                                <div class="form-group" style="display:none">
+                                    <label class="form-label"></label>
+                                    <input type="hidden" name="codigo" placeholder="<?php $co; ?>">
+                                </div>
+                    -->
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                                     <label class="form-check-label" for="gridCheck">
                                         <small>
                                             Confirmo que he leído, entendido y acepto la <a href="<?php echo $url_host; ?>formatos/politica_de_datos.pdf">política
@@ -286,7 +300,7 @@ require 'controllers/detalleInmuebleController.php' ?>
             </div>
         </div>
     </div>
-
+    
     <?php include 'layout/footer.php'; ?>
     <script>
         var pagina = false;
@@ -338,21 +352,21 @@ require 'controllers/detalleInmuebleController.php' ?>
     <!-- inicializar aliados -->
     <script>
         $('#owl-aliados').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:1200,
-            autoplayHoverPause:true,
-            responsive:{
-                0:{
-                    items:1
+            loop: true,
+            margin: 10,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 1200,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
                 },
-                600:{
-                    items:1
+                600: {
+                    items: 1
                 },
-                1000:{
-                    items:1
+                1000: {
+                    items: 1
                 }
             }
         })
