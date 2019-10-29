@@ -247,20 +247,20 @@ require 'controllers/detalleInmuebleController.php' ?>
                                     <label class="form-label">Mensaje</label>
                                     <textarea name="mensaje" class="form-control" rows="1" required></textarea>
                                 </div>
-                                <!--
+                                
                                 <div class="form-group" style="display:none">
                                     <label class="form-label"></label>
-                                    <input type="hidden" name="tipoIn" placeholder="<?php $tipo_inmueble; ?>">
+                                    <input type="hidden" name="tipoIn" value ="<?php echo $tipo_inmueble ?>">
                                 </div>
                                 <div class="form-group" style="display:none">
                                     <label class="form-label"></label>
-                                    <input type="hidden" name="tipoGes" placeholder="<?php $gestion; ?>">
+                                    <input type="hidden" name="tipoGes" value="<?php echo $gestion; ?>">
                                 </div>
                                 <div class="form-group" style="display:none">
                                     <label class="form-label"></label>
-                                    <input type="hidden" name="codigo" placeholder="<?php $co; ?>">
+                                    <input type="hidden" name="codigo" value="<?php echo $co; ?>">
                                 </div>
-                    -->
+                
                                 <div class="form-group form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                                     <label class="form-check-label" for="gridCheck">

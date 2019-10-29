@@ -15,6 +15,7 @@ if ($_POST) {
     $codi = $_POST['codigo'];
     
     
+    
 }
 
 
@@ -38,10 +39,11 @@ try{
     //Cabecera
     $mail->setFrom('inmobiliaria@medinasantos.com','inmobiliaria@medinasantos.com');
     //destinos
-    $mail->addAddress('wdsp9898@gmail.com');
+    $mail->addAddress(' inmobiliariamedinasa@outlook.com');
+    $mail->addAddress('medinasantos2@outlook.com');
 
-    $mail->Subject='Mensaje desde la pagina web de Inmobiliaria Medina Santos';
-    $mail->Body = '<span>Hola, '.$nombre.' quiere recibir información con respeto a el '.$tipoIn.' en '.$tipoGes.' con el código: '.$codi.' </span>
+    $mail->Subject='Inmobiliaria Medina Santos - Detalle de inmueble';
+    $mail->Body = '<span>Hola, '.$nombre.' quiere recibir información con respeto a '.$tipoIn.' en '.$tipoGes.' con el código: '.$codi.' </span>
                     <h3>Información del interesado:</h3>
                     <ul>
                         <li>Correo: '.$email.'</li>
