@@ -38,7 +38,7 @@
 
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <div class="form-group number">
-                                        <input type="text" name="phone" class="form-control" placeholder="Teléfono required" required>
+                                        <input type="text" name="phone" class="form-control" placeholder="Teléfono" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12">

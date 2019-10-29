@@ -232,8 +232,8 @@ require 'controllers/detalleInmuebleController.php' ?>
                             <h5 class="sidebar-title">Nosotros te llamamos</h5>
                             <form action="email/detalleCorreo.php" method="POST" enctype="multipart/form-data">
                                 <div class="form-group">
-                                    <label class="form-label">Nombre</label>
-                                    <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
+                                    <label class="form-label">Nombres</label>
+                                    <input type="text" name="nombre" class="form-control" placeholder="Nombre y Apellido" required>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Teléfono</label>
@@ -247,10 +247,10 @@ require 'controllers/detalleInmuebleController.php' ?>
                                     <label class="form-label">Mensaje</label>
                                     <textarea name="mensaje" class="form-control" rows="1" required></textarea>
                                 </div>
-                                
+
                                 <div class="form-group" style="display:none">
                                     <label class="form-label"></label>
-                                    <input type="hidden" name="tipoIn" value ="<?php echo $tipo_inmueble ?>">
+                                    <input type="hidden" name="tipoIn" value="<?php echo $tipo_inmueble ?>">
                                 </div>
                                 <div class="form-group" style="display:none">
                                     <label class="form-label"></label>
@@ -260,7 +260,7 @@ require 'controllers/detalleInmuebleController.php' ?>
                                     <label class="form-label"></label>
                                     <input type="hidden" name="codigo" value="<?php echo $co; ?>">
                                 </div>
-                
+
                                 <div class="form-group form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                                     <label class="form-check-label" for="gridCheck">
@@ -300,12 +300,20 @@ require 'controllers/detalleInmuebleController.php' ?>
             </div>
         </div>
     </div>
-    
+
     <?php include 'layout/footer.php'; ?>
     <script>
         var pagina = false;
     </script>
-    <?php include 'layout/archivosfooter.php'; ?>
+    <!-- importantes mantener el orden-->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/scripts.js"></script>
     <!-- inicilizar carousel -->
     <script>
         $('#slide-detalle').slick({

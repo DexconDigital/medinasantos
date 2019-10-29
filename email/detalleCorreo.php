@@ -39,11 +39,11 @@ try{
     //Cabecera
     $mail->setFrom('inmobiliaria@medinasantos.com','inmobiliaria@medinasantos.com');
     //destinos
-    $mail->addAddress(' inmobiliariamedinasa@outlook.com');
-    $mail->addAddress('medinasantos2@outlook.com');
-
+    /*$mail->addAddress('inmobiliariamedinasa@outlook.com');
+    $mail->addAddress('medinasantos2@outlook.com'); */
+    $mail->addAddress('wdsp9898@gmail.com');
     $mail->Subject='Inmobiliaria Medina Santos - Detalle de inmueble';
-    $mail->Body = '<span>Hola, '.$nombre.' quiere recibir información con respeto a '.$tipoIn.' en '.$tipoGes.' con el código: '.$codi.' </span>
+    $mail->Body = '<span>Buen día, '.$nombre.' quiere recibir información con respeto a '.$tipoIn.' en '.$tipoGes.' con el código: '.$codi.' </span>
                     <h3>Información del interesado:</h3>
                     <ul>
                         <li>Correo: '.$email.'</li>
