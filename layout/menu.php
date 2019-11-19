@@ -78,7 +78,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">
+                                <a class="nav-link" href="https://gateway2.tucompra.com.co/sites/organizacionmedinasantos" target="blank">
                                     <img src="images/logopse.png" alt="Logo de PSE" width="auto" height="50px">
                                 </a>
                             </li>
