@@ -1,4 +1,4 @@
-<?= $page="quienes";?>
+<?php $page="quienes";?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -14,7 +14,7 @@
     <!-- Menu -->
     <?php include 'layout/menu.php'; ?>
     <!-- Fin de Menu -->
-    <div class="container-fluid body">
+    <div class="">
         <section id="description_quienes_somos">
             <div class="about-us">
                 <div class="container">

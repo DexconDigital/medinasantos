@@ -1,25 +1,25 @@
+<?php
+require_once( "conexion.php" );
+$id = $_GET["id"];
+$con = Conect();
+$consulta = "SELECT * FROM noticias WHERE id = '$id'";
+$result = $con->prepare( $consulta );
+$result->execute();
+$resultado = $result->fetch();
 
-     <?php
-        require_once("conexion.php");
-        $id = $_GET["id"];
-        $con = Conect();
-        $consulta = "SELECT * FROM noticias WHERE id = '$id'";
-        $result = mysqli_query($con, $consulta) or die(mysqli_error($con));
-        while ($field = mysqli_fetch_array($result)) {
-            $imagen = $field['imagen'];
-            $archivo = $field['archivo'];            
-        }
-        unlink($archivo);
-        unlink($imagen);
+$imagen = $field['imagen'];
+$archivo = $field['archivo'];
 
-        $qry = "DELETE FROM noticias WHERE id ='$id'  ";
-        $sql = mysqli_query($con, $qry);
+unlink( $archivo );
+unlink( $imagen );
 
-        if (!$sql) {
-            echo 'No se logro realizar la peticion';
-        } else {
-            header("Location: lista-publicaciones.php");
-        }
-        ?>
-    
-    
+$qry = "DELETE FROM noticias WHERE id ='$id'  ";
+$result = $con->prepare( $qry );
+$result->execute();
+
+if ( !$result ) {
+    echo 'No se logro realizar la peticion';
+} else {
+    header( "Location: lista-publicaciones.php" );
+}
+?>

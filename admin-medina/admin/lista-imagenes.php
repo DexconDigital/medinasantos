@@ -1,8 +1,14 @@
 <?php $page = "Lista de Noticias";
-require("seguridad.php");
-require_once("conexion.php");
+require( "seguridad.php" );
+require_once( "conexion.php" );
 include 'layout/layout.php';
 $id_inmobiliria = 6;
+$con = Conect();
+
+$qry = "select * from slide_inicio where id_inmobiliaria5 = '$id_inmobiliria' order by id DESC ";
+$result = $con->prepare( $qry );
+$result->execute();
+$datos = $result->fetchAll( );
 ?>
 <div class="container">
     <div class="row justify-content-center">
@@ -19,18 +25,15 @@ $id_inmobiliria = 6;
                     </tr>
                 </thead>
                 <tbody>
-                <?php 
-                            $con=Conect();
-                            $qry="select * from slide_inicio where id_inmobiliaria5 = '$id_inmobiliria' order by id DESC ";
-                            $sql=mysqli_query($con,$qry);
-                            while($res=  mysqli_fetch_array($sql)){
-                            echo '<tr>
+                    <?php
+                    foreach ($datos as $key => $res) {
+                        echo '<tr>
                                 <td>'.$res["id"].'</td>
                                 <td>'.$res["ruta_imagen"].'</td>
                                 <td>'.$res["texto-banner"].'</td>
                                 <td><a href="actualizar-img.php?id='.$res['id'].'"><i class="fas fa-edit"></i></a></td>
-                                <td><a data-toggle="modal" data-target="#confirm-delete"><i class="fa fa-times"></i></a>
-                                    <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <td><a data-toggle="modal" data-target="#confirm-delete'.$res['id'].'"><i class="fa fa-times"></i></a>
+                                    <div class="modal fade" id="confirm-delete'.$res['id'].'" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                       <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                           <div class="modal-header">
@@ -51,13 +54,14 @@ $id_inmobiliria = 6;
                                     </div>
                                 
                                 </td>
-                            </tr>';}
-                            ?>
+                            </tr>';
+                    }
+                    ?>
                 </tbody>
             </table>
         </div>
     </div>
 </div>
 
-
-<?php include 'layout/layoutFooter.php'; ?>
+<?php include 'layout/layoutFooter.php';
+?>

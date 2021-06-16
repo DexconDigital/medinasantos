@@ -57,10 +57,10 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li class="dropdown-item">
-                                        <a href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=254&tipo=1" target="blank">Propietarios</a>
+                                        <a href="https://simidocs.siminmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=254&tipo=1" target="blank">Propietarios</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=254&tipo=2" target="blank">Arrendatarios</a>
+                                        <a href="https://simidocs.siminmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=254&tipo=2" target="blank">Arrendatarios</a>
                                     </li>
                                     <li class="dropdown-item">
                                         <a data-toggle="modal" data-target="#consigna">Consignar Inmueble</a>

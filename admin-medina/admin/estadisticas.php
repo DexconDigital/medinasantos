@@ -3,10 +3,11 @@ require("seguridad.php");
 require_once("conexion.php");
 include 'layout/layout.php';
 $id=1;
-            $con=Conect();
-            $qry="SELECT * FROM estadisticas where id ='$id'";
-            $sql=mysqli_query($con,$qry);
-            $res=  mysqli_fetch_array($sql) ; 
+$con=Conect();
+$qry="SELECT * FROM estadisticas where id ='$id'";
+$result = $con->prepare( $qry );
+$result->execute();
+$res = $result->fetch( );
 ?>
 
 <div class="container">
@@ -14,7 +15,7 @@ $id=1;
         <div class="col-9">
             <h2 class="text-center">Estadisticas</h2>
             <form method="post" action="uptade_estadisticas.php" enctype="multipart/form-data">
-            <input type="hidden" name="id" id="id" value="<?php echo $res[0]?>">
+                <input type="hidden" name="id" id="id" value="<?php echo $res[0]?>">
                 <div class="form-group row">
                     <label for="" class="col-sm-2 col-form-label">Numero de Clientes</label>
                     <div class="col-sm-10">

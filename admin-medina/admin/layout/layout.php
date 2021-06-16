@@ -1,10 +1,11 @@
 <?php
-$user=$_SESSION["usuarioactual"];
-$con=Conect();
-$qry="SELECT * FROM usuarios where usuario ='$user'";
-$sql=mysqli_query($con,$qry);
-$usuario=  mysqli_fetch_array($sql) ; 
-$imagen_inicio = $usuario[7];
+$user = $_SESSION["usuarioactual"];
+$con = Conect();
+$qry = "SELECT * FROM usuarios where usuario = '{$user->usuario}'";
+$result = $con->prepare( $qry );
+$result->execute();
+$usuario = $result->fetch( PDO::FETCH_OBJ );
+$imagen_inicio = $usuario->imagen;
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -20,19 +21,25 @@ $imagen_inicio = $usuario[7];
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
     <script src="tinymce/tinymce.min.js"></script>
-    <script>tinymce.init({     selector:'textarea',
-        height:300,
-        menubar:false,
-        plugins: [
-        'advlist autolink lists link image charmap print preview anchor textcolor colorpicker'],
-        language: 'es_MX',
-        toolbar: 'undo redo cut copy paste selectall |  fontsizeselect | bold italic underline forecolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | print link',
-        fontsize_formats: '8pt 10pt 12pt 13pt 14pt 16pt 18pt 20pt 22pt 24pt 26pt 28pt 30pt 32pt 34pt 36pt 42pt' });
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            height: 300,
+            menubar: false,
+            plugins: [
+                'advlist autolink lists link image charmap print preview anchor textcolor colorpicker'
+            ],
+            language: 'es_MX',
+            toolbar: 'undo redo cut copy paste selectall |  fontsizeselect | bold italic underline forecolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | print link',
+            fontsize_formats: '8pt 10pt 12pt 13pt 14pt 16pt 18pt 20pt 22pt 24pt 26pt 28pt 30pt 32pt 34pt 36pt 42pt'
+        });
+
     </script>
     <style type="text/css">
-        #register_form fieldset:not(:first-of-type) {
+        #register_form fieldset:not( :first-of-type) {
             display: none;
         }
+
     </style>
 </head>
 
@@ -92,4 +99,3 @@ $imagen_inicio = $usuario[7];
             </li>
         </ul>
         <div id="content-wrapper" style="background:#c8cfda21; position:relative;">
-       

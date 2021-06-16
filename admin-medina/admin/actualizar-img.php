@@ -1,12 +1,13 @@
 <?php $page = "Lista de Noticias";
-require("seguridad.php");
-require_once("conexion.php");
+require( "seguridad.php" );
+require_once( "conexion.php" );
 include 'layout/layout.php';
-            $id=$_GET["id"];
-            $con=Conect();
-            $qry="SELECT * FROM slide_inicio where id ='$id' and id_inmobiliaria5 = 6";
-            $sql= mysqli_query($con,$qry);
-            $res=  mysqli_fetch_array($sql); 
+$id = (isset($_GET["id"])) ? $_GET["id"] : 0;
+$con = Conect();
+$qry = "SELECT * FROM slide_inicio where id ='$id' and id_inmobiliaria5 = 6";
+$result = $con->prepare( $qry );
+$result->execute();
+$res = $result->fetch( );
 ?>
 <div class="container d-flex" style="height:100%">
     <div class="row justify-content-center align-items-center">
@@ -17,14 +18,14 @@ include 'layout/layout.php';
                 <div class="form-group row">
                     <label for="" class="col-sm-2 col-form-label">Nombre Imagen</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" aria-describedby="tituloHelp" name="titulo" id="titulo "placeholder="Nombre Imagen" value="<?php echo $res[2];?>" required>
+                        <input type="text" class="form-control" aria-describedby="tituloHelp" name="titulo" id="titulo " placeholder="Nombre Imagen" value="<?php echo $res[2];?>" required>
                         <small id="tituloHepl" class="form-text text-muted">Ingrese un texto que describa la imagen. Esto es para temas de SEO</small>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="" class="col-sm-2 col-form-label">Frase de la imagen</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" aria-describedby="tituloHelp" name="frase" id="frase "placeholder="Frase" value="<?php echo $res[3]; ?>" required>
+                        <input type="text" class="form-control" aria-describedby="tituloHelp" name="frase" id="frase " placeholder="Frase" value="<?php echo $res[3]; ?>" required>
                         <small id="tituloHepl" class="form-text text-muted">Ingrese una frase, esta equivale al texto que esta encima de la imagen en su pagina de inicio</small>
                     </div>
                 </div>
@@ -48,4 +49,5 @@ include 'layout/layout.php';
     </div>
 </div>
 
-<?php include 'layout/layoutFooter.php'; ?>
+<?php include 'layout/layoutFooter.php';
+?>

@@ -1,4 +1,5 @@
-<?php require 'controllers/indexController.php';
+<?php
+require 'controllers/indexController.php';
 require 'bases_de_datos/indexDB.php';
 require 'bases_de_datos/noticiasDB.php';
 $page = 'inicio' ?>
@@ -14,19 +15,21 @@ $page = 'inicio' ?>
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <!-- Incluir documento donde se encuentra el resto de archivos -->
-    <?php include 'layout/archivosheader.php'; ?>
+    <?php include 'layout/archivosheader.php';
+?>
 </head>
 
 <body>
     <!-- Menu -->
-    <?php include 'layout/menu.php'; ?>
+    <?php include 'layout/menu.php';
+?>
     <!-- Fin de Menu -->
-    <div class="container-fluid body">
+    <div class="">
         <div class="banner" id="banner">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <?php
-                    while ($res = mysqli_fetch_array($sql)) {
+                    foreach ( $sql as $key => $res ) {
                         echo '
 							<div class="carousel-item">
                                 <img  class="d-block w-100" src="admin-medina/admin/' . $res["ruta_imagen"] . '" alt="' . $res['alt_imagen'] . '"/>
@@ -34,13 +37,12 @@ $page = 'inicio' ?>
                                     <div class="carousel-content container">
                                         <div class="t-center">
                                             <h1 data-animation="animated fadeInUp delay-05s" class="">' . $res['texto-banner'] . '</h1>
+                                        </div>
                                     </div>
+                                </div>
                             </div>
-                        </div>
-							</div>
-					';
-                    }
-                    ?>
+					   ';
+                    } ?>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -65,11 +67,12 @@ $page = 'inicio' ?>
                 </div>
                 <div class="row justify-content-center">
                     <div class="owl-carousel owl-theme" id="owl_propertys">
-                        <?php if(is_array($api)){
-                            inmuebles_destacados($api);
-                        }else{
-                            echo '<h5 class="text-center">No Tiene Inmuebles Destacados</h5>';
-                        }?>
+                        <?php if ( is_array( $api ) ) {
+    inmuebles_destacados( $api );
+} else {
+    echo '<h5 class="text-center">No Tiene Inmuebles Destacados</h5>';
+}
+?>
                     </div>
                 </div>
             </div>
@@ -83,8 +86,10 @@ $page = 'inicio' ?>
                 <div class="row justify-content-center">
                     <div class="col-11 col-lg-6 col-pad wow fadeInLeft delay-04s d-flex align-items-center" style="visibility: visible; animation-name: fadeInLeft;">
                         <div class="pr-lg-4 mr-lg-3 text-justify">
-                            <p><?php echo $texto_quienes_somos['proyeccion']['parrafos'][0]; ?></p>
-                            <p><?php echo $texto_quienes_somos['proyeccion']['parrafos'][1]; ?></p>
+                            <p><?php echo $texto_quienes_somos['proyeccion']['parrafos'][0];
+?></p>
+                            <p><?php echo $texto_quienes_somos['proyeccion']['parrafos'][1];
+?></p>
                         </div>
                     </div>
                     <div class="col-11 col-lg-6 col-pad wow fadeInRight delay-04s" style="visibility: visible; animation-name: fadeInRight;">
@@ -101,36 +106,26 @@ $page = 'inicio' ?>
                         <h1>Nuestros Servicios</h1>
                     </div>
                     <div class="row">
-                        <!-- item -->
+
                         <div class="col-sm-6 services-info-3 s-brd-2 wow fadeInLeft delay-04s" style="visibility: visible; animation-name: fadeInLeft;">
                             <i class="<?php echo $iconos_servicios['arrendamientos'] ?>"></i>
                             <h5><?php echo $texto_servicios['arrendamientos']['titulo'] ?></h5>
                         </div>
-                        <!-- item -->
+
                         <div class="col-md-6 col-sm-6 services-info-3 s-brd-1 wow fadeInUp delay-04s" style="visibility: visible; animation-name: fadeInUp;">
                             <i class="<?php echo $iconos_servicios['ventas'] ?>"></i>
                             <h5><?php echo $texto_servicios['ventas']['titulo'] ?></h5>
                         </div>
-                        <!-- item -->
+
                         <div class="col-md-6 col-sm-6 services-info-3 wow fadeInRight delay-04s" style="visibility: visible; animation-name: fadeInRight;">
                             <i class="<?php echo $iconos_servicios['avaluos'] ?>"></i>
                             <h5><?php echo $texto_servicios['avaluos']['titulo'] ?></h5>
                         </div>
-                        <!-- item -->
+
                         <div class="col-md-6 col-sm-6 services-info-3 s-brd-2 wow fadeInLeft delay-04s" style="visibility: visible; animation-name: fadeInLeft;">
                             <i class="<?php echo $iconos_servicios['servicios_locativos'] ?>"></i>
                             <h5><?php echo $texto_servicios['servicios_locativos']['titulo'] ?></h5>
                         </div>
-                        <!-- *********************** Ocultando estos servicios
-                        <div class="col-lg-4 col-md-6 col-sm-6 services-info-3 s-brd-1 wow fadeInDown delay-04s" style="visibility: visible; animation-name: fadeInDown;">
-                            <i class="<?php echo $iconos_servicios['creditos_hipotecarios'] ?>"></i>
-                            <h5><?php echo $texto_servicios['creditos_hipotecarios']['titulo'] ?></h5>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 services-info-3 wow fadeInRight delay-04s" style="visibility: visible; animation-name: fadeInRight;">
-                            <i class="<?php echo $iconos_servicios['seguros'] ?>"></i>
-                            <h5><?php echo $texto_servicios['seguros']['titulo'] ?></h5>
-                        </div> 
-                        -->
                     </div>
                 </div>
             </div>
@@ -145,12 +140,13 @@ $page = 'inicio' ?>
                     <div class="row justify-content-center">
                         <div class="col-lg-12 row wow fadeInDown delay-04s justify-content-center" style="visibility: visible; animation-name: fadeInDown;">
                             <?php
-                            for ($i = 0; $i < count($logos_aliados); $i++) {
-                                echo '<div class="col-12 col-md-6 col-lg-4 text-center">
+for ( $i = 0; $i < count( $logos_aliados );
+$i++ ) {
+    echo '<div class="col-12 col-md-6 col-lg-4 text-center">
                                             <img src="' . $logos_aliados[$i] . '" alt="">
                                     </div>';
-                            }
-                            ?>
+}
+?>
                         </div>
                     </div>
                 </div>
@@ -164,9 +160,10 @@ $page = 'inicio' ?>
                         <h1>Últimas Publicaciones</h1>
                     </div>
                     <div class="row wow fadeInUp delay-04s" style="visibility: visible; animation-name: fadeInUp;">
-                        <?php if (isset($noticias_array) && is_array($noticias_array)) {
-                            modelo_ultima_noticia($noticias_array);
-                        } ?>
+                        <?php if ( isset( $noticias_array ) && is_array( $noticias_array ) ) {
+    modelo_ultima_noticia( $noticias_array );
+}
+?>
                     </div>
                 </div>
             </div>
@@ -191,20 +188,22 @@ $page = 'inicio' ?>
     </div>
     <!-- Banner -->
 
-
-    <?php include 'layout/footer.php'; ?>
+    <?php include 'layout/footer.php';
+?>
     <script>
         var pagina = true;
+
     </script>
-    <?php include 'layout/archivosfooter.php'; ?>
+    <?php include 'layout/archivosfooter.php';
+?>
     <!-- Conexion API -->
     <script src="conexion_api/token_api.js"></script>
     <script src="conexion_api/validadores.js"></script>
     <script src="conexion_api/buscador.js"></script>
     <script>
         $('.carousel-inner div:first-child').addClass('active');
-    </script>
 
+    </script>
 
 </body>
 

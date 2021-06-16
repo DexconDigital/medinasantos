@@ -35,8 +35,9 @@ try{
     //Cabecera
     $mail->setFrom('inmobiliaria@medinasantos.com','inmobiliaria@medinasantos.com');
     //destinos
-    $mail->addAddress(' inmobiliariamedinasa@outlook.com');
+    $mail->addAddress('inmobiliariamedinasa@outlook.com');
     $mail->addAddress('medinasantos2@outlook.com');
+
 
     $mail->Subject='Mensaje desde la pagina web de Inmobiliaria Medina Santos';
     $mail->Body = '<span>Hola, '.$nombre.' quiere contactarse con ustedes y sus datos son: </span>

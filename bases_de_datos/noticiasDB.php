@@ -7,8 +7,12 @@ $link = Conect();
 $array = array();
 
 $sql_noticias = "SELECT * FROM noticias  where id_inmobiliaria2 = 6 order by id desc";
-$result = mysqli_query($link, $sql_noticias) or die(mysqli_error($link));
-while ($field = mysqli_fetch_array($result)) {
+$result = $link->prepare( $sql_noticias );
+$result->execute();
+
+$resultado = $result->fetchAll( );
+
+foreach ( $resultado as $key => $field ) {
     $nombre = $field['nombre'];
     $id = $field['id'];
     $descripcion = $field['descripcion'];

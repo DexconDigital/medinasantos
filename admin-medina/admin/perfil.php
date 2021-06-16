@@ -2,11 +2,12 @@
 require("seguridad.php");
 require_once("conexion.php");
 include 'layout/layout.php';
-$user=$_SESSION["usuarioactual"];
+$user= $_SESSION["usuarioactual"];
 $con = Conect();
-$qry = "SELECT * FROM usuarios where usuario ='$user'";
-$sql = mysqli_query($con, $qry);
-$usuario =  mysqli_fetch_array($sql);
+$qry = "SELECT * FROM usuarios where usuario ='$user->usuario'";
+$result = $con->prepare( $qry );
+$result->execute();
+$usuario = $result->fetch();
 ?>
 
 <div class="container">

@@ -122,6 +122,8 @@
         var pagina = false;
     </script>
 
+     <!-- importantes mantener el orden-->
+<!-- importantes mantener el orden-->
     <?php include 'layout/archivosfooter.php'; ?>
 </body>
 

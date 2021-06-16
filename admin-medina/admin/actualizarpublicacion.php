@@ -1,19 +1,20 @@
 <?php $page = "Lista de Noticias";
-require("seguridad.php");
-require_once("conexion.php");
+require( "seguridad.php" );
+require_once( "conexion.php" );
 include 'layout/layout.php';
-$id=$_GET["id"];
-            $con=Conect();
-            $qry="SELECT * FROM noticias where id ='$id' and id_inmobiliaria2 = 6";
-            $sql=mysqli_query($con,$qry);
-            $res=  mysqli_fetch_array($sql) ; 
+$id = (isset($_GET["id"])) ? $_GET["id"] : 0;
+$con = Conect();
+$qry = "SELECT * FROM noticias where id ='$id' and id_inmobiliaria2 = 6";
+$result = $con->prepare( $qry );
+$result->execute();
+$res = $result->fetch( );
 ?>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-9">
-            <h2 class="text-center">Agregar Noticia</h2>
+            <h2 class="text-center">Editar Noticia</h2>
             <form method="post" action="uptade.php" enctype="multipart/form-data">
-            <input type="hidden" name="id" id="id" value="<?php echo $res[0]; ?>">
+                <input type="hidden" name="id" id="id" value="<?php echo $res[0]; ?>">
                 <div class="form-group row">
                     <label for="" class="col-sm-2 col-form-label">Titulo Publicacion</label>
                     <div class="col-sm-10">
@@ -53,4 +54,5 @@ $id=$_GET["id"];
     </div>
 </div>
 
-<?php include 'layout/layoutFooter.php'; ?>
+<?php include 'layout/layoutFooter.php';
+?>

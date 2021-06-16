@@ -12,6 +12,22 @@ require 'controllers/detalleInmuebleController.php' ?>
     <link rel="stylesheet" href="./css/carousel.tamanos.css">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+<!-- Datos para compartir por facebook -->
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="https://inmobiliariamedinasantos.com/detalleInmueble/codigo/ <?php $co?>" >
+    <meta property="og:title" content="<?php echo $r['Tipo_Inmueble'].' en '.$r['Gestion'];?>" >
+    <meta property="og:description" content="Inmueble ubicado en: <?php echo $r['barrio'] .', '. $r['ciudad'].', '.$r['depto'];?> " >
+    <meta property="og:image" itemprop="image" content="<?php echo $r['fotos'][0]['foto'];?>" >
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="280">
+    <meta property="og:image:height" content="280">
+    <!-- fin de datos para compartir por facebook -->
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo $r['Tipo_Inmueble'].' en '.$r['Gestion'];?>" >
+    <meta name="twitter:description" content="Inmueble ubicado en: <?php echo $r['barrio'] .', '. $r['ciudad'].', '.$r['depto'];?> " >
+    <meta name="twitter:image" content="<?php echo $r['fotos'][0]['foto'];?>" >
+    <!-- fin de datos para compartir por twitter -->
 </head>
 
 <body>
@@ -78,15 +94,15 @@ require 'controllers/detalleInmuebleController.php' ?>
                                 <div class="col-12 col-md-3 pl-0 text-center text-md-left"><a class="btn btn-color" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=254-<?php echo $co ?>" target="_blank">Imprimir Ficha</a></div>
                                 <div class="col-12 col-md-3 offset-md-3 text-center text-md-left">Compartir por:</div>
                                 <div class="col-4 col-md-1">
-                                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.pendiente.com%2FdetalleInmueble%3Fcodigo%3D<?php echo $co; ?>" target="_blank">
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Finmobiliariamedinasantos.com%2Fdetalle-inmueble.php%3Fco%3D<?php echo $co; ?>" target="_blank">
                                         <i class="fab fa-facebook-square"></i></a>
                                 </div>
                                 <div class="col-4 col-md-1">
-                                    <a href="<?php echo 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.pendiente.com%2FdetalleInmueble%3Fcodigo%3D' . $co . '&text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] ?>" target="_blank">
+                                    <a href="<?php echo 'https://twitter.com/intent/tweet?url=https%3A%2F%2Finmobiliariamedinasantos.com%2Fdetalle-inmueble.php%3Fco%3D' . $co . '&text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] ?>" target="_blank">
                                         <i class="fab fa-twitter"></i></a>
                                 </div>
                                 <div class="col-4 col-md-1">
-                                    <a href="<?php echo 'https://wa.me/?text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] . '%20http://www.supropiedadinmobiliaria.com/detalleInmueble.php?codigo%3d' . $co ?>" target="_blank">
+                                    <a href="<?php echo 'https://wa.me/?text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] . '%20Descripción:%20' . $r['descrip'] .  '%20https%3A%2F%2Finmobiliariamedinasantos.com%2Fdetalle-inmueble.php%3Fco%3D' . $co ?>" target="_blank">
                                         <i class="fab fa-whatsapp"></i></a>
                                 </div>
                             </div>
@@ -306,9 +322,9 @@ require 'controllers/detalleInmuebleController.php' ?>
         var pagina = false;
     </script>
     <!-- importantes mantener el orden-->
+<script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/slick.min.js"></script>

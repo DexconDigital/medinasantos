@@ -10,16 +10,18 @@ $password=$_REQUEST["pass"];
 $id_inmobiliaria = 6;
 
 $qry="SELECT usuario FROM usuarios WHERE usuario ='$nombre' and password ='$password' and id_inmobiliaria1 = '$id_inmobiliaria'";
-$sql=mysqli_query($con,$qry);
+$result = $con->prepare( $qry );
+$result->execute();
 
-$row = mysqli_fetch_row($sql);
+$row = $result->fetch( PDO::FETCH_OBJ );
+$rowcount = $result->rowCount();
 
-if (mysqli_num_rows($sql) > 0) {
+if ( $rowcount > 0 ) {
     // output data of each row
     session_start(); 
       //Guardamos dos variables de sesión que nos auxiliará para saber si se está o no "logueado" un usuario 
       $_SESSION["autentica"] = "SIP"; 
-      $_SESSION["usuarioactual"] =  $row[0];
+      $_SESSION["usuarioactual"] =  $row;
      header ("Location: admin/index.php");
       //nombre del usuario logueado. 
       //Direccionamos a nuestra página principal del sistema. 
