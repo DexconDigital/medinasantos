@@ -41,8 +41,8 @@ $datos_contacto = [
 		"icono" => "fas fa-map-marker-alt",
 	],
 	"telefono_fijo" => [
-		"link"=> "+570317221563",
-		"imprimir" => "PBX +57(1) 722 1563",
+		"link"=> "6017221563",
+		"imprimir" => "PBX (601) 722 1563",
 		"icono" => "fas fa-phone-alt",
 	],
 	"celular" => [
